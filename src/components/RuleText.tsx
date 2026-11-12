@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { rules, type RuleBlock } from '../data'
 import { GLOSSARY, TOKEN, glossaryKey } from '../lib/glossary'
 import UnitCard from './UnitCard'
+import SectionDiagram from './Diagrams'
 
 const SECTION_IDS = new Set(rules.map((r) => r.id))
 const EXAMPLE_START = /^(?:\*\*)?Exemple(?:\*\*)?\s*:\s*/
@@ -78,7 +79,7 @@ function Mark({ text, q }: { text: string; q?: string }) {
 }
 
 /** Blocs d'une section de règles : paragraphes, listes (avec niveaux), tableaux et schémas. */
-export function RuleBlocks({ blocks, highlight }: { blocks: RuleBlock[]; highlight?: string }) {
+export function RuleBlocks({ blocks, highlight, sectionId }: { blocks: RuleBlock[]; highlight?: string; sectionId?: string }) {
   const out = []
   for (let i = 0; i < blocks.length; i++) {
     const b = blocks[i]
@@ -150,9 +151,15 @@ export function RuleBlocks({ blocks, highlight }: { blocks: RuleBlock[]; highlig
       )
     } else {
       out.push(
-        <figure key={i} className="rule-img">
-          <img src={`./${b.src}`} alt="Schéma du livret de règles" loading="lazy" />
-        </figure>,
+        <SectionDiagram
+          key={i}
+          sectionId={sectionId}
+          fallback={
+            <figure className="rule-img">
+              <img src={`./${b.src}`} alt="Schéma du livret de règles" loading="lazy" />
+            </figure>
+          }
+        />,
       )
     }
   }

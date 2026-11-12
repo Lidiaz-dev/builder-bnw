@@ -132,7 +132,7 @@ function Booklet({ sectionId }: { sectionId?: string }) {
               </H>
               {/A COMPLETER|WIP/.test(s.blocks.map(blockText).join(' ')) && <p className="warn small">Section marquée comme en cours d'écriture dans le livret.</p>}
               <RuleSummary id={s.id} />
-              <RuleBlocks blocks={s.blocks} />
+              <RuleBlocks blocks={s.blocks} sectionId={s.id} />
             </section>
           )
         })}

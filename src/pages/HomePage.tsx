@@ -6,6 +6,7 @@ export default function HomePage() {
   return (
     <div className="home">
       <section className="hero">
+        <div>
         <p className="eyebrow">Système Noctua · format epic 10-15 mm</p>
         <h1>Brave New World</h1>
         <p className="lead">
@@ -23,6 +24,10 @@ export default function HomePage() {
             Consulter les règles
           </Link>
         </div>
+        </div>
+        <figure className="poster">
+          <img src="./img/identite/affiche.jpg" alt="Affiche de Brave New World : une planète et un vaisseau dans l'espace" />
+        </figure>
       </section>
 
       <section className="faction-grid">

@@ -30,9 +30,10 @@ body {
 }
 
 body {
+  /* Fond spatial de la maquette, assombri pour garder le texte lisible. */
   background:
-    radial-gradient(1200px 600px at 80% -10%, rgba(34, 195, 230, 0.08), transparent 60%),
-    radial-gradient(900px 500px at -10% 20%, rgba(242, 179, 61, 0.05), transparent 60%),
+    linear-gradient(rgba(7, 11, 20, 0.86), rgba(7, 11, 20, 0.93)),
+    url('/img/identite/fond-espace.jpg') center / cover no-repeat,
     var(--bg);
   background-attachment: fixed;
   color: var(--text);
@@ -51,6 +52,9 @@ h4 {
 }
 h1 {
   font-size: 1.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-shadow: 0 0 14px rgba(34, 195, 230, 0.45);
 }
 h2 {
   font-size: 1.3rem;
@@ -373,17 +377,44 @@ textarea:focus {
 /* ------------------------------------------------------------------ accueil */
 
 .hero {
-  padding: 3rem 0 2rem;
-  max-width: 760px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(200px, 300px);
+  gap: 2.5rem;
+  align-items: center;
+  padding: 2rem 0;
 }
 .hero h1 {
   font-size: clamp(2.4rem, 7vw, 4rem);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  background: linear-gradient(90deg, var(--text), var(--accent));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  letter-spacing: 0.08em;
+  color: #fff;
+  text-shadow:
+    0 0 10px rgba(34, 195, 230, 0.8),
+    0 0 30px rgba(34, 195, 230, 0.45);
+}
+.poster {
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--accent-2);
+  box-shadow:
+    0 0 0 1px rgba(34, 195, 230, 0.25),
+    0 0 40px rgba(34, 195, 230, 0.25);
+  aspect-ratio: 2 / 3;
+}
+.poster img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 700px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .poster {
+    max-width: 240px;
+    order: -1;
+  }
 }
 .eyebrow {
   color: var(--gold);
@@ -1105,6 +1136,65 @@ textarea:focus {
 .compact-table {
   width: auto;
   min-width: 170px;
+}
+
+/* Schémas redessinés */
+.diagram {
+  margin: 1rem 0 1.2rem;
+  border: 1px solid var(--accent-2);
+  border-radius: var(--radius);
+  background: radial-gradient(ellipse at 50% 40%, #0f1d36, #060a14 75%);
+  box-shadow: 0 0 24px rgba(34, 195, 230, 0.12);
+  overflow: hidden;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+  break-inside: avoid;
+}
+.diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 440px;
+}
+.diagram figcaption {
+  font-size: 0.85rem;
+  color: var(--muted);
+  padding: 0.55rem 0.9rem 0.7rem;
+  border-top: 1px solid var(--line);
+}
+.diagram .stars circle {
+  fill: #fff;
+  opacity: 0.45;
+}
+.diagram text {
+  font-family: var(--display);
+  fill: #e3eaf5;
+}
+.diagram .d-title {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+}
+.diagram .d-sub {
+  font-size: 12.5px;
+  fill: #c9d3e2;
+}
+.diagram .d-chip {
+  font-size: 13px;
+  font-weight: 700;
+}
+.diagram .d-node {
+  font-size: 13px;
+  font-weight: 700;
+}
+.diagram .d-node.qg {
+  font-size: 16px;
+  fill: #f2b33d;
+}
+.diagram .d-ruler {
+  font-size: 13px;
+  font-weight: 700;
+  fill: #c9d3e2;
 }
 
 /* Renvois et lexique */

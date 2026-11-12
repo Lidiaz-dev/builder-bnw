@@ -148,15 +148,17 @@ function FireAngleDiagram() {
       caption="On regarde où se trouve majoritairement l'attaquant (son leader) par rapport au défenseur : ici dans la zone de flanc, le tir touche le flanc."
     >
       <Stars w={W} h={H} seed={11} />
+      {/* Attaquant à cheval sur la limite Front/Flanc, majoritairement dans le flanc (environ 2/3).
+          Dessiné sous les zones pour que la limite reste visible par-dessus. */}
+      <Base cx={193} cy={58} w={56} h={84} rotate={137} color={GREEN} fill="#0f2a1e" />
       <Zones cx={cx} cy={cy} w={64} h={92} W={W} H={H} opacity={0.9} />
       <Base cx={cx} cy={cy} w={64} h={92} color="#c9d3e2" fill="#1b2436" />
-      <Base cx={110} cy={150} w={56} h={84} rotate={-58} color={GREEN} fill="#0f2a1e" />
-      <line x1={150} y1={168} x2={258} y2={196} stroke={RED} strokeWidth={4} markerEnd="url(#tir-arrow-red)" filter="url(#tir-glow)" />
-      <Label x={110} y={222} title="ATTAQUANT" color={GREEN} />
+      <line x1={224} y1={95} x2={263} y2={166} stroke={RED} strokeWidth={4} markerEnd="url(#tir-arrow-red)" filter="url(#tir-glow)" />
+      <Label x={95} y={124} title="ATTAQUANT" color={GREEN} />
       <Label x={cx} y={cy + 72} title="DÉFENSEUR" color="#c9d3e2" />
       <Label x={cx} y={30} title="FRONT" />
-      <Label x={212} y={118} title="FLANC" color={GOLD} />
-      <g transform="translate(18 18)">
+      <Label x={180} y={205} title="FLANC" color={GOLD} />
+      <g transform="translate(18 252)">
         <rect width={150} height={30} rx={15} fill="#0b1424" stroke={GOLD} />
         <text x={75} y={20} textAnchor="middle" className="d-chip" fill={GOLD}>
           Tir de flanc : −1 DEF

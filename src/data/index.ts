@@ -123,9 +123,9 @@ export const SLOT_LABEL: Record<SlotId, string> = {
 /** Couleur d'accent de chaque faction (variable CSS --faction). */
 export const FACTION_COLOR: Record<string, string> = {
   cabale: '#e8913a',
-  corpo: '#4f9df0',
-  umbra: '#a77bf3',
-  vespara: '#5fcf6b',
+  corpo: '#ec5a50',
+  umbra: '#4f9df0',
+  vespara: '#d46ee6',
 }
 
 /* ------------------------------------------------------------------ formats et arbre de recrutement */

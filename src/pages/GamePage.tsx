@@ -38,7 +38,9 @@ export default function GamePage() {
   const [game, setGame] = useState<GameState | null>(() => loadGame())
   const [reminders, setReminders] = useState<string[]>([])
 
-  useEffect(() => storeGame(game), [game])
+  useEffect(() => {
+    storeGame(game)
+  }, [game])
 
   if (!game) return <Setup onStart={setGame} />
 

@@ -83,8 +83,9 @@ function Booklet({ sectionId }: { sectionId?: string }) {
   const shown = rules.filter((r) => chapterOf(r.id) === chapter)
 
   useEffect(() => {
-    if (!sectionId) return window.scrollTo(0, 0)
-    document.getElementById(`s-${sectionId}`)?.scrollIntoView({ block: 'start' })
+    // Un effet React ne doit rien renvoyer d'autre qu'une fonction de nettoyage.
+    if (sectionId) document.getElementById(`s-${sectionId}`)?.scrollIntoView({ block: 'start' })
+    else window.scrollTo(0, 0)
   }, [sectionId, pathname])
 
   return (

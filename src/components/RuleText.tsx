@@ -125,18 +125,50 @@ export function RuleBlocks({ blocks, highlight, sectionId }: { blocks: RuleBlock
         </p>,
       )
     } else if (b.type === 'table') {
+      // Première ligne en en-tête, première colonne en intitulé de ligne (comme les tableaux d'armes).
       const width = Math.max(...b.rows.map((r) => r.length))
+      const [head, ...body] = b.rows
       out.push(
         <div key={i} className="table-wrap">
           <table className="rule-table">
+            <thead>
+              <tr>
+                {head.map((c, k) => (
+                  <th key={k} scope="col" colSpan={k === head.length - 1 ? width - head.length + 1 : 1}>
+                    {c}
+                  </th>
+                ))}
+              </tr>
+            </thead>
             <tbody>
-              {b.rows.map((r, j) => (
+              {body.map((r, j) => (
                 <tr key={j}>
-                  {r.map((c, k) => (
-                    <td key={k} colSpan={k === r.length - 1 ? width - r.length + 1 : 1}>
-                      <RichText text={c} highlight={highlight} />
-                    </td>
-                  ))}
+                  {r.map((c, k) => {
+                    const span = k === r.length - 1 ? width - r.length + 1 : 1
+                    // Cellule de plusieurs phrases : une ligne par phrase, plus lisible.
+                    const sentences = c.split(/(?<=\.)\s+(?=[A-ZÀ-Ý«])/)
+                    const content =
+                      sentences.length > 1 ? (
+                        <ul className="cell-list">
+                          {sentences.map((s, n) => (
+                            <li key={n}>
+                              <RichText text={s} highlight={highlight} />
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <RichText text={c} highlight={highlight} />
+                      )
+                    return k === 0 ? (
+                      <th key={k} scope="row" colSpan={span}>
+                        {content}
+                      </th>
+                    ) : (
+                      <td key={k} colSpan={span}>
+                        {content}
+                      </td>
+                    )
+                  })}
                 </tr>
               ))}
             </tbody>

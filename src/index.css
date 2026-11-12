@@ -864,21 +864,52 @@ textarea:focus {
   overflow-x: auto;
   margin: 0.6rem 0 1rem;
 }
+/* Tableaux des règles : même langage que les tableaux d'armes des fiches. */
 .rule-table {
   border-collapse: collapse;
   width: 100%;
   font-size: 0.88rem;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 .rule-table th,
 .rule-table td {
-  border: 1px solid var(--line-2);
-  padding: 0.35rem 0.55rem;
+  padding: 0.45rem 0.65rem;
   vertical-align: top;
   text-align: left;
+  border-bottom: 1px solid var(--line);
 }
-.rule-table th {
-  background: var(--panel-2);
+.rule-table tr:last-child > * {
+  border-bottom: 0;
+}
+.rule-table thead th {
+  font-size: 0.7rem;
   font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line-2);
+}
+.rule-table tbody th {
+  font-family: var(--display);
+  font-weight: 700;
+  color: var(--accent);
+  white-space: nowrap;
+  width: 1%;
+}
+.rule-table tbody tr:hover {
+  background: rgba(34, 195, 230, 0.04);
+}
+.cell-list {
+  margin: 0;
+  padding-left: 1rem;
+}
+.cell-list li {
+  margin: 0.1rem 0;
 }
 
 /* ------------------------------------------------------------------ règles */

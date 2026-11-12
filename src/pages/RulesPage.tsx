@@ -1,9 +1,10 @@
-import { useEffect, useMemo, useState, type ReactNode } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link, NavLink, useLocation, useParams } from 'react-router-dom'
 import { FACTION_COLOR, SLOT_LABEL, factionById, factions, quickref, rules, skills, sources, type RuleBlock, type SlotId } from '../data'
 import { RichText, RuleBlocks } from '../components/RuleText'
 import UnitCard, { InfantryCard } from '../components/UnitCard'
 import FactionRules from '../components/FactionRules'
+import RuleSummary from '../components/RuleSummaries'
 
 const norm = (s: string) =>
   s
@@ -130,7 +131,7 @@ function Booklet({ sectionId }: { sectionId?: string }) {
                 <AnchorButton id={s.id} />
               </H>
               {/A COMPLETER|WIP/.test(s.blocks.map(blockText).join(' ')) && <p className="warn small">Section marquée comme en cours d'écriture dans le livret.</p>}
-              {SUMMARIES[s.id]}
+              <RuleSummary id={s.id} />
               <RuleBlocks blocks={s.blocks} />
             </section>
           )
@@ -167,69 +168,6 @@ function AnchorButton({ id }: { id: string }) {
       {copied ? 'Lien copié' : '🔗'}
     </button>
   )
-}
-
-/** Résumés visuels ajoutés au-dessus du texte de certaines sections. */
-const ROUND_PHASES: [string, string][] = [
-  ['Début de round', 'Effets de début de round, pass tokens'],
-  ["Phase d'énergie", 'Distribuer l’énergie en alternance'],
-  ["Phase d'ordres", 'Pions ordre face cachée'],
-  ["Phase d'activation", 'Activer une unité ou passer, en alternance'],
-  ['Combat de terrains', 'Jets en opposition dans les terrains contestés'],
-  ['Phase de fin', 'Points des objectifs, transfert de la priorité'],
-  ['Nettoyage', 'Ramasser ordres et énergie'],
-]
-
-const SUMMARIES: Record<string, ReactNode> = {
-  '4.1': (
-    <div className="summary">
-      <span className="summary-label">En bref</span>
-      <ol className="round-flow">
-        {ROUND_PHASES.map(([name, what], i) => (
-          <li key={name} className={i < 3 ? 'skip-r1' : undefined}>
-            <strong>{name}</strong>
-            <span>{what}</span>
-          </li>
-        ))}
-      </ol>
-      <p className="small muted">Les phases en pointillés n'ont pas lieu au premier round, qui commence directement à l'activation.</p>
-    </div>
-  ),
-  '5.2.2': (
-    <div className="summary">
-      <span className="summary-label">En bref</span>
-      <p className="small">Dés d'éperonnage par socle = dés de taille + dés de vitesse.</p>
-      <div className="row wrap summary-tables">
-        <table className="rule-table compact-table">
-          <thead>
-            <tr>
-              <th>Taille</th>
-              <th className="num">Dés</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Léger</td><td className="num">1</td></tr>
-            <tr><td>Moyen</td><td className="num">3</td></tr>
-            <tr><td>Lourd</td><td className="num">6</td></tr>
-          </tbody>
-        </table>
-        <table className="rule-table compact-table">
-          <thead>
-            <tr>
-              <th>Vitesse (réglette)</th>
-              <th className="num">Dés</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>S (3")</td><td className="num">2</td></tr>
-            <tr><td>M (6")</td><td className="num">3</td></tr>
-            <tr><td>L (12")</td><td className="num">5</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p className="small muted">Exemple : un char lourd lancé sur une réglette L jette 6 + 5 = 11 dés.</p>
-    </div>
-  ),
 }
 
 function FactionsTab({ factionId }: { factionId?: string }) {

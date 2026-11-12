@@ -5,6 +5,8 @@ import { GLOSSARY, TOKEN, glossaryKey } from '../lib/glossary'
 import UnitCard from './UnitCard'
 
 const SECTION_IDS = new Set(rules.map((r) => r.id))
+const EXAMPLE_START = /^(?:\*\*)?Exemple(?:\*\*)?\s*:\s*/
+const EXAMPLE_NEXT = /^(?:\*\*)?(?:Cas n°|Dans des tirs)/
 
 /**
  * Texte avec le gras du livret (**…**), les renvois « cf 5.2.1 » en liens, les termes du lexique
@@ -96,6 +98,24 @@ export function RuleBlocks({ blocks, highlight }: { blocks: RuleBlock[]; highlig
         <ul key={`ul${i}`} className="rule-list">
           {items}
         </ul>,
+      )
+    } else if (b.type === 'p' && EXAMPLE_START.test(b.text)) {
+      // Un exemple et ses « Cas n°… » qui suivent : encadré à part, pour le distinguer de la règle.
+      const lines: string[] = [b.text.replace(EXAMPLE_START, '')]
+      while (i + 1 < blocks.length && blocks[i + 1].type === 'p' && EXAMPLE_NEXT.test((blocks[i + 1] as { text: string }).text)) {
+        i++
+        lines.push((blocks[i] as { text: string }).text)
+      }
+      const split = lines.flatMap((l) => l.split(/\s(?=(?:\*\*)?Cas n°\s?\d)/))
+      out.push(
+        <div key={i} className="example">
+          <span className="example-label">Exemple</span>
+          {split.map((l, k) => (
+            <p key={k}>
+              <RichText text={l} highlight={highlight} />
+            </p>
+          ))}
+        </div>,
       )
     } else if (b.type === 'p') {
       out.push(

@@ -1044,6 +1044,60 @@ textarea:focus {
 .round-flow li.skip-r1 {
   border-style: dashed;
 }
+.summary-cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.8rem;
+  margin: 0.3rem 0 0.6rem;
+}
+.summary-cols h5,
+.summary h5 {
+  font-family: var(--display);
+  font-size: 0.85rem;
+  color: var(--accent);
+  margin: 0 0 0.3rem;
+}
+.summary-cols ul,
+.summary-notes {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.85rem;
+}
+.summary-cols li,
+.summary-notes li {
+  margin: 0.15rem 0;
+}
+.summary-notes {
+  flex: 1;
+  min-width: 220px;
+}
+.summary .rule-table {
+  margin-bottom: 0.6rem;
+}
+
+/* Exemples du livret */
+.example {
+  border-left: 3px solid var(--gold);
+  background: rgba(242, 179, 61, 0.06);
+  border-radius: 0 8px 8px 0;
+  padding: 0.5rem 0.8rem;
+  margin: 0.4rem 0 0.9rem;
+  font-size: 0.9rem;
+  color: #c9d3e2;
+}
+.example-label {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+.example p {
+  margin: 0.2rem 0;
+}
+
 .summary-tables {
   align-items: flex-start;
   gap: 1rem;

@@ -2,7 +2,7 @@
   {
     "id": "anti-infanterie",
     "name": "Anti-infanterie",
-    "text": "pas de bouclier pour les défenseur infanterie, permet de cibler uniquement l'infanterie adverse lors d'un tir dans un terrain contesté. -1 a la def de l'infanterie."
+    "text": "pas de bouclier pour les défenseurs d'infanterie, permet de cibler uniquement l'infanterie adverse lors d'un tir dans un terrain contesté. -1 à la DEF de l'infanterie."
   },
   {
     "id": "anti-aerien",

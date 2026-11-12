@@ -41,6 +41,10 @@ pip install pymupdf
 python scripts/import_data.py "B:/WARHAMMER/Brave new world/Règles"
 ```
 
+Les corrections du texte (fautes, « bâtiment » → « terrain », 1 dé par socle au combat de terrains, Machinegun…)
+sont dans `scripts/corrections.py` et réappliquées à chaque import. Le script signale celles qui ne trouvent plus rien,
+par exemple quand une faute a été corrigée directement dans les PDF.
+
 Les choix faits sur les données floues sont listés dans [HYPOTHESES.md](HYPOTHESES.md).
 
 ## Brancher Firebase (comptes)

@@ -26,7 +26,7 @@
       },
       {
         "type": "p",
-        "text": "A la plus grande surprise des Corporations, trop occupées à se faire la guerre, une faction de civils a émergé. Constituée de colons ayant fui les guerres des corpos, la faction s'est réfugiée dans les grands déserts de Noctua. Grâce au pillage des débris de guerre, mais aussi à l'exploitation de stations aliens, la « **Cabale »** tire son épingle du jeu en arrivant sur les exploitations de Solaryne pour en voler les ressources. Rapides et chirurgicaux, les raids de la Cabale laissent peu de témoins."
+        "text": "À la plus grande surprise des Corporations, trop occupées à se faire la guerre, une faction de civils a émergé. Constituée de colons ayant fui les guerres des corpos, la faction s'est réfugiée dans les grands déserts de Noctua. Grâce au pillage des débris de guerre, mais aussi à l'exploitation de stations aliens, la « **Cabale »** tire son épingle du jeu en arrivant sur les exploitations de Solaryne pour en voler les ressources. Rapides et chirurgicaux, les raids de la Cabale laissent peu de témoins."
       },
       {
         "type": "p",
@@ -34,7 +34,7 @@
       },
       {
         "type": "p",
-        "text": "Attirée par les amas d'énergie, une race de conquérants biologiques, formant une ruche vivante, s'est mise en chemin. Ses avants-gardes sondent planète par planète pour détecter le moindre signal d'énergie, fondre dessus, et tout dévorer. Ce sont les « **Vespara** »."
+        "text": "Attirée par les amas d'énergie, une race de conquérants biologiques, formant une ruche vivante, s'est mise en chemin. Ses avant-gardes sondent planète par planète pour détecter le moindre signal d'énergie, fondre dessus, et tout dévorer. Ce sont les « **Vespara** »."
       },
       {
         "type": "p",
@@ -73,7 +73,7 @@
       },
       {
         "type": "p",
-        "text": "Il y a une gamme de figurine dédiée, mais il est possible de jouer avec n'importe quel modèle."
+        "text": "Il y a une gamme de figurines dédiée, mais il est possible de jouer avec n'importe quel modèle."
       }
     ]
   },
@@ -168,7 +168,7 @@
       },
       {
         "type": "p",
-        "text": "A aucun moment une réussite peut être en dessous de 3+ et au-dessus de 5+. Plusieurs modificateurs peuvent être apportés aux dés, ils se cumulent jusqu'à atteindre la valeur finale."
+        "text": "À aucun moment une réussite ne peut être en dessous de 3+ et au-dessus de 5+. Plusieurs modificateurs peuvent être apportés aux dés, ils se cumulent jusqu'à atteindre la valeur finale."
       },
       {
         "type": "p",
@@ -199,7 +199,7 @@
       },
       {
         "type": "p",
-        "text": "**Puissance adaptative A/M/B** : Les unités peuvent reçevoir de l'énergie pour ajouter des réussites automatiques dans les systèmes Armes/Moteurs/Boucliers. L'énergie est distribuée à la phase d'énergie."
+        "text": "**Puissance adaptative A/M/B** : Les unités peuvent recevoir de l'énergie pour ajouter des réussites automatiques dans les systèmes Armes/Moteurs/Boucliers. L'énergie est distribuée à la phase d'énergie."
       },
       {
         "type": "p",
@@ -260,7 +260,7 @@
               "shots": 6
             },
             {
-              "name": "Gatling",
+              "name": "Machine gun",
               "bonus": "anti-infanterie",
               "bonusLabel": "Anti infanterie",
               "arc": "Front",
@@ -328,7 +328,7 @@
       },
       {
         "type": "li",
-        "text": "Puissance adaptative A/M/B : le nombre d'énergie maximale qu'elle peut recevoir dans ses différents systèmes",
+        "text": "Puissance adaptative A/M/B : le nombre maximal d'énergie qu'elle peut recevoir dans ses différents systèmes",
         "level": 0
       },
       {
@@ -483,7 +483,7 @@
     "blocks": [
       {
         "type": "p",
-        "text": "A la **phase d'énergie**, le véhicule de commandement peut **distribuer** des points d'énergie à **L** de lui."
+        "text": "À la **phase d'énergie**, le véhicule de commandement peut **distribuer** des points d'énergie à **L** de lui."
       },
       {
         "type": "p",
@@ -524,7 +524,7 @@
       },
       {
         "type": "p",
-        "text": "A la phase d'énergie, c'est à partir de cette unité que l'énergie est distribuée."
+        "text": "À la phase d'énergie, c'est à partir de cette unité que l'énergie est distribuée."
       },
       {
         "type": "p",
@@ -565,7 +565,7 @@
   },
   {
     "id": "2.3.2.1",
-    "title": "Terrains controlés",
+    "title": "Terrains contrôlés",
     "level": 4,
     "blocks": [
       {
@@ -574,7 +574,7 @@
       },
       {
         "type": "p",
-        "text": "Si une infanterie **alliée** se trouve déjà dans le terrain, les deux effectifs **se cumulent**. Si une infanterie **ennemie** se trouve déjà dans le terrain, voir section « 2.3.2.2 Assaut de terrain controlé »"
+        "text": "Si une infanterie **alliée** se trouve déjà dans le terrain, les deux effectifs **se cumulent**. Si une infanterie **ennemie** se trouve déjà dans le terrain, voir section « 2.3.2.2 Assaut de terrain contrôlé »"
       },
       {
         "type": "p",
@@ -584,7 +584,7 @@
   },
   {
     "id": "2.3.2.2",
-    "title": "Assaut de terrain controlé",
+    "title": "Assaut de terrain contrôlé",
     "level": 4,
     "blocks": [
       {
@@ -838,7 +838,7 @@
       },
       {
         "type": "p",
-        "text": "C'est à partir du Leader que toutes les **mesures** et **lignes de vues** sont prises."
+        "text": "C'est à partir du Leader que toutes les **mesures** et **lignes de vue** sont prises."
       },
       {
         "type": "p",
@@ -861,7 +861,7 @@
       },
       {
         "type": "p",
-        "text": "L'unité doit avoir la même orientation (être parallèle les uns aux autres)."
+        "text": "L'unité doit avoir la même orientation (être parallèles les uns aux autres)."
       }
     ]
   },
@@ -902,7 +902,7 @@
     "blocks": [
       {
         "type": "p",
-        "text": "Une l'unité peut tirer et éliminer une unité adverse même si celle-ci n'est pas à 100% visible (si elle est cachée derrière un terrain par exemple)."
+        "text": "Une unité peut tirer et éliminer une unité adverse même si celle-ci n'est pas à 100% visible (si elle est cachée derrière un terrain par exemple)."
       },
       {
         "type": "p",
@@ -1088,7 +1088,7 @@
     "blocks": [
       {
         "type": "p",
-        "text": "Les **terrains** servent de refuge pour l'infanterie, afin de donner de l'énergie à son armée. Tous les terrains **bloquent les lignes de vues** et sont **infranchissables**."
+        "text": "Les **terrains** servent de refuge pour l'infanterie, afin de donner de l'énergie à son armée. Tous les terrains **bloquent les lignes de vue** et sont **infranchissables**."
       }
     ]
   },
@@ -1187,7 +1187,7 @@
     "blocks": [
       {
         "type": "p",
-        "text": "A tour de rôle, les joueurs placent 3 objectifs chacun dans le territoire allié :"
+        "text": "À tour de rôle, les joueurs placent 3 objectifs chacun dans le territoire allié :"
       },
       {
         "type": "li",
@@ -1201,7 +1201,7 @@
       },
       {
         "type": "li",
-        "text": "à plus de **M** tout autre objectif.",
+        "text": "à plus de **M** de tout autre objectif.",
         "level": 0
       },
       {
@@ -1225,7 +1225,7 @@
     "blocks": [
       {
         "type": "p",
-        "text": "A tour de rôle, les joueurs placent 3 objectifs chacun dans le territoire ennemi :"
+        "text": "À tour de rôle, les joueurs placent 3 objectifs chacun dans le territoire ennemi :"
       },
       {
         "type": "li",
@@ -1239,7 +1239,7 @@
       },
       {
         "type": "li",
-        "text": "à plus de **M** tout autre objectif.",
+        "text": "à plus de **M** de tout autre objectif.",
         "level": 0
       },
       {
@@ -1263,7 +1263,7 @@
     "blocks": [
       {
         "type": "p",
-        "text": "A tour de rôle, les joueurs placent 3 objectifs :"
+        "text": "À tour de rôle, les joueurs placent 3 objectifs :"
       },
       {
         "type": "li",
@@ -1323,7 +1323,7 @@
     "blocks": [
       {
         "type": "p",
-        "text": "A chaque fois qu'un joueur gagne des **points de scénario**, il peut déclencher son **pouvoir de faction**."
+        "text": "À chaque fois qu'un joueur gagne des **points de scénario**, il peut déclencher son **pouvoir de faction**."
       }
     ]
   },
@@ -1334,7 +1334,7 @@
     "blocks": [
       {
         "type": "p",
-        "text": "A la fin des 5 rounds de jeu, le joueur qui cumule le plus grand nombre de points de victoire remporte la partie."
+        "text": "À la fin des 5 rounds de jeu, le joueur qui cumule le plus grand nombre de points de victoire remporte la partie."
       },
       {
         "type": "p",
@@ -1359,7 +1359,7 @@
     "blocks": [
       {
         "type": "p",
-        "text": "Il y a deux type de rencontre :"
+        "text": "Il y a deux types de rencontre :"
       },
       {
         "type": "li",
@@ -1382,7 +1382,7 @@
       },
       {
         "type": "li",
-        "text": "**Progression** : Il est possible de recruter une unité avancée que si l'unité précédente sur la même ligne a déjà été recrutée.",
+        "text": "**Progression** : Il n'est possible de recruter une unité avancée que si l'unité précédente sur la même ligne a déjà été recrutée.",
         "level": 0
       },
       {
@@ -1469,7 +1469,7 @@
       },
       {
         "type": "li",
-        "text": "b. Compter le nombre d'activations, le joueur ayant le moins d'activations gagne autant de pass token que la différence d'activations entre les deux camps.",
+        "text": "b. Compter le nombre d'activations, le joueur ayant le moins d'activations gagne autant de pass tokens que la différence d'activations entre les deux camps.",
         "level": 1
       },
       {
@@ -1670,7 +1670,7 @@
       },
       {
         "type": "li",
-        "text": "**boucliers**, donnes des réussites automatiques",
+        "text": "**boucliers**, donne des réussites automatiques",
         "level": 0
       },
       {
@@ -1696,7 +1696,7 @@
       },
       {
         "type": "p",
-        "text": "A la phase d'énergie, rassembler un nombre de pions correspondant à l'énergie disponible. Une unité peut **recevoir** de l'énergie si elle est à **L** du véhicule de commandement et en ligne de vue."
+        "text": "À la phase d'énergie, rassembler un nombre de pions correspondant à l'énergie disponible. Une unité peut **recevoir** de l'énergie si elle est à **L** du véhicule de commandement et en ligne de vue."
       },
       {
         "type": "p",
@@ -1715,7 +1715,7 @@
       },
       {
         "type": "p",
-        "text": "Cette valeur indique combien d'énergie **maximum** l'unité peut reçevoir dans chacun de ses systèmes."
+        "text": "Cette valeur indique combien d'énergie **maximum** l'unité peut recevoir dans chacun de ses systèmes."
       },
       {
         "type": "p",
@@ -1761,7 +1761,7 @@
       },
       {
         "type": "p",
-        "text": "Si l'unité ne fait aucune action de mouvement, elle effectuera quand-même S en ligne droite devant, avant la fin de l'activation."
+        "text": "Si l'unité ne fait aucune action de mouvement, elle effectuera quand même S en ligne droite devant, avant la fin de l'activation."
       }
     ]
   },
@@ -1876,7 +1876,7 @@
       },
       {
         "type": "p",
-        "text": "A la fin de son mouvement, elle fait faire une « **Prise de position** » (cf 5.2.1)"
+        "text": "À la fin de son mouvement, elle peut faire une « **Prise de position** » (cf 5.2.1)"
       }
     ]
   },
@@ -1953,7 +1953,7 @@
       },
       {
         "type": "p",
-        "text": "Dans tous les cas, chaque **action** ou **l'effet commencé** doit être **terminé** avant de résoudre un autre effet."
+        "text": "Dans tous les cas, chaque **action** ou **effet commencé** doit être **terminé** avant de résoudre un autre effet."
       },
       {
         "type": "p",
@@ -2043,7 +2043,7 @@
       },
       {
         "type": "p",
-        "text": "A la fin de l'action d'attaque, les défenseurs doivent faire un **test de moral** si un socle au moins a été retiré."
+        "text": "À la fin de l'action d'attaque, les défenseurs doivent faire un **test de moral** si un socle au moins a été retiré."
       }
     ]
   },
@@ -2185,7 +2185,7 @@
     "blocks": [
       {
         "type": "p",
-        "text": "Une fois le nombre de réussites finales du jet de l'attaquant obtenu, le défenseur retire un nombre de points de vie égale au nombre de fois où des paliers de DEF ont été dépassés."
+        "text": "Une fois le nombre de réussites finales du jet de l'attaquant obtenu, le défenseur retire un nombre de points de vie égal au nombre de fois où des paliers de DEF ont été dépassés."
       }
     ]
   },
@@ -2213,7 +2213,7 @@
       },
       {
         "type": "li",
-        "text": "A la fin d'une action d'attaque ou ZAR, si lors de celle-ci un socle a été retiré",
+        "text": "À la fin d'une action d'attaque ou ZAR, si lors de celle-ci un socle a été retiré",
         "level": 1
       },
       {
@@ -2254,7 +2254,7 @@
       },
       {
         "type": "p",
-        "text": "Les **bonus** de **D** supplémentaire sont **facultatif**"
+        "text": "Les **bonus** de **D** supplémentaires sont **facultatifs**"
       },
       {
         "type": "p",
@@ -2278,7 +2278,7 @@
       },
       {
         "type": "li",
-        "text": "A 45° comme l'indique le schéma ci-contre.",
+        "text": "À 45° comme l'indique le schéma ci-contre.",
         "level": 0
       },
       {
@@ -2330,7 +2330,7 @@
       },
       {
         "type": "p",
-        "text": "L'action majeur de mouvement se déroule dans l'ordre suivant :"
+        "text": "L'action majeure de mouvement se déroule dans l'ordre suivant :"
       },
       {
         "type": "li",
@@ -2382,7 +2382,7 @@
       },
       {
         "type": "p",
-        "text": "Si un terrain contient déjà des **unités ennemies**, cela provoque un **assaut de terrains** (cf 2.3.2.2 Assaut de terrain controlé)"
+        "text": "Si un terrain contient déjà des **unités ennemies**, cela provoque un **assaut de terrains** (cf 2.3.2.2 Assaut de terrain contrôlé)"
       }
     ]
   },
@@ -2597,7 +2597,7 @@
       },
       {
         "type": "p",
-        "text": "**Anti-infanterie** = pas de bouclier pour les défenseur infanterie, permet de cibler uniquement l'infanterie adverse lors d'un tir dans un terrain contesté. -1 a la def de l'infanterie."
+        "text": "**Anti-infanterie** = pas de bouclier pour les défenseurs d'infanterie, permet de cibler uniquement l'infanterie adverse lors d'un tir dans un terrain contesté. -1 à la DEF de l'infanterie."
       },
       {
         "type": "p",
@@ -2677,7 +2677,7 @@
       },
       {
         "type": "p",
-        "text": "Les copros sont caractérisées par des véhicules lourds et des vaisseaux de soutien en orbite."
+        "text": "Les corpos sont caractérisées par des véhicules lourds et des vaisseaux de soutien en orbite."
       }
     ]
   },

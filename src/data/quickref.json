@@ -35,7 +35,7 @@
       },
       {
         "type": "p",
-        "text": "Pour chaque unité, mettre un pion face caché :"
+        "text": "Pour chaque unité, mettre un pion face cachée :"
       },
       {
         "type": "li",
@@ -91,11 +91,11 @@
     "blocks": [
       {
         "type": "p",
-        "text": "A la fin d'une action de mouvement."
+        "text": "À la fin d'une action de mouvement."
       },
       {
         "type": "p",
-        "text": "Toutes les unités à M de l'unité active doivent choisir une cible a M."
+        "text": "Toutes les unités à M de l'unité active doivent choisir une cible à M."
       },
       {
         "type": "p",
@@ -120,7 +120,7 @@
     "blocks": [
       {
         "type": "p",
-        "text": "A distance S d'un terrain, 1 + 4D (nombre de réussites)."
+        "text": "À distance S d'un terrain, 1 + 4D (nombre de réussites)."
       }
     ]
   },
@@ -129,7 +129,7 @@
     "blocks": [
       {
         "type": "p",
-        "text": "Les infanteries ne peuvent plus ZAR. A la phase de combat de terrains :"
+        "text": "Les infanteries ne peuvent plus ZAR. À la phase de combat de terrains :"
       },
       {
         "type": "li",
@@ -138,7 +138,7 @@
       },
       {
         "type": "li",
-        "text": "1 dé pour chaque véhicule allié à M.",
+        "text": "1 dé pour chaque socle allié à M.",
         "level": 0
       },
       {
@@ -171,7 +171,7 @@
       },
       {
         "type": "p",
-        "text": "+1D si à L du véhicule de commandement, +1D si à plus de M d'unités ennemi,"
+        "text": "+1D si à L du véhicule de commandement, +1D si à plus de M d'unités ennemies,"
       },
       {
         "type": "p",

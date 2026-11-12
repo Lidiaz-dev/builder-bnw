@@ -23,6 +23,9 @@ from pathlib import Path
 
 import pymupdf
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from corrections import Corrector  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "src" / "data"
 IMG = ROOT / "public" / "img" / "regles"
@@ -568,10 +571,24 @@ def main():
     quick = latest(folder, "Ref Rapide")
     sources["quickref"] = quick.name
 
+    # Corrections du texte (scripts/corrections.py), avant d'en tirer les compétences.
+    fix = Corrector()
+    factions = fix.walk(factions)
+    rules = fix.walk(rules)
+    quickref = fix.walk(parse_quickref(quick))
+    # Arme de l'exemple 2.2 : même nom que dans les profils des factions.
+    for s in rules:
+        for b in s["blocks"]:
+            if b["type"] == "profile":
+                for w in b["profile"]["weapons"]:
+                    if w["name"] == "Machinegun":
+                        w["name"] = "Machine gun"
+    fix.report()
+
     write("factions.json", factions)
     write("rules.json", rules)
     write("skills.json", skills_from(rules))
-    write("quickref.json", parse_quickref(quick))
+    write("quickref.json", quickref)
     write("sources.json", sources)
     print(f"Règles : {len(rules)} sections ({book.name}), images dans {IMG.relative_to(ROOT)}")
 

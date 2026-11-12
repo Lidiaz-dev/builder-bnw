@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState, type ReactNode } from 'react'
 import { Link, NavLink, useLocation, useParams } from 'react-router-dom'
 import { FACTION_COLOR, SLOT_LABEL, factionById, factions, quickref, rules, skills, sources, type RuleBlock, type SlotId } from '../data'
 import { RichText, RuleBlocks } from '../components/RuleText'
@@ -125,10 +125,12 @@ function Booklet({ sectionId }: { sectionId?: string }) {
           const H = (`h${Math.min(s.level + 1, 5)}`) as 'h2'
           return (
             <section key={s.id} id={`s-${s.id}`} className={`rule-section lvl-${s.level}`}>
-              <H>
+              <H className="sec-title">
                 <span className="sec-num">{s.id}</span> {s.title}
+                <AnchorButton id={s.id} />
               </H>
               {/A COMPLETER|WIP/.test(s.blocks.map(blockText).join(' ')) && <p className="warn small">Section marquée comme en cours d'écriture dans le livret.</p>}
+              {SUMMARIES[s.id]}
               <RuleBlocks blocks={s.blocks} />
             </section>
           )
@@ -140,6 +142,94 @@ function Booklet({ sectionId }: { sectionId?: string }) {
       </article>
     </div>
   )
+}
+
+/** Bouton « lien vers cette section » : copie l'adresse de la section pour l'envoyer à un autre joueur. */
+function AnchorButton({ id }: { id: string }) {
+  const [copied, setCopied] = useState(false)
+  const url = `${location.origin}${location.pathname}#/regles/livret/${id}`
+  return (
+    <button
+      type="button"
+      className={`anchor-btn${copied ? ' copied' : ''}`}
+      title="Copier le lien vers cette section"
+      aria-label={`Copier le lien vers la section ${id}`}
+      onClick={async () => {
+        try {
+          await navigator.clipboard.writeText(url)
+        } catch {
+          window.prompt('Lien vers la section :', url)
+        }
+        setCopied(true)
+        setTimeout(() => setCopied(false), 1600)
+      }}
+    >
+      {copied ? 'Lien copié' : '🔗'}
+    </button>
+  )
+}
+
+/** Résumés visuels ajoutés au-dessus du texte de certaines sections. */
+const ROUND_PHASES: [string, string][] = [
+  ['Début de round', 'Effets de début de round, pass tokens'],
+  ["Phase d'énergie", 'Distribuer l’énergie en alternance'],
+  ["Phase d'ordres", 'Pions ordre face cachée'],
+  ["Phase d'activation", 'Activer une unité ou passer, en alternance'],
+  ['Combat de terrains', 'Jets en opposition dans les terrains contestés'],
+  ['Phase de fin', 'Points des objectifs, transfert de la priorité'],
+  ['Nettoyage', 'Ramasser ordres et énergie'],
+]
+
+const SUMMARIES: Record<string, ReactNode> = {
+  '4.1': (
+    <div className="summary">
+      <span className="summary-label">En bref</span>
+      <ol className="round-flow">
+        {ROUND_PHASES.map(([name, what], i) => (
+          <li key={name} className={i < 3 ? 'skip-r1' : undefined}>
+            <strong>{name}</strong>
+            <span>{what}</span>
+          </li>
+        ))}
+      </ol>
+      <p className="small muted">Les phases en pointillés n'ont pas lieu au premier round, qui commence directement à l'activation.</p>
+    </div>
+  ),
+  '5.2.2': (
+    <div className="summary">
+      <span className="summary-label">En bref</span>
+      <p className="small">Dés d'éperonnage par socle = dés de taille + dés de vitesse.</p>
+      <div className="row wrap summary-tables">
+        <table className="rule-table compact-table">
+          <thead>
+            <tr>
+              <th>Taille</th>
+              <th className="num">Dés</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Léger</td><td className="num">1</td></tr>
+            <tr><td>Moyen</td><td className="num">3</td></tr>
+            <tr><td>Lourd</td><td className="num">6</td></tr>
+          </tbody>
+        </table>
+        <table className="rule-table compact-table">
+          <thead>
+            <tr>
+              <th>Vitesse (réglette)</th>
+              <th className="num">Dés</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>S (3")</td><td className="num">2</td></tr>
+            <tr><td>M (6")</td><td className="num">3</td></tr>
+            <tr><td>L (12")</td><td className="num">5</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p className="small muted">Exemple : un char lourd lancé sur une réglette L jette 6 + 5 = 11 dés.</p>
+    </div>
+  ),
 }
 
 function FactionsTab({ factionId }: { factionId?: string }) {
@@ -241,10 +331,10 @@ function SearchResults({ q, onPick }: { q: string; onPick: () => void }) {
       {hits.map((h) => (
         <Link key={h.key} to={h.to} className="card hit" onClick={onPick}>
           <strong>
-            <RichText text={h.title} highlight={q} />
+            <RichText text={h.title} highlight={q} plain />
           </strong>
           <span className="small">
-            <RichText text={h.snippet} highlight={q} />
+            <RichText text={h.snippet} highlight={q} plain />
           </span>
         </Link>
       ))}

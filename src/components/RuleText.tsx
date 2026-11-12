@@ -1,25 +1,59 @@
-import { Fragment } from 'react'
-import type { RuleBlock } from '../data'
+import { Fragment, type ReactNode } from 'react'
+import { Link } from 'react-router-dom'
+import { rules, type RuleBlock } from '../data'
+import { GLOSSARY, TOKEN, glossaryKey } from '../lib/glossary'
 import UnitCard from './UnitCard'
 
-/** Texte avec le gras du livret (**…**) et, en option, des mots surlignés par la recherche. */
-export function RichText({ text, highlight }: { text: string; highlight?: string }) {
+const SECTION_IDS = new Set(rules.map((r) => r.id))
+
+/**
+ * Texte avec le gras du livret (**…**), les renvois « cf 5.2.1 » en liens, les termes du lexique
+ * en infobulle (première occurrence du paragraphe) et, en option, les mots cherchés surlignés.
+ */
+export function RichText({ text, highlight, plain }: { text: string; highlight?: string; plain?: boolean }) {
   const parts = text.split(/\*\*(.+?)\*\*/g)
+  const seen = new Set<string>()
   return (
     <>
-      {parts.map((p, i) =>
-        i % 2 ? (
-          <strong key={i}>
-            <Mark text={p} q={highlight} />
-          </strong>
-        ) : (
-          <Fragment key={i}>
-            <Mark text={p} q={highlight} />
-          </Fragment>
-        ),
-      )}
+      {parts.map((p, i) => {
+        const inner = plain ? <Mark text={p} q={highlight} /> : decorate(p, highlight, seen)
+        return i % 2 ? <strong key={i}>{inner}</strong> : <Fragment key={i}>{inner}</Fragment>
+      })}
     </>
   )
+}
+
+function decorate(text: string, q: string | undefined, seen: Set<string>): ReactNode {
+  const out: ReactNode[] = []
+  let from = 0
+  for (const m of text.matchAll(TOKEN)) {
+    const at = m.index ?? 0
+    const g = m.groups ?? {}
+    if (g.id) {
+      if (!SECTION_IDS.has(g.id)) continue
+      const start = at + g.ref.length
+      out.push(<Mark key={`t${from}`} text={text.slice(from, start)} q={q} />)
+      out.push(
+        <Link key={`r${at}`} to={`/regles/livret/${g.id}`} className="xref" title={`Aller à la section ${g.id}`}>
+          {g.id}
+        </Link>,
+      )
+      from = start + g.id.length
+    } else if (g.term) {
+      const key = glossaryKey(g.term)
+      if (!key || seen.has(key)) continue
+      seen.add(key)
+      out.push(<Mark key={`t${from}`} text={text.slice(from, at)} q={q} />)
+      out.push(
+        <span key={`g${at}`} className="term" tabIndex={0} data-tip={GLOSSARY[key]}>
+          <Mark text={g.term} q={q} />
+        </span>,
+      )
+      from = at + g.term.length
+    }
+  }
+  out.push(<Mark key={`t${from}`} text={text.slice(from)} q={q} />)
+  return out
 }
 
 const norm = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()

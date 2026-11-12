@@ -417,7 +417,7 @@
           {
             "name": "Canon court",
             "bonus": "sol-uniquement",
-            "bonusLabel": "SOL uniqement",
+            "bonusLabel": "SOL uniquement",
             "arc": "Front",
             "range": 15,
             "shots": 6
@@ -434,7 +434,7 @@
         "rules": [
           {
             "name": "Perforation",
-            "text": "lors d'un tir avec le canon court, la DEF du défenseur est diminué de 1"
+            "text": "lors d'un tir avec le canon court, la DEF du défenseur est diminuée de 1"
           }
         ]
       },
@@ -482,23 +482,23 @@
     "id": "corpo",
     "name": "Corporations",
     "lore": null,
-    "background": "Les corporations sont les unités de colons envoyées par l'Union Terra afin de prendre position sur les différentes planètes de Noctua et commencer à récolter la Solaryne. Leur technologie fait partie des plus avancées de l'Union Terra. Chaque corpo possède son propre matériel, armement et armée privée. Les copros sont caractérisées par des véhicules lourds et des vaisseaux de soutien en orbite.",
+    "background": "Les corporations sont les unités de colons envoyées par l'Union Terra afin de prendre position sur les différentes planètes de Noctua et commencer à récolter la Solaryne. Leur technologie fait partie des plus avancées de l'Union Terra. Chaque corpo possède son propre matériel, armement et armée privée. Les corpos sont caractérisées par des véhicules lourds et des vaisseaux de soutien en orbite.",
     "factionPower": "Gagne 5 drop-tokens.",
-    "colossusPower": "Lors de son arrivée le colosse peut poser à L de lui une des 4 tourelles disponibles dans le choix des drops (gratuitement). De plus, s'il s'agit d'une tourelle Gatling ou tourelle Anti aérienne, elle peut faire une action mineure de tir.",
+    "colossusPower": "Lors de son arrivée le colosse peut poser à L de lui une des 4 tourelles disponibles dans le choix des drops (gratuitement). De plus, s'il s'agit d'une tourelle Machinegun ou tourelle Anti aérienne, elle peut faire une action mineure de tir.",
     "specialIntro": "Les véhicules de commandement peuvent appeler différents types de bonus provenant des vaisseaux de soutien.",
     "specialRules": [
       {
         "name": "Support demandé",
         "text": [
-          "A chaque round, le véhicule de commandement gagne 10 pions spéciaux (drop-tokens) qu'il ajoute dans une réserve de pions.",
+          "À chaque round, le véhicule de commandement gagne 10 pions spéciaux (drop-tokens) qu'il ajoute dans une réserve de pions.",
           "Pendant l'activation du véhicule de commandement, celui-ci peut choisir un nombre de drop-tokens disponibles dans sa réserve, pour effectuer un appel de « drop ».",
           "Les drop-tokens utilisés sont retirés de la réserve.",
           "Chaque drop possède un coût en drop-token.",
-          "Chaque drop peut être appelé qu'une fois par activation.",
-          "Une fois le coût d'un ou plusieurs drop dépensé, le joueur les place sur la table, à M de tout ennemi.",
+          "Chaque drop ne peut être appelé qu'une fois par activation.",
+          "Une fois le coût d'un ou plusieurs drops dépensé, le joueur les place sur la table, à M de tout ennemi.",
           "Une fois le drop sur la table, il est considéré comme une unité appartenant au joueur qui l'a posé.",
           "Si des drops avec le même nom sont à S les uns des autres (tous à S entre eux) ils forment une unité (de 3 socles maximum, afin de pouvoir cumuler les dés lors des actions de tirs).",
-          "Tous les drop ont une DEF de 3 + 3 (et n'ont pas de face/flanc/arrière)",
+          "Tous les drops ont une DEF de 3 + 3 (et n'ont pas de face/flanc/arrière)",
           "La destruction d'un drop ne déclenche pas de test de moral."
         ]
       }
@@ -514,17 +514,17 @@
           [
             "1",
             "Barricade",
-            "Pose un socle léger. Ce socle donne le couvert à une unité en contacte socle à socle"
+            "Pose un socle léger. Ce socle donne le couvert à une unité en contact socle à socle"
           ],
           [
             "2",
             "Tourelle Machinegun",
-            "Pose un socle léger. Pendant l'activation du commandant, a le droit à une action secondaire de tir. Elle a une seule arme « Machine gun »"
+            "Pose un socle léger. Pendant l'activation du commandant, elle a le droit à une action secondaire de tir. Elle a une seule arme « Machine gun »"
           ],
           [
             "3",
             "Tourelle Anti aérienne",
-            "Pose un socle léger. Pendant l'activation du commandant, a le droit à une action secondaire de tir. Elle a une seule arme « Anti aérien »"
+            "Pose un socle léger. Pendant l'activation du commandant, elle a le droit à une action secondaire de tir. Elle a une seule arme « Anti aérien »"
           ],
           [
             "4",
@@ -539,17 +539,17 @@
           [
             "6",
             "Brouilleur",
-            "Pose un socle léger. Réduit de 1 la puissance adaptative a L (4/4/4 devient 3/3/3). Peut se cumuler avec d'autres brouilleurs"
+            "Pose un socle léger. Réduit de 1 la puissance adaptative à L (4/4/4 devient 3/3/3). Peut se cumuler avec d'autres brouilleurs"
           ],
           [
             "7",
             "Arme supplémentaire",
-            "Pose un socle léger. Quand une unité fini un mouvement a S, récupère automatiquement l'arme « Canon lourd ». Une fois l'arme récupérée, le socle reste et n'a plus d'effets."
+            "Pose un socle léger. Quand une unité finit un mouvement à S, récupère automatiquement l'arme « Canon lourd ». Une fois l'arme récupérée, le socle reste et n'a plus d'effets."
           ],
           [
             "8",
             "Renforts",
-            "Ajoute un socle à une unité allié qui a perdu un ou plusieurs socle durant la bataille."
+            "Ajoute un socle à une unité alliée qui a perdu un ou plusieurs socles durant la bataille."
           ]
         ]
       }
@@ -996,11 +996,11 @@
     "lore": "La technologie Umbra étant à la pointe de ce qui peut être fait dans la galaxie, soutenue par l'énergie Solaryne, les véhicules sont d'une performance incroyable.",
     "background": "L'Union Terra n'a que peu d'informations sur cette race alien qui agit dans l'ombre des radars humains. Pour certains humains, les Umbra Sapiens, d'une force supérieure à celle de l'humanité, ne sont qu'un mythe créé par l'Union pour instaurer la peur parmi la population. Des sites et installations ont pourtant été retrouvés par l'Union Terra sur les planètes de Noctua, mais leurs études sont restées secrètes. Les maigres informations indiquent qu'il s'agit de la race qui sait le mieux exploiter les cristaux de Solaryne. Peu d'individus ont été rencontrés, les quelques survivants de batailles opposant les Umbra Sapiens aux humains indiquent un rapport de force de 1 Umbra pour 50 humains. Des théories indiquent que ce seraient les Umbra Sapiens qui auraient révélé l'existence de Noctua aux yeux de l'univers.",
     "factionPower": "Permet à 1 unité + 4D de ne pas retirer ses pions d'énergie à la prochaine phase de nettoyage.",
-    "colossusPower": "Lors de son arrivée le colosse possède le maximum d'énergie disponible pour ses systèmes (et donc peut faire autant d'actions) De plus, il distribue 1 d'énergie à 2 unités a L de lui.",
+    "colossusPower": "Lors de son arrivée le colosse possède le maximum d'énergie disponible pour ses systèmes (et donc peut faire autant d'actions) De plus, il distribue 1 d'énergie à 2 unités à L de lui.",
     "specialIntro": null,
     "specialRules": [
       {
-        "name": "Maître de la Solaryn",
+        "name": "Maître de la Solaryne",
         "text": [
           "Chaque point d'énergie dépensé dans les systèmes d'une unité en vaut 2.",
           "(exemple : un point d'énergie est dépensé dans les armes, l'unité considère que 2 énergies ont été dépensées dans les armes.)"
@@ -1010,7 +1010,7 @@
         "name": "Relais d'énergie",
         "text": [
           "Chaque unité avec la règle spéciale « Relais » permet de relayer la possibilité de dépenser de l'énergie de L depuis un véhicule de commandement.",
-          "Avec les profils génériques, toutes les unités de taille « moyen » et « lourd » possèdent la règle « Relais »."
+          "Toutes les unités de taille « moyen » et « lourd » possèdent la règle « Relais »."
         ]
       }
     ],
@@ -1461,7 +1461,7 @@
         "rules": [
           {
             "name": "Relais mobile",
-            "text": "Peut reçevoir de l'énergie et de faire relais d'énergie à plus de L du commandant"
+            "text": "Peut recevoir de l'énergie et faire relais d'énergie à plus de L du commandant"
           }
         ]
       },
@@ -1514,10 +1514,10 @@
   {
     "id": "vespara",
     "name": "Vespara",
-    "lore": "Les unités Vespara n'ont pas de boucliers pour se protéger, ils augmentent leurs chitines afin de mieux résister aux attaques.",
+    "lore": "Les unités Vespara n'ont pas de boucliers pour se protéger, elles renforcent leur chitine afin de mieux résister aux attaques.",
     "background": "Race alien organique qui n'a qu'un seul objectif : consommer les cristaux de Solaryne. Les radars longue portée indiquent des vaisseaux-ruches immenses aux confins de la galaxie, se rapprochant du système Noctua. La présence d'entités aliens sur les planètes colonisées est une certitude : des émissaires de l'avant-garde Vespara ont traversé la galaxie bien plus rapidement que les vaisseaux-ruches, afin de préparer le terrain pour l'invasion. Les Vespara n'utilisent pas de carburants, de munitions ou même de ressources présentes sur les planètes, tout n'est qu'organisme.",
-    "factionPower": "Fait une prise de position pour tous les bâtiments contrôlés",
-    "colossusPower": "Lors de son arrivée le colosse peut faire une prise de position à M. De plus, il peut résoudre une contamination évolutive pour un bâtiment à M.",
+    "factionPower": "Fait une prise de position pour tous les terrains contrôlés",
+    "colossusPower": "Lors de son arrivée le colosse peut faire une prise de position à M. De plus, il peut résoudre une contamination évolutive pour un terrain à M.",
     "specialIntro": null,
     "specialRules": [
       {
@@ -1529,24 +1529,24 @@
       {
         "name": "Contamination urbaine",
         "text": [
-          "Une infanterie qui rentre dans un bâtiment le contamine.",
-          "Uniquement les unités alliés d'infanterie peuvent capturer un bâtiment contaminé.",
-          "Si le bâtiment contaminé n'a plus d'infanterie alliée à l'intérieur, il est quand même considéré comme étant capturé, et donc apporte son bonus d'énergie."
+          "Une infanterie qui rentre dans un terrain le contamine.",
+          "Uniquement les unités alliées d'infanterie peuvent capturer un terrain contaminé.",
+          "Si le terrain contaminé n'a plus d'infanterie alliée à l'intérieur, il est quand même considéré comme étant capturé, et donc apporte son bonus d'énergie."
         ]
       },
       {
-        "name": "Eradication de la contamination",
+        "name": "Éradication de la contamination",
         "text": [
-          "Quand une infanterie ennemie est dans un bâtiment contaminé, à tout moment du round d'un tour allié elle peut subir une perte afin de supprimer la contamination (pas de test de moral)"
+          "Quand une infanterie ennemie est dans un terrain contaminé, à tout moment du round d'un tour allié elle peut subir une perte afin de supprimer la contamination (pas de test de moral)"
         ]
       },
       {
         "name": "Contamination évolutive",
         "text": [
-          "A la fin de la phase d'ordre, les infanteries peuvent chacune utiliser cette règle spéciale.",
-          "Une infanterie allié peut subir X pertes, X étant le choix d'une amélioration à apporter au bâtiment (pas de test de moral)",
-          "Il n'est pas possible de choisir plusieurs fois la même amélioration pour le bâtiment.",
-          "Tant que le bâtiment est contaminé, l'amélioration reste."
+          "À la fin de la phase d'ordre, les infanteries peuvent chacune utiliser cette règle spéciale.",
+          "Une infanterie alliée peut subir X pertes, X étant le choix d'une amélioration à apporter au terrain (pas de test de moral)",
+          "Il n'est pas possible de choisir plusieurs fois la même amélioration pour le terrain.",
+          "Tant que le terrain est contaminé, l'amélioration reste."
         ]
       }
     ],
@@ -1565,13 +1565,13 @@
           ],
           [
             "2",
-            "Portes piégés",
+            "Portes piégées",
             "+1 réussite aux boucliers et 1 perte à toute infanterie ennemie qui entre"
           ],
           [
             "3",
             "Invasion",
-            "Fait une prise de position d'un autre bâtiment à L (cette nouvelle infanterie ne peut pas utiliser la contamination évolutive ce round)"
+            "Fait une prise de position d'un autre terrain à L (cette nouvelle infanterie ne peut pas utiliser la contamination évolutive ce round)"
           ],
           [
             "4",
@@ -1956,7 +1956,7 @@
         "rules": [
           {
             "name": "Protubérance Frontale",
-            "text": "Pour les éperonnages, l'unité est toujours considéré comme ayant parcouru L et étant de taille Lourde"
+            "text": "Pour les éperonnages, l'unité est toujours considérée comme ayant parcouru L et étant de taille Lourde"
           }
         ]
       },

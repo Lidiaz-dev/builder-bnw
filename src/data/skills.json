@@ -1,0 +1,32 @@
+[
+  {
+    "id": "anti-infanterie",
+    "name": "Anti-infanterie",
+    "text": "pas de bouclier pour les défenseur infanterie, permet de cibler uniquement l'infanterie adverse lors d'un tir dans un terrain contesté. -1 a la def de l'infanterie."
+  },
+  {
+    "id": "anti-aerien",
+    "name": "Anti-aérien",
+    "text": "ignore les règles des unités volantes (le -1 pour être touché par les armes d'unités au sol et pas de Front/Flanc/Arrière quand elles sont la cible de tir d'unités au sol)"
+  },
+  {
+    "id": "air-uniquement",
+    "name": "Air uniquement",
+    "text": "ne peut cibler que les unités aériennes"
+  },
+  {
+    "id": "sol-uniquement",
+    "name": "Sol uniquement",
+    "text": "ne peut cibler que les unités au sol"
+  },
+  {
+    "id": "rapide",
+    "name": "Rapide",
+    "text": "-1 pour être touché"
+  },
+  {
+    "id": "acquisition-de-cible",
+    "name": "Acquisition de cible",
+    "text": "ignore la règle rapide"
+  }
+]

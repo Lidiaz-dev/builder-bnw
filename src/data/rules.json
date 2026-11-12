@@ -1,0 +1,2752 @@
+[
+  {
+    "id": "1",
+    "title": "Lore",
+    "level": 1,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "**Noctua**, un nouveau système planétaire, est apparu sur les radars de l'**union Terra**, du jour au lendemain."
+      },
+      {
+        "type": "p",
+        "text": "Noctua, riche en ressources, a suscité la convoitise des grandes **Corporations** de l'union Terra."
+      },
+      {
+        "type": "p",
+        "text": "Plusieurs expéditions de colons et de membres des Corporations ont été envoyées sur les différentes planètes de Noctua."
+      },
+      {
+        "type": "p",
+        "text": "Peu après le début de la colonisation, le corps scientifique sur place a découvert une **nouvelle énergie** rare et précieuse, la « **Solaryne** », composée de cristaux qui dégagent chaleur et forte lumière."
+      },
+      {
+        "type": "p",
+        "text": "Dans un premier temps, les Corporations se sont alliées pour découvrir comment exploiter la Solaryne. Puis rapidement, elles se sont fait la guerre pour en obtenir le contrôle, laissant plusieurs théâtres de guerre, fuis par les civils préférant partir errer dans le désert."
+      },
+      {
+        "type": "p",
+        "text": "A la plus grande surprise des Corporations, trop occupées à se faire la guerre, une faction de civils a émergé. Constituée de colons ayant fui les guerres des corpos, la faction s'est réfugiée dans les grands déserts de Noctua. Grâce au pillage des débris de guerre, mais aussi à l'exploitation de stations aliens, la « **Cabale »** tire son épingle du jeu en arrivant sur les exploitations de Solaryne pour en voler les ressources. Rapides et chirurgicaux, les raids de la Cabale laissent peu de témoins."
+      },
+      {
+        "type": "p",
+        "text": "L'union Terra n'est pas la seule à avoir détecté ce nouveau système planétaire..."
+      },
+      {
+        "type": "p",
+        "text": "Attirée par les amas d'énergie, une race de conquérants biologiques, formant une ruche vivante, s'est mise en chemin. Ses avants-gardes sondent planète par planète pour détecter le moindre signal d'énergie, fondre dessus, et tout dévorer. Ce sont les « **Vespara** »."
+      },
+      {
+        "type": "p",
+        "text": "Dans l'ombre de ce conflit, un gardien est là, qui patiente, qui observe. L'union Terra n'a que peu d'informations sur cette race. Le peu de rencontres avec elle ne permet pas de récolter assez d'éléments sur ses motivations et sur sa présence dans le système planétaire. Il semble que cette race ait toujours été là : certaines structures sur les planètes de Noctua présentent une architecture similaire à celle de leurs vaisseaux ou véhicules."
+      },
+      {
+        "type": "p",
+        "text": "Elle est appelée « **Umbra sapiens** »."
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Bases du jeu",
+    "level": 1,
+    "blocks": []
+  },
+  {
+    "id": "2.1",
+    "title": "Comment jouer",
+    "level": 2,
+    "blocks": []
+  },
+  {
+    "id": "2.1.1",
+    "title": "C'est quoi ?",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "**Brave New World** est un jeu de figurines, format « epic » 10-15mm. On y contrôle des armées qui s'affrontent sur un champ de bataille. Les parties durent environ 3h, selon la vitesse de jeu des joueurs."
+      },
+      {
+        "type": "p",
+        "text": "Les armées sont d'environ 30 figurines sur table."
+      },
+      {
+        "type": "p",
+        "text": "Il y a une gamme de figurine dédiée, mais il est possible de jouer avec n'importe quel modèle."
+      }
+    ]
+  },
+  {
+    "id": "2.1.2",
+    "title": "Matériel",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Une table de jeu se compose d'un tapis, de décors et de figurines."
+      },
+      {
+        "type": "p",
+        "text": "La taille de la **table** varie en fonction du type de rencontre joué :"
+      },
+      {
+        "type": "li",
+        "text": "**Engagement** = 5pts 120x120cm",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "**Théâtre d'opérations** = 7pts 120x180cm",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "Les **décors** se composent principalement de terrains urbains et d'obstacles."
+      },
+      {
+        "type": "p",
+        "text": "Les **figurines** utilisées proviennent de la gamme correspondante ou d'une autre gamme, l'important réside dans le respect de la taille du socle."
+      },
+      {
+        "type": "p",
+        "text": "Un set de 3 pions objectifs par joueur. Un objectif est un pion circulaire de 40mm de diamètre."
+      },
+      {
+        "type": "p",
+        "text": "Les mesures se font à l'aide d'un mètre en pouces et de 3 réglettes :"
+      },
+      {
+        "type": "li",
+        "text": "S (3\")",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "M (6\")",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "L (12\")",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "Des dés à 6 faces (D6)."
+      }
+    ]
+  },
+  {
+    "id": "2.1.3",
+    "title": "Grands principes du jeu",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Tout jet de dés, hors modificateur, compte un 4 ou plus (4+) comme une **réussite** et le reste comme un échec."
+      },
+      {
+        "type": "p",
+        "text": "**Dé explosif** : **à tout moment de la partie**, **chaque dé** qui est lancé, quand il fait un **6** naturellement, est dit « **explosif** », il relance un dé supplémentaire, et ça pour chaque 6 (même lors d'une relance de dé explosif)."
+      },
+      {
+        "type": "p",
+        "text": "Il est possible à tout moment de mesurer les distances."
+      },
+      {
+        "type": "p",
+        "text": "Des **modificateurs** peuvent être apportés au jet de dés."
+      },
+      {
+        "type": "p",
+        "text": "Un +1, donne une réussite sur un 3+"
+      },
+      {
+        "type": "p",
+        "text": "Un -1, donne une réussite sur un 5+"
+      },
+      {
+        "type": "p",
+        "text": "A aucun moment une réussite peut être en dessous de 3+ et au-dessus de 5+. Plusieurs modificateurs peuvent être apportés aux dés, ils se cumulent jusqu'à atteindre la valeur finale."
+      },
+      {
+        "type": "p",
+        "text": "Le jeu se joue en **activations alternées**, chaque joueur va activer une unité, puis passer la main à son adversaire."
+      },
+      {
+        "type": "p",
+        "text": "Les portées et mesures se calculent en pouces."
+      }
+    ]
+  },
+  {
+    "id": "2.1.4",
+    "title": "Définitions importantes",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "**DEF** : La défense est une caractéristique des unités. Elle définit le nombre de points de vie et le degré de difficulté à faire perdre des points de vie à l'unité."
+      },
+      {
+        "type": "p",
+        "text": "**ZAR** : Zone d'affrontement rapproché est une attaque qui se déclenche quand les unités sont proches d'unités adverses."
+      },
+      {
+        "type": "p",
+        "text": "**LOS** : Line of sight, ligne de vue, ce que voit une unité."
+      },
+      {
+        "type": "p",
+        "text": "**Puissance adaptative A/M/B** : Les unités peuvent reçevoir de l'énergie pour ajouter des réussites automatiques dans les systèmes Armes/Moteurs/Boucliers. L'énergie est distribuée à la phase d'énergie."
+      },
+      {
+        "type": "p",
+        "text": "**Les ordres** : Ce sont les actions, majeures et mineures, que peuvent réaliser les unités pendant leurs activations."
+      }
+    ]
+  },
+  {
+    "id": "2.2",
+    "title": "Les unités",
+    "level": 2,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Une unité est composée d'un ou plusieurs socles. Une unité possède toujours un **Leader**."
+      },
+      {
+        "type": "p",
+        "text": "Chaque unité se compose d'un profil suivant :"
+      },
+      {
+        "type": "table",
+        "rows": [
+          [
+            "[Faction]",
+            "[Nom de l'unité]"
+          ],
+          [
+            "Armes"
+          ],
+          [
+            "Nom",
+            "Bonus",
+            "Arc",
+            "Portée",
+            "Tirs"
+          ],
+          [
+            "Canon",
+            "-",
+            "Tourelle",
+            "30",
+            "7"
+          ],
+          [
+            "Lance missiles",
+            "Anti air",
+            "Front",
+            "30",
+            "6"
+          ],
+          [
+            "Gatling",
+            "Anti infanterie",
+            "Front",
+            "15",
+            "6"
+          ],
+          [
+            "Mouvement",
+            "Défense",
+            "Bouclier",
+            "ZAR"
+          ],
+          [
+            "M",
+            "7+6+6",
+            "3",
+            "6"
+          ],
+          [
+            "Taille",
+            "Unité",
+            "Type",
+            "Puissance adaptative A/M/B",
+            "Points de destruction"
+          ],
+          [
+            "Moyen",
+            "4",
+            "Sol",
+            "4/2/3",
+            "4"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Le profil d'une unité est composé de :"
+      },
+      {
+        "type": "li",
+        "text": "Nom de la faction",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Nom de l'unité",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Armes, et caractéristiques de chaque arme",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Mouvement : de quelle mesure l'unité se déplace",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Défense : sa capacité à résister à des attaques",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Bouclier : ses contre-mesures pour déjouer les attaques",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "ZAR : sa capacité en combat rapproché",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Taille : sur quel socle elle se trouve",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Unité : sa taille maximale",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Type : où elle évolue",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Puissance adaptative A/M/B : le nombre d'énergie maximale qu'elle peut recevoir dans ses différents systèmes",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Points de destruction : le nombre de points que l'adversaire marque en détruisant cette unité",
+        "level": 0
+      }
+    ]
+  },
+  {
+    "id": "2.3",
+    "title": "Types d'unités",
+    "level": 2,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Il existe deux types d'unités :"
+      },
+      {
+        "type": "li",
+        "text": "Infanterie",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "Véhicule",
+        "level": 1
+      },
+      {
+        "type": "p",
+        "text": "L'infanterie ne se déplace pas, elle stationne uniquement dans les terrains."
+      },
+      {
+        "type": "p",
+        "text": "Chaque véhicule peut être :"
+      },
+      {
+        "type": "li",
+        "text": "Au sol",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "Aérien",
+        "level": 1
+      },
+      {
+        "type": "p",
+        "text": "Chaque véhicule possède une taille :"
+      },
+      {
+        "type": "li",
+        "text": "Léger (socle 4cmx3cm)",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "Moyen (socle 6cmx4cm)",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "Lourd (socle 10cmx7cm)",
+        "level": 1
+      },
+      {
+        "type": "p",
+        "text": "Le **Front** de l'unité est toujours sur le plus **petit côté du rectangle.**"
+      },
+      {
+        "type": "img",
+        "src": "img/regles/p6-1.png"
+      }
+    ]
+  },
+  {
+    "id": "2.3.1",
+    "title": "Les véhicules",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Les véhicules comportent une valeur de défense (DEF) différente selon l'angle impacté. Les modificateurs :"
+      },
+      {
+        "type": "li",
+        "text": "Front = pas de modificateur",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "Flanc = -1 de DEF",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "Arrière = -2 de DEF",
+        "level": 1
+      },
+      {
+        "type": "p",
+        "text": "Pour définir l'angle impacté : regarder où se trouve majoritairement l'attaquant (leader) par rapport au défenseur."
+      }
+    ]
+  },
+  {
+    "id": "2.3.1.1",
+    "title": "Véhicule de commandement",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Chaque armée est menée par un ou plusieurs véhicules de commandement. Ce véhicule a plusieurs avantages :"
+      },
+      {
+        "type": "li",
+        "text": "**Générer** de l'énergie,",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "**Distribuer** de l'énergie,",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Donner des **ordres**,",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "**Soutenir** le reste de l'armée.",
+        "level": 0
+      }
+    ]
+  },
+  {
+    "id": "2.3.1.2",
+    "title": "Générer de l'énergie",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Chaque véhicule de commandement génère **5 énergies** en début de phase d'énergie."
+      }
+    ]
+  },
+  {
+    "id": "2.3.1.3",
+    "title": "Distribuer de l'énergie",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "A la **phase d'énergie**, le véhicule de commandement peut **distribuer** des points d'énergie à **L** de lui."
+      },
+      {
+        "type": "p",
+        "text": "Il n'est pas obligatoire de distribuer toute l'énergie, mais l'énergie non distribuée est perdue pour le reste du tour."
+      }
+    ]
+  },
+  {
+    "id": "2.3.1.4",
+    "title": "Donner des ordres",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Pendant l'activation du véhicule de commandement, à n'importe quel moment entre ses actions, il peut donner un **ordre mineur** à une unité à **L** de lui."
+      }
+    ]
+  },
+  {
+    "id": "2.3.1.5",
+    "title": "Soutien",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Les unités à **L** d'un véhicule de commandement allié peuvent ajouter **+1D à tous leurs jets de test de moral**."
+      }
+    ]
+  },
+  {
+    "id": "2.3.1.6",
+    "title": "Destruction du véhicule de commandement",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Lorsque le véhicule de commandement est **détruit**, le commandant est transféré dans **l'unité terrestre la plus proche**."
+      },
+      {
+        "type": "p",
+        "text": "A la phase d'énergie, c'est à partir de cette unité que l'énergie est distribuée."
+      },
+      {
+        "type": "p",
+        "text": "Tous les autres bonus liés au commandement sont perdus."
+      }
+    ]
+  },
+  {
+    "id": "2.3.2",
+    "title": "L'infanterie",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "L'organisation de l'infanterie est différente de celle des véhicules."
+      },
+      {
+        "type": "p",
+        "text": "L'infanterie sert à prendre le **contrôle des terrains** et à y faire des combats."
+      },
+      {
+        "type": "p",
+        "text": "Son profil est différent pour chaque faction."
+      },
+      {
+        "type": "p",
+        "text": "L'infanterie est placée dans un terrain avec un compteur de présence (peut être représenté par un ou plusieurs dés). Une fois le compteur de présence placé, **le joueur contrôle le terrain**."
+      },
+      {
+        "type": "p",
+        "text": "Pour chaque tranche de DEF atteinte, le compteur de présence est décrémenté. Quand il arrive à zéro, il n'y a plus d'infanterie dans le terrain : le joueur ne contrôle donc plus le terrain."
+      },
+      {
+        "type": "p",
+        "text": "Quand les infanteries des deux joueurs se trouvent dans le même terrain, aucun des deux joueurs ne contrôle le terrain. La situation est réglée pendant la phase de **combat de terrains**."
+      }
+    ]
+  },
+  {
+    "id": "2.3.2.1",
+    "title": "Terrains controlés",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Quand une infanterie entre dans un terrain vide, il est considéré qu'elle le **contrôle** entièrement."
+      },
+      {
+        "type": "p",
+        "text": "Si une infanterie **alliée** se trouve déjà dans le terrain, les deux effectifs **se cumulent**. Si une infanterie **ennemie** se trouve déjà dans le terrain, voir section « 2.3.2.2 Assaut de terrain controlé »"
+      },
+      {
+        "type": "p",
+        "text": "Une infanterie dans un terrain contrôlé peut faire uniquement des **ZAR** lorsqu'elle en est éligible."
+      }
+    ]
+  },
+  {
+    "id": "2.3.2.2",
+    "title": "Assaut de terrain controlé",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Quand les infanteries des deux joueurs se trouvent dans le même terrain, cela déclenche un **combat de terrains**, qui sera résolu à la phase de combat de terrains du round en cours."
+      },
+      {
+        "type": "p",
+        "text": "Les infanteries entraînées dans ce combat ne peuvent plus effectuer de ZAR, ni en être la cible."
+      }
+    ]
+  },
+  {
+    "id": "2.3.2.3",
+    "title": "Moral dans un terrain",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Une infanterie dans un terrain qui **échoue** à un test de moral subit **une perte**."
+      }
+    ]
+  },
+  {
+    "id": "2.3.2.4",
+    "title": "Tirer sur un terrain",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Les véhicules peuvent **tirer sur les terrains** pour y décimer l'infanterie présente."
+      },
+      {
+        "type": "p",
+        "text": "Quand une infanterie de chaque joueur se trouve dans le terrain, les pertes sont retirées à chaque joueur selon leurs valeurs de défense."
+      }
+    ]
+  },
+  {
+    "id": "2.3.3",
+    "title": "Unités aériennes",
+    "level": 3,
+    "blocks": []
+  },
+  {
+    "id": "2.3.3.1",
+    "title": "Caractéristiques",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Les règles des **unités aériennes** diffèrent des règles des véhicules terrestres sur les points suivants :"
+      },
+      {
+        "type": "li",
+        "text": "Lorsqu'elles font une **action majeure de mouvement**, elles ne peuvent pas faire de pivot à 360° au début et à la fin de leur mouvement, mais seulement un **pivot de 45°** au début de leur mouvement.",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Elles sont **visibles de tout le monde**, et elles **voient tout le monde**.",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Elles **ignorent les unités et les terrains** lors de leurs **mouvements**. Si la fin de leur mouvement les oblige à chevaucher un terrain ou une unité, les déplacer en amont de la réglette.",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Elles ne bloquent jamais la LOS.",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Elles ont **-1 pour être touchées** par les armes d'unités au sol.",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Les unités terrestres n'ont pas de **bonus de mi-portée** sur les unités aériennes.",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Pas de **Front/Flanc/Arrière** quand elles sont la cible de tir d'unités terrestres.",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Pas de **ZAR** pour les unités aériennes (et n'en déclenchent pas).",
+        "level": 0
+      }
+    ]
+  },
+  {
+    "id": "2.3.3.2",
+    "title": "Le moral et les unités aériennes",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Les unités aériennes subissent un test de moral sans **aucun bonus/malus**. En cas d'échec, l'unité subit un **dégât**."
+      }
+    ]
+  },
+  {
+    "id": "2.3.4",
+    "title": "Les Colosses",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Les colosses ne sont pas une unité sélectionnable lors de la création de l'armée, ils arrivent au cœur de l'affrontement."
+      }
+    ]
+  },
+  {
+    "id": "2.3.4.1",
+    "title": "Caractéristiques",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Les règles des colosses diffèrent des règles des autres véhicules terrestres sur les points suivants :"
+      },
+      {
+        "type": "li",
+        "text": "Le front de l'unité est sur le côté le plus long du socle,",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Pas de malus de DEF quand l'unité se fait attaquer de flanc,",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "L'unité reçoit obligatoirement un ordre majeur de mouvement à la phase d'ordre,",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Ne peut pas se faire éperonner.",
+        "level": 0
+      }
+    ]
+  },
+  {
+    "id": "2.3.4.2",
+    "title": "Déploiement",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Le colosse **n'est pas déployé** lors du premier round comme les autres unités, il **arrive lorsque le premier objectif est scoré**, après que le pouvoir de faction a été réalisé."
+      },
+      {
+        "type": "p",
+        "text": "Le colosse est alors placé à **L** du bord de table allié."
+      },
+      {
+        "type": "p",
+        "text": "Lors de son arrivée, il déclenche le **pouvoir de déploiement du colosse** lié à son armée. Pendant le round de son arrivée, le colosse est **alimenté** et a le droit à **une action mineure.**"
+      }
+    ]
+  },
+  {
+    "id": "2.3.4.3",
+    "title": "Alimentation",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Un colosse **ne résout pas** d'ordre majeur lors de la phase d'activation, mais retourne son pion d'ordre lorsqu'il est choisi pour être activé."
+      },
+      {
+        "type": "p",
+        "text": "Lors de la phase d'énergie, il peut être **alimenté**, même à plus de L du véhicule de commandement."
+      },
+      {
+        "type": "p",
+        "text": "Un colosse **alimenté** gagne la règle **rapide**."
+      },
+      {
+        "type": "p",
+        "text": "Un colosse **alimenté** peut effectuer des **actions** pendant le round en cours."
+      },
+      {
+        "type": "p",
+        "text": "De plus, chaque **énergie dépensée** sur le colosse lui donne **une action mineure** à utiliser lors de son activation (3 actions mineures maximum par activation)."
+      }
+    ]
+  },
+  {
+    "id": "2.3.4.4",
+    "title": "Mouvements",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Le colosse peut :"
+      },
+      {
+        "type": "li",
+        "text": "Se déplacer au travers des terrains, décors et unités,",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Faire un pivot à 360° au début et à la fin de son mouvement.",
+        "level": 0
+      }
+    ]
+  },
+  {
+    "id": "2.3.4.5",
+    "title": "ZAR en duel",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Le colosse ne déclenche pas une **ZAR normale** à la fin de ses actions, il **choisit une cible à portée** et résout uniquement la ZAR avec cette cible. Il ne peut pas être ciblé par une autre unité que sa cible de ZAR pendant son activation."
+      },
+      {
+        "type": "p",
+        "text": "La cible ne peut pas cibler une autre unité que le Colosse qui la prend pour cible."
+      },
+      {
+        "type": "p",
+        "text": "Les autres unités à **M** ne font pas de ZAR."
+      },
+      {
+        "type": "p",
+        "text": "En dehors de ces actions, les ZAR et les colosses suivent les règles normales."
+      }
+    ]
+  },
+  {
+    "id": "2.4",
+    "title": "Constitution d'une unité",
+    "level": 2,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Les unités contiennent un ou plusieurs socles."
+      },
+      {
+        "type": "p",
+        "text": "Une unité est toujours menée par un **leader**, celui-ci doit être différencié visuellement (couleur de socle différente ou peinture de figurine différente)."
+      },
+      {
+        "type": "p",
+        "text": "C'est à partir du Leader que toutes les **mesures** et **lignes de vues** sont prises."
+      },
+      {
+        "type": "p",
+        "text": "Le leader est toujours la dernière figurine à être retirée."
+      }
+    ]
+  },
+  {
+    "id": "2.4.1",
+    "title": "Cohérence de l'unité",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Tout socle de l'unité doit être en **cohérence** avec son leader."
+      },
+      {
+        "type": "p",
+        "text": "La **cohérence** est de **S**, n'importe quel point du leader vers n'importe quel point des autres socles de l'unité."
+      },
+      {
+        "type": "p",
+        "text": "L'unité doit avoir la même orientation (être parallèle les uns aux autres)."
+      }
+    ]
+  },
+  {
+    "id": "2.4.2",
+    "title": "Unité et mouvement",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Quand une unité fait un mouvement, il n'y a que le **leader qui se déplace**, les autres membres de l'unité doivent être placés en **cohérence** avec le **Leader**."
+      },
+      {
+        "type": "p",
+        "text": "Lors du placement tous les socles de l'unité doivent avoir la même orientation que le leader."
+      }
+    ]
+  },
+  {
+    "id": "2.4.3",
+    "title": "Unité et portée",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Toutes **les mesures** pendant l'activation de l'unité sont prises **depuis le leader.**"
+      },
+      {
+        "type": "p",
+        "text": "Toutes **les mesures vers une autre unité**, alliée ou ennemie, prennent en compte n'importe quel socle de l'unité."
+      }
+    ]
+  },
+  {
+    "id": "2.4.4",
+    "title": "Unité et tir",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Une l'unité peut tirer et éliminer une unité adverse même si celle-ci n'est pas à 100% visible (si elle est cachée derrière un terrain par exemple)."
+      },
+      {
+        "type": "p",
+        "text": "Quand une unité veut tirer sur une unité adverse :"
+      },
+      {
+        "type": "li",
+        "text": "1. Mesure la distance entre le **leader actif** et n'importe quel socle de l'unité adverse,",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "2. Regarder chaque socle de l'unité active qui a une ligne de vue (LOS) pour tirer sur la cible,",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "3. Compter le nombre de socles qui peuvent tirer,",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "4. Résoudre le tir",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "Pour tirer, il faut avoir une **LOS** sur au moins une cible."
+      },
+      {
+        "type": "p",
+        "text": "Pour se faire tirer dessus, un seul socle suffit à mettre en danger l'unité."
+      },
+      {
+        "type": "p",
+        "text": "Pour définir sur quel angle le tir s'effectue, il faut prendre en compte l'angle du leader de l'unité ciblée."
+      },
+      {
+        "type": "p",
+        "text": "Exemple : Si l'unité qui tire se trouve en majorité dans l'angle frontal de l'unité qui se fait attaquer, alors il est considéré que le tir touche le front de l'unité."
+      }
+    ]
+  },
+  {
+    "id": "2.5",
+    "title": "Lignes de vue",
+    "level": 2,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "**LOS** (Line of sight = ligne de vue) : ce que les unités peuvent ou non **voir**."
+      },
+      {
+        "type": "p",
+        "text": "Une unité est **masquée** par des unités qui sont de **taille égale ou supérieure**, ou par des obstacles et terrains."
+      },
+      {
+        "type": "p",
+        "text": "Si une unité est complètement masquée, il n'est pas possible de la prendre pour cible."
+      },
+      {
+        "type": "p",
+        "text": "Une unité est visible lorsque :"
+      },
+      {
+        "type": "li",
+        "text": "La cible se trouve dans l'angle avant ou dans l'angle de l'arme qui tire,",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "La cible n'est pas complètement masquée.",
+        "level": 1
+      },
+      {
+        "type": "p",
+        "text": "Les **unités aériennes** sont toujours **en LOS**, et ont une"
+      },
+      {
+        "type": "p",
+        "text": "**LOS** sur tout le monde."
+      },
+      {
+        "type": "img",
+        "src": "img/regles/p11-1.png"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Mise en place",
+    "level": 1,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Se mettre d'accord avec son adversaire pour définir le type de rencontre."
+      }
+    ]
+  },
+  {
+    "id": "3.1",
+    "title": "Table",
+    "level": 2,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Choix du type de rencontre :"
+      },
+      {
+        "type": "li",
+        "text": "**Engagement** = 5pts 120x120cm",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "**Théâtre d'opérations** = 7pts 120x180cm",
+        "level": 0
+      }
+    ]
+  },
+  {
+    "id": "3.1.1",
+    "title": "Territoires",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Les joueurs sont placés l'un en face de l'autre."
+      },
+      {
+        "type": "p",
+        "text": "Pour une rencontre de type « Théâtre d'opérations », les joueurs se placent face à face sur les côtés les plus longs."
+      },
+      {
+        "type": "p",
+        "text": "La table est divisée en **deux territoires**, allant de son bord de table jusqu'à une ligne imaginaire coupant la table en deux parties de même taille (= ligne centrale) : le territoire **allié** et le territoire **ennemi**."
+      }
+    ]
+  },
+  {
+    "id": "3.2",
+    "title": "Les décors",
+    "level": 2,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "La table est garnie de décors :"
+      },
+      {
+        "type": "li",
+        "text": "Terrains",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Obstacles",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "Il est conseillé d'ajuster le nombre de terrains selon le type de rencontre :"
+      },
+      {
+        "type": "li",
+        "text": "Engagement = 10",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Théâtre d'opérations = 15",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "Les obstacles ne sont pas obligatoires dans la constitution de la table."
+      }
+    ]
+  },
+  {
+    "id": "3.2.1",
+    "title": "Terrains",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Les **terrains** servent de refuge pour l'infanterie, afin de donner de l'énergie à son armée. Tous les terrains **bloquent les lignes de vues** et sont **infranchissables**."
+      }
+    ]
+  },
+  {
+    "id": "3.2.2",
+    "title": "Obstacles",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Les obstacles peuvent correspondre à tout ce qui se trouve sur un champ de bataille : des débris ou des rochers, par exemple."
+      },
+      {
+        "type": "p",
+        "text": "Au moment de la mise en place des décors sur la table, définir les **tailles** des obstacles (petit, moyen ou lourd)."
+      },
+      {
+        "type": "p",
+        "text": "Les obstacles **bloquent les lignes de vue** et sont **infranchissables** pour les unités de **taille égale ou inférieure**. Si une unité de taille supérieure à un obstacle doit finir son mouvement sur l'obstacle, ce dernier est détruit (et retiré de la table)."
+      }
+    ]
+  },
+  {
+    "id": "3.2.3",
+    "title": "Placements conseillés",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Lors du placement des décors, il est conseillé d'avoir une équité sur le nombre de terrains disponibles au premier round de jeu."
+      },
+      {
+        "type": "p",
+        "text": "Avoir une première ligne de terrains au maximum à 11\" du grand bord de table, puis une seconde ligne de terrains à 16\" du grand bord de table."
+      }
+    ]
+  },
+  {
+    "id": "3.3",
+    "title": "Scénarios",
+    "level": 2,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Une partie dure **5 rounds**."
+      },
+      {
+        "type": "p",
+        "text": "Il existe 3 types de scénarios :"
+      },
+      {
+        "type": "li",
+        "text": "**Recherche et destruction**",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "**Récupération de ressources**",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "**Contrôle de zones**",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "C'est aux joueurs de choisir sur quel scénario ils vont devoir s'affronter."
+      },
+      {
+        "type": "p",
+        "text": "Dans chaque partie, les **points de scénario** s'ajoutent aux points gagnés lors de **l'élimination d'unités** (points de destruction)."
+      },
+      {
+        "type": "p",
+        "text": "Toutes les unités possèdent une valeur de « point de destruction »."
+      },
+      {
+        "type": "p",
+        "text": "Lors du calcul des points de victoire, chaque joueur ajoute le nombre de points de destruction correspondant aux profils des unités qu'il a détruites."
+      },
+      {
+        "type": "p",
+        "text": "Les pions objectifs ne bloquent pas le mouvement, mais il n'est pas possible de s'arrêter dessus. Ils ne peuvent pas être masqués par les unités."
+      },
+      {
+        "type": "p",
+        "text": "**Le placement des objectifs s'effectue lors de la phase de déploiement, en commençant par le joueur qui a la priorité.**"
+      }
+    ]
+  },
+  {
+    "id": "3.3.1",
+    "title": "Recherche et destruction",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "A tour de rôle, les joueurs placent 3 objectifs chacun dans le territoire allié :"
+      },
+      {
+        "type": "li",
+        "text": "à plus de **S** de tout décor,",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "à plus de **L** du bord de table allié,",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "à plus de **M** tout autre objectif.",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "Chaque objectif a une **DEF** de **6 + 6 + 6.**"
+      },
+      {
+        "type": "p",
+        "text": "Les objectifs n'entraînent pas de test de moral."
+      },
+      {
+        "type": "p",
+        "text": "La destruction d'un objectif ennemi rapporte **30 points de scénario.**"
+      }
+    ]
+  },
+  {
+    "id": "3.3.2",
+    "title": "Récupération de ressources",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "A tour de rôle, les joueurs placent 3 objectifs chacun dans le territoire ennemi :"
+      },
+      {
+        "type": "li",
+        "text": "à plus de **S** de tout décor,",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "à plus de **M** du territoire allié,",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "à plus de **M** tout autre objectif.",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "À la **fin du mouvement** lors d'une **action de mouvement**, si le **leader** d'une unité terrestre se trouve à **S** d'un objectif en territoire ennemi, il est considéré comme **contrôlé**."
+      },
+      {
+        "type": "p",
+        "text": "Celui-ci est directement scoré et retiré de la carte."
+      },
+      {
+        "type": "p",
+        "text": "Un objectif scoré rapporte **30 points de scénario**."
+      }
+    ]
+  },
+  {
+    "id": "3.3.3",
+    "title": "Contrôle de zones",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "A tour de rôle, les joueurs placent 3 objectifs :"
+      },
+      {
+        "type": "li",
+        "text": "2 centrés sur la **ligne centrale,**",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "1 dans le **territoire ennemi**, à **M** de la **ligne centrale,** à plus de **M** de tout autre objectif.",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "Un objectif peut être placé dans un terrain, alors tout le terrain devient l'objectif."
+      },
+      {
+        "type": "p",
+        "text": "(Pendant le placement, si un objectif ne peut pas être placé, il est retiré du jeu)"
+      },
+      {
+        "type": "p",
+        "text": "Un objectif est considéré comme contrôlé quand davantage d'unités alliées terrestres se trouvent à **S** de l'objectif que d'unités ennemies."
+      },
+      {
+        "type": "p",
+        "text": "Les infanteries dans les terrains ne comptent que pour 1 unité."
+      },
+      {
+        "type": "p",
+        "text": "À la fin de chaque round, les joueurs marquent des points de scénario :"
+      },
+      {
+        "type": "li",
+        "text": "1 par objectif contrôlé dans le **territoire allié**,",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "3 par objectif contrôlé sur la **ligne centrale**,",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "5 par objectif contrôlé dans le **territoire ennemi**.",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "Pour ce scénario, le pouvoir de faction est déclenché pour le joueur gagnant le plus de points de scénario."
+      }
+    ]
+  },
+  {
+    "id": "3.3.4",
+    "title": "Pouvoir de faction",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "A chaque fois qu'un joueur gagne des **points de scénario**, il peut déclencher son **pouvoir de faction**."
+      }
+    ]
+  },
+  {
+    "id": "3.3.5",
+    "title": "Qui gagne à la fin ?",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "A la fin des 5 rounds de jeu, le joueur qui cumule le plus grand nombre de points de victoire remporte la partie."
+      },
+      {
+        "type": "p",
+        "text": "Les points de victoire se gagnent de deux façons :"
+      },
+      {
+        "type": "li",
+        "text": "En éliminant des unités ennemies : **points de destruction** WIP",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "En effectuant les scénarios : **points de scénario**.",
+        "level": 0
+      }
+    ]
+  },
+  {
+    "id": "3.4",
+    "title": "Les listes d'armée",
+    "level": 2,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Il y a deux type de rencontre :"
+      },
+      {
+        "type": "li",
+        "text": "**Engagement** = 5 points 120x120cm",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "**Théâtre d'opérations** = 7 points 120x180cm",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "Le recrutement s'effectue du centre (QG Colosse) vers l'extérieur, de manière linéaire, branche par branche."
+      },
+      {
+        "type": "li",
+        "text": "**Départ** : Pour débloquer une ligne, il est obligatoire de dépenser 1 point sur l'unité directement connectée au QG.",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "**Progression** : Il est possible de recruter une unité avancée que si l'unité précédente sur la même ligne a déjà été recrutée.",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "**Doublon** : il n'est pas possible de recruter deux fois la même unité du même emplacement.",
+        "level": 0
+      },
+      {
+        "type": "img",
+        "src": "img/regles/p15-1.png"
+      }
+    ]
+  },
+  {
+    "id": "3.5",
+    "title": "Priorité",
+    "level": 2,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Pour déterminer qui a la priorité pour le déploiement puis le premier round, chaque joueur lance **5 dés**, celui qui fait le **plus de réussites** a la priorité."
+      },
+      {
+        "type": "p",
+        "text": "En cas d'égalité, les joueurs relancent les 5 dés jusqu'à obtenir un vainqueur."
+      }
+    ]
+  },
+  {
+    "id": "3.6",
+    "title": "Déploiement",
+    "level": 2,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Une fois les listes prêtes et les objectifs énoncés, les deux armées sont prêtes à s'affronter."
+      },
+      {
+        "type": "p",
+        "text": "Le joueur qui a la **priorité** place le premier un **objectif**, puis son adversaire fait de même, jusqu'au moment où tous les objectifs sont placés."
+      },
+      {
+        "type": "p",
+        "text": "La partie peut commencer."
+      },
+      {
+        "type": "p",
+        "text": "Le **premier round** n'a pas les mêmes phases que les autres rounds. Il commence directement par la **phase d'activation** (voir 4.1 Les phases)."
+      },
+      {
+        "type": "p",
+        "text": "Le joueur qui a la priorité active et joue une **unité** de son choix."
+      },
+      {
+        "type": "p",
+        "text": "L'activation commence **en dehors de la table**, l'**ordre majeur** sera forcément un **mouvement** afin d'arriver sur le champ de bataille."
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Déroulement d'un round",
+    "level": 1,
+    "blocks": []
+  },
+  {
+    "id": "4.1",
+    "title": "Les phases",
+    "level": 2,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "La partie est composée de 5 rounds, qui contiennent des activations."
+      },
+      {
+        "type": "li",
+        "text": "1. Début de round",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "a. Résoudre les effets de début de round,",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "b. Compter le nombre d'activations, le joueur ayant le moins d'activations gagne autant de pass token que la différence d'activations entre les deux camps.",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "2. Phase d'énergie",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "a. Chaque joueur rassemble son énergie,",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "b. Le joueur avec la priorité fournit en énergie une de ses unités OU passe,",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "c. Le joueur sans la priorité fournit en énergie une de ses unités OU passe,",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "d. Répéter 2.b et 2.c jusqu'à ce que les deux joueurs aient passé ou n'aient plus d'énergie à dépenser.",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "3. Phase d'ordre",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "a. Chaque joueur rassemble tous ses pions ordres,",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "b. Les deux joueurs posent face cachée les ordres pour chacune de leurs unités sur le champ de bataille.",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "4. Phase d'activation",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "a. Le joueur avec la priorité sélectionne une unité à activer OU passe,",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "i. Révèle l'ordre associé à celle-ci",
+        "level": 2
+      },
+      {
+        "type": "li",
+        "text": "ii. Résout l'activation de l'unité",
+        "level": 2
+      },
+      {
+        "type": "li",
+        "text": "iii. Pose un pion d'ordre près de l'unité face visible",
+        "level": 2
+      },
+      {
+        "type": "li",
+        "text": "b. Le joueur sans la priorité sélectionne une unité à activer OU passe",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "i. Révèle l'ordre associé à celle-ci",
+        "level": 2
+      },
+      {
+        "type": "li",
+        "text": "ii. Résout l'activation de l'unité",
+        "level": 2
+      },
+      {
+        "type": "li",
+        "text": "iii. Pose un pion d'ordre près de l'unité face visible",
+        "level": 2
+      },
+      {
+        "type": "li",
+        "text": "c. Répéter les étapes 4.a et 4.b jusqu'à ce que les deux joueurs n'aient plus d'unité à activer.",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "5. Phase de combat de terrains",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "6. Phase de fin",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "a. Comptage des points de victoire pour les objectifs",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "b. Transfert de la priorité au joueur qui n'a pas eu la dernière activation",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "7. Phase de nettoyage",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "a. Chaque joueur ramasse les pions de ses unités",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "i. Ramassage des pions ordres",
+        "level": 2
+      },
+      {
+        "type": "li",
+        "text": "ii. Ramassage des pions d'énergie",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": "4.1.1",
+    "title": "Passer",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Pendant la **phase d'énergie**, un joueur peut arrêter de donner de l'énergie à ses unités, dans ce cas-là, il passe."
+      },
+      {
+        "type": "p",
+        "text": "Si son adversaire **passe** également, la phase d'énergie **prend fin**."
+      },
+      {
+        "type": "p",
+        "text": "Si son adversaire **donne** de l'énergie à une unité, le joueur peut **à nouveau donner** de l'énergie ou passer, répéter ces étapes pour toute la phase."
+      },
+      {
+        "type": "p",
+        "text": "Pendant la **phase d'activation**, un joueur peut dépenser un **pass token** à la place d'activer une unité, l'activation passe au joueur adverse."
+      }
+    ]
+  },
+  {
+    "id": "4.2",
+    "title": "Phase d'énergie",
+    "level": 2,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Pendant la **phase d'énergie**, il est possible d'**augmenter l'énergie** qui alimente les systèmes des unités sur la table."
+      },
+      {
+        "type": "p",
+        "text": "Chaque armée dispose de sa propre énergie à dépenser."
+      },
+      {
+        "type": "p",
+        "text": "L'énergie est gagnée de deux façons :"
+      },
+      {
+        "type": "li",
+        "text": "Faction / véhicule de commandement",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "Terrains capturés",
+        "level": 1
+      },
+      {
+        "type": "p",
+        "text": "Augmenter l'énergie des :"
+      },
+      {
+        "type": "li",
+        "text": "**armes**, donne des réussites automatiques",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "**moteurs**, augmente la vitesse/maniabilité",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "**boucliers**, donnes des réussites automatiques",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "Pour les armes et boucliers, ce sont des réussites automatiques en plus des dés lancés, pour toute l'unité."
+      }
+    ]
+  },
+  {
+    "id": "4.2.1",
+    "title": "Puissance adaptative",
+    "level": 3,
+    "blocks": []
+  },
+  {
+    "id": "4.2.1.1",
+    "title": "Avoir de l'énergie",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Le **véhicule de commandement** ainsi que les **terrains contrôlés** par l'infanterie fournissent de l'énergie."
+      },
+      {
+        "type": "p",
+        "text": "A la phase d'énergie, rassembler un nombre de pions correspondant à l'énergie disponible. Une unité peut **recevoir** de l'énergie si elle est à **L** du véhicule de commandement et en ligne de vue."
+      },
+      {
+        "type": "p",
+        "text": "Lorsqu'une unité reçoit de l'énergie, elle doit recevoir **l'intégralité** de l'énergie **prévue** en une seule fois. Une unité ayant déjà reçu de l'énergie ne peut plus en recevoir de nouveau."
+      }
+    ]
+  },
+  {
+    "id": "4.2.1.2",
+    "title": "Distribuer de l'énergie",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Chaque unité a une valeur à son profil de « **puissance adaptative A/M/B** »."
+      },
+      {
+        "type": "p",
+        "text": "Cette valeur indique combien d'énergie **maximum** l'unité peut reçevoir dans chacun de ses systèmes."
+      },
+      {
+        "type": "p",
+        "text": "Les valeurs sont représentées sous la forme suivante :"
+      },
+      {
+        "type": "p",
+        "text": "X/X/X = A/M/B = **Armes / Moteurs / Boucliers**"
+      },
+      {
+        "type": "p",
+        "text": "Lors de la phase d'énergie, le véhicule de commandement fournit en énergie les systèmes qu'il souhaite."
+      },
+      {
+        "type": "p",
+        "text": "Quand une unité reçoit de l'énergie, dans un ou plusieurs de ses systèmes, elle ne pourra plus en recevoir à cette phase."
+      },
+      {
+        "type": "p",
+        "text": "L'énergie distribuée reste pour tout le round en cours."
+      }
+    ]
+  },
+  {
+    "id": "4.2.1.3",
+    "title": "Alimentation : Armes",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Chaque énergie dépensée donne à toutes les actions d'attaque **+1 réussite automatique**, pour toutes les armes."
+      }
+    ]
+  },
+  {
+    "id": "4.2.1.4",
+    "title": "Alimentation : Moteurs",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Chaque énergie dépensée dans cette section donne **+1 S de mouvement en avant** obligatoire pour l'activation."
+      },
+      {
+        "type": "p",
+        "text": "Si l'unité ne fait aucune action de mouvement, elle effectuera quand-même S en ligne droite devant, avant la fin de l'activation."
+      }
+    ]
+  },
+  {
+    "id": "4.2.1.5",
+    "title": "Alimentation : Boucliers",
+    "level": 4,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Chaque énergie dépensée donne pendant tout le round **+1 réussite automatique** sur les boucliers."
+      }
+    ]
+  },
+  {
+    "id": "4.3",
+    "title": "Phase d'ordres",
+    "level": 2,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "De façon **simultanée**, les deux joueurs vont placer **face cachée** un pion ordre pour chacune de leurs unités."
+      },
+      {
+        "type": "p",
+        "text": "Ce pion indique quelle **action majeure** va effectuer cette unité."
+      },
+      {
+        "type": "p",
+        "text": "Toutes les unités doivent avoir un pion ordre à la fin de cette phase."
+      }
+    ]
+  },
+  {
+    "id": "4.4",
+    "title": "Phase d'activation",
+    "level": 2,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Lors de l'activation de l'unité, résoudre les actions :"
+      },
+      {
+        "type": "li",
+        "text": "**Action majeure**, préparée à la phase d'ordre,",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "**Action mineure**, choisie au moment de l'activation de l'unité.",
+        "level": 1
+      },
+      {
+        "type": "p",
+        "text": "Les **actions** sont réalisées dans **n'importe quel ordre**."
+      },
+      {
+        "type": "p",
+        "text": "Chaque action commencée doit être terminée avant d'entamer la suivante."
+      },
+      {
+        "type": "p",
+        "text": "**L'action majeure doit être réalisée.**"
+      },
+      {
+        "type": "p",
+        "text": "L'action mineure n'est pas obligatoire."
+      },
+      {
+        "type": "table",
+        "rows": [
+          [
+            "Action",
+            "Majeure",
+            "Mineure"
+          ],
+          [
+            "Tir",
+            "Peut tirer avec toutes ses armes",
+            "Peut tirer avec une seule arme"
+          ],
+          [
+            "Mouvement",
+            "Peut faire un pivot au début et à la fin de son mouvement, se déplace de sa valeur de mouvement. Peut scinder sa réglette de mouvement pour faire un virage. Gagne le bonus « Rapide ». Peut faire une « Prise de position ».",
+            "Peut se déplacer de sa valeur de mouvement"
+          ],
+          [
+            "Spéciale",
+            "Choix de 2 sous-actions",
+            "Choix de 1 sous-action"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4.4.1",
+    "title": "Mouvement",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "L'unité peut se **déplacer**."
+      },
+      {
+        "type": "p",
+        "text": "Pour l'action majeure :"
+      },
+      {
+        "type": "p",
+        "text": "Au **début** et à la **fin** du mouvement, elle peut faire un **pivot de 360°** sur elle-même. Peut **scinder** sa réglette de mouvement pour faire un **virage**. (cf 5.2 Mouvements) Pendant son activation l'unité gagne **Rapide** à n'importe quel moment."
+      },
+      {
+        "type": "p",
+        "text": "A la fin de son mouvement, elle fait faire une « **Prise de position** » (cf 5.2.1)"
+      }
+    ]
+  },
+  {
+    "id": "4.4.2",
+    "title": "Spéciale",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Permet à l'unité d'effectuer des sous-actions choisies parmi la liste suivante :"
+      },
+      {
+        "type": "li",
+        "text": "**Prise de position**",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "**Réparation** : cible un **allié à S**, lance **4D** et retire des dégâts correspondant au nombre de réussites.",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "Une sous action peut être effectuée plusieurs fois."
+      }
+    ]
+  },
+  {
+    "id": "4.5",
+    "title": "Phase de combat de terrains",
+    "level": 2,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Pendant la phase de **combat de terrains,** les joueurs vont faire un jet en opposition. Chaque joueur va créer son pool de dés :"
+      },
+      {
+        "type": "li",
+        "text": "valeur de combat pour son nombre d'infanteries présentes,",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "1 dé pour chaque socle allié à M.",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "Une fois les dés lancés, le joueur ayant obtenu le plus de réussites gagne le combat, et inflige en perte la différence entre les deux jets."
+      },
+      {
+        "type": "p",
+        "text": "Exemple : Le joueur A obtient 10 réussites, le joueur B obtient 7 réussites. Le joueur B perd 3 infanteries."
+      },
+      {
+        "type": "p",
+        "text": "**A la fin de ce combat**, il est possible qu'il reste encore des **infanteries** dans les deux camps, le combat continuera le **round suivant**."
+      },
+      {
+        "type": "p",
+        "text": "**Pas de test de moral** pour la phase de combat de terrains."
+      }
+    ]
+  },
+  {
+    "id": "4.6",
+    "title": "Séquençage",
+    "level": 2,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Plusieurs effets peuvent se résoudre au même moment de la partie."
+      },
+      {
+        "type": "p",
+        "text": "Dans tous les cas, chaque **action** ou **l'effet commencé** doit être **terminé** avant de résoudre un autre effet."
+      },
+      {
+        "type": "p",
+        "text": "C'est le **joueur actif** qui choisit dans quel ordre il résout les effets."
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Activation d'une unité",
+    "level": 1,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Lors de **l'activation** d'une unité, celle-ci résout **obligatoirement** son **action majeure**."
+      },
+      {
+        "type": "p",
+        "text": "Si elle le désire, elle peut effectuer une **action mineure**, **avant** ou **après** l'action majeure."
+      }
+    ]
+  },
+  {
+    "id": "5.1",
+    "title": "Tir",
+    "level": 2,
+    "blocks": [
+      {
+        "type": "li",
+        "text": "1. Déclaration de l'arme",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "2. Déclaration de la cible",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "3. Création du pool de dés de l'attaquant",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "4. Jet d'attaque",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "5. Modification du jet d'attaque",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "6. Création du pool de dés du défenseur (Boucliers)",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "7. Jets de boucliers",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "8. Modification du jet de boucliers",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "L'unité doit **annoncer** avec quelles armes et sur quelles cibles elle tire **avant** de résoudre tous ses tirs."
+      },
+      {
+        "type": "p",
+        "text": "Si **plusieurs armes** avec le même nom tirent sur la **même unité**, il est possible de **jumeler** le tir, dans ce cas-là, il n'y a qu'**une seule** attaque en additionnant la puissance des armes."
+      },
+      {
+        "type": "p",
+        "text": "Il est possible qu'une unité ennemie soit détruite avant que toutes les armes la visant aient pu tirer, dans ce cas-là, les tirs restants sont perdus."
+      },
+      {
+        "type": "p",
+        "text": "L'attaquant doit **égaler ou dépasser** la valeur de **défense** de la cible avec ses réussites."
+      },
+      {
+        "type": "p",
+        "text": "Les **réussites** du **défenseur** retirent les réussites de l'attaquant."
+      },
+      {
+        "type": "p",
+        "text": "A la fin de l'action d'attaque, les défenseurs doivent faire un **test de moral** si un socle au moins a été retiré."
+      }
+    ]
+  },
+  {
+    "id": "5.1.1",
+    "title": "Création du pool de dés d'attaque",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Lors de cette étape de l'attaque, pour tous les socles de l'unité, les tirs d'une arme sont rassemblés en un pool."
+      },
+      {
+        "type": "p",
+        "text": "Il n'est pas possible de diviser ce pool pour tirer sur plusieurs cibles avec la même arme. Quand une arme est utilisée, c'est toute l'unité qui utilise la même arme sur la même cible et avec le même pool de dés."
+      }
+    ]
+  },
+  {
+    "id": "5.1.2",
+    "title": "Modification du tir",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Quand l'unité qui tire est **endommagée**, elle retire autant de réussites que de **points de vie manquants** au socle."
+      },
+      {
+        "type": "p",
+        "text": "Si la cible est à **mi-portée**, **+1 pour toucher.**"
+      }
+    ]
+  },
+  {
+    "id": "5.1.3",
+    "title": "Couvert",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Si le défenseur se trouve à **distance M** ou moins d'un **décor** et si **plus de la moitié** de l'unité est masquée par celui-ci, l'unité est à **couvert**."
+      },
+      {
+        "type": "p",
+        "text": "Une unité à couvert a **+1 en DEF** (tous les paliers de DEF ont +1)."
+      }
+    ]
+  },
+  {
+    "id": "5.1.4",
+    "title": "Défense",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Chaque unité possède une **valeur de Défense (DEF)**."
+      },
+      {
+        "type": "p",
+        "text": "La DEF indique le **nombre de réussites à atteindre lors d'une attaque** pour infliger des dégâts au défenseur."
+      },
+      {
+        "type": "p",
+        "text": "La DEF d'une unité est composée d'**une ou plusieurs valeurs**."
+      },
+      {
+        "type": "p",
+        "text": "Chaque valeur de DEF correspond à **1 point de vie (PV)**."
+      },
+      {
+        "type": "p",
+        "text": "Lorsqu'une valeur de DEF est dépassée par une attaque, l'unité **perd 1 point de vie**."
+      },
+      {
+        "type": "p",
+        "text": "Lorsqu'un socle n'a plus de points de vie, il est **retiré du jeu**."
+      },
+      {
+        "type": "p",
+        "text": "Exemple : Le défenseur a comme DEF 6 + 5"
+      },
+      {
+        "type": "p",
+        "text": "Dans des tirs différents :"
+      },
+      {
+        "type": "p",
+        "text": "Cas n°1 : L'attaquant fait 5 réussites, il ne dépasse pas la DEF, donc son tir n'a pas d'effet. Cas n°2 : L'attaquant fait 6 réussites, il dépasse la DEF et donc retire un point de vie. Cas n°3 : L'attaquant fait 10 réussites, il dépasse le premier palier de DEF (6) mais n'a pas assez de réussites pour le palier suivant, donc il retire un point de vie."
+      },
+      {
+        "type": "p",
+        "text": "Cas n°4 : L'attaquant fait 11 réussites, il dépasse les deux paliers de DEF, donc il détruit l'unité."
+      }
+    ]
+  },
+  {
+    "id": "5.1.5",
+    "title": "Boucliers",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Quand une unité se fait tirer dessus, et que le nombre de réussites **égale ou dépasse** un ou plusieurs paliers de DEF d'un socle, alors elle lance sa valeur de **bouclier** pour le socle qui peut être endommagé."
+      },
+      {
+        "type": "p",
+        "text": "Si le nombre de réussites permet de pouvoir endommager **plusieurs socles**, alors le joueur lance autant de fois sa valeur de bouclier que de socles qui peuvent être endommagés."
+      },
+      {
+        "type": "p",
+        "text": "Chaque **réussite de bouclier retire une réussite** de l'attaquant."
+      },
+      {
+        "type": "p",
+        "text": "Exemple : Le défenseur a comme DEF 6 + 5, avec une unité de 2 socles."
+      },
+      {
+        "type": "p",
+        "text": "Dans des tirs différents :"
+      },
+      {
+        "type": "p",
+        "text": "Cas n°1 : L'attaquant fait 5 réussites, il ne dépasse pas la DEF, donc son tir n'a pas d'effet. Cas n°2 : L'attaquant fait 6 réussites, il dépasse le premier palier de DEF, le défenseur lance la valeur de bouclier pour un socle."
+      },
+      {
+        "type": "p",
+        "text": "Cas n°3 : L'attaquant fait 11 réussites, il dépasse les deux paliers de DEF, le défenseur lance la valeur de bouclier pour un socle."
+      },
+      {
+        "type": "p",
+        "text": "Cas n°4 : L'attaquant fait 17 réussites, il dépasse les deux paliers de DEF d'un socle et également le premier palier de DEF d'un second socle, le défenseur lance la valeur de bouclier pour deux socles."
+      }
+    ]
+  },
+  {
+    "id": "5.1.6",
+    "title": "Dégâts et pertes",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Une fois le nombre de réussites finales du jet de l'attaquant obtenu, le défenseur retire un nombre de points de vie égale au nombre de fois où des paliers de DEF ont été dépassés."
+      }
+    ]
+  },
+  {
+    "id": "5.1.7",
+    "title": "Moral",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Pour plusieurs raisons une unité peut être amenée à faire un test de moral."
+      },
+      {
+        "type": "p",
+        "text": "Le test de moral doit toujours avoir **une réussite**. Certains **bonus/malus** peuvent être appliqués."
+      },
+      {
+        "type": "p",
+        "text": "Le test de moral doit être effectué dans les cas suivants :"
+      },
+      {
+        "type": "li",
+        "text": "Doit effectuer un test de moral",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "A la fin d'une action d'attaque ou ZAR, si lors de celle-ci un socle a été retiré",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "Une unité alliée est **détruite à M**",
+        "level": 1
+      },
+      {
+        "type": "p",
+        "text": "Le test de **moral** est effectué avec **3 dés**."
+      },
+      {
+        "type": "p",
+        "text": "Puis des bonus/malus sont ajoutés :"
+      },
+      {
+        "type": "li",
+        "text": "+1D si pas d'ennemis à M",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "+1D si à L d'un véhicule de commandement allié",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "-1 réussite par socle retiré durant l'attaque",
+        "level": 1
+      },
+      {
+        "type": "p",
+        "text": "En cas de réussite, rien ne se passe."
+      },
+      {
+        "type": "p",
+        "text": "En cas d'échec, l'unité recule de S. Si son mouvement est bloqué par une autre unité ou un décor, l'unité perd 1 PV (mais n'engendre pas de test de moral)."
+      },
+      {
+        "type": "p",
+        "text": "Les **bonus** de **D** supplémentaire sont **facultatif**"
+      },
+      {
+        "type": "p",
+        "text": "Le **malus** de **réussite** est **obligatoire**"
+      }
+    ]
+  },
+  {
+    "id": "5.2",
+    "title": "Mouvements",
+    "level": 2,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Les unités se déplacent avec des **réglettes** : placer la réglette devant le socle et déposer le socle en contact avec la réglette. Le socle peut être déposé de 2 façons différentes :"
+      },
+      {
+        "type": "li",
+        "text": "Tout droit, dans la même orientation que la position de départ",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "A 45° comme l'indique le schéma ci-contre.",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "3 longueurs de réglettes :"
+      },
+      {
+        "type": "li",
+        "text": "S (3\")",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "M (6\")",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "L (12\")",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "Lors d'une **action majeure de mouvement,** il est possible de **scinder** une réglette de mouvement pour effectuer un virage : coller à la suite **deux réglettes de mouvement de la taille inférieure**."
+      },
+      {
+        "type": "p",
+        "text": "La seconde réglette doit se placer au maximum à **45° de la première**."
+      },
+      {
+        "type": "p",
+        "text": "**Valeur -1 X 2**"
+      },
+      {
+        "type": "p",
+        "text": "Exemple : l'unité se déplace de L, mais veut effectuer un virage, son mouvement devient M + M."
+      },
+      {
+        "type": "p",
+        "text": "Il est possible d'avancer moins loin que la réglette."
+      },
+      {
+        "type": "p",
+        "text": "Lors des mouvements, il est possible **d'éperonner** des véhicules adverses."
+      },
+      {
+        "type": "p",
+        "text": "Effectuer un mouvement en action majeure donne le bonus « **Rapide** » (-1 pour être touché pendant tout le round où l'unité s'est déplacée)."
+      },
+      {
+        "type": "p",
+        "text": "L'action majeur de mouvement se déroule dans l'ordre suivant :"
+      },
+      {
+        "type": "li",
+        "text": "Déplacement de la valeur de **Mouvement**",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Gagne la règle **Rapide**",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "**Prise de position**",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "**Éperonnage**",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "**ZAR**",
+        "level": 0
+      },
+      {
+        "type": "img",
+        "src": "img/regles/p23-1.png"
+      }
+    ]
+  },
+  {
+    "id": "5.2.1",
+    "title": "Prise de position",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Une **unité** peut envoyer de **l'infanterie** dans un terrain à **S**."
+      },
+      {
+        "type": "p",
+        "text": "Le nombre d'infanterie est : **1 + 4D** (nombre de réussites)"
+      },
+      {
+        "type": "p",
+        "text": "Si un terrain contient déjà des **unités alliées**, celles-ci **se cumulent**."
+      },
+      {
+        "type": "p",
+        "text": "Si un terrain contient déjà des **unités ennemies**, cela provoque un **assaut de terrains** (cf 2.3.2.2 Assaut de terrain controlé)"
+      }
+    ]
+  },
+  {
+    "id": "5.2.2",
+    "title": "Éperonnage",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Lors d'une **action de mouvement** en avant, lorsque l'unité active **rentre en contact** avec une unité adverse, il y a éperonnage si :"
+      },
+      {
+        "type": "li",
+        "text": "L'unité est de **taille égale** ou **supérieure** à la cible",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "L'unité a parcouru au moins 1 **S complet**",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "Les deux unités sont **terrestres**",
+        "level": 1
+      },
+      {
+        "type": "p",
+        "text": "L'unité active jette alors ses **dés d'éperonnage**, pour chaque socle :"
+      },
+      {
+        "type": "li",
+        "text": "1/3/6 selon sa taille (léger/moyen/lourd)",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "2/3/5 selon la vitesse (réglette posée et distance parcourue, S/M/L)",
+        "level": 1
+      },
+      {
+        "type": "p",
+        "text": "Le défenseur jette les dés de ses **boucliers** pour un socle."
+      },
+      {
+        "type": "p",
+        "text": "Plusieurs résultats sont possibles :"
+      },
+      {
+        "type": "li",
+        "text": "Le nombre de **réussites** de l'unité **active** est **supérieur** au nombre de **boucliers :** le défenseur est repoussé de S, la direction est choisie par l'unité active, dans la continuité de son mouvement, à 45° près. Si ce mouvement de recul est bloqué par une autre unité ou un décor, l'unité repoussée perd 1 PV. L'orientation finale est choisie par le défenseur.",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "Le nombre de **réussites** de l'unité **active** est **égal** ou **supérieur** à la **DEF** du défenseur, alors celui-ci subit **1 point de dégât** pour chaque palier de DEF passé.",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": "5.2.3",
+    "title": "Zone d'Affrontement Rapproché - ZAR",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Quand deux unités sont **proches** l'une de l'autre, elles font une attaque de **ZAR.**"
+      },
+      {
+        "type": "p",
+        "text": "Les ZAR se déclenchent à la fin de toute **action de mouvement** (après les prises de positions éventuelles de l'action majeure de mouvement)"
+      },
+      {
+        "type": "p",
+        "text": "Toutes les unités à **M** de l'unité active **participent à la ZAR.**"
+      },
+      {
+        "type": "p",
+        "text": "Chaque unité doit choisir une cible **éligible.**"
+      },
+      {
+        "type": "p",
+        "text": "Toutes les ZAR sont **en simultané** et frappent sur la **DEF non modifiée** (aucun bonus/malus durant la ZAR)."
+      },
+      {
+        "type": "p",
+        "text": "Il n'y a pas de jet de boucliers lors des ZAR."
+      },
+      {
+        "type": "p",
+        "text": "Étapes de résolution de la ZAR :"
+      },
+      {
+        "type": "li",
+        "text": "1. Déclaration des cibles : alterner en commençant par l'unité active, puis l'adversaire",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "2. Création du pool de dés de l'attaquant",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "3. Jet d'attaque",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "4. Modification du jet d'attaque",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "Si une unité du joueur non actif est ciblée par une unité à M de l'unité active, celle-ci doit à son tour choisir une cible à **M**."
+      },
+      {
+        "type": "p",
+        "text": "Recommencer jusqu'au moment où il n'y a plus de nouvelle cible."
+      },
+      {
+        "type": "p",
+        "text": "Pas de **puissance adaptative** pendant une attaque de ZAR (arme ou bouclier)."
+      }
+    ]
+  },
+  {
+    "id": "5.3",
+    "title": "Destruction",
+    "level": 2,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Une unité qui n'a plus de **points de vie** disponibles est considérée comme **détruite**."
+      },
+      {
+        "type": "p",
+        "text": "Les unités **détruites** qui n'ont pas de **pions ordre face visible** ont le droit à une **action désespérée** (les unités détruites en ZAR sont dans le feu de l'action, donc ne peuvent pas réagir) :"
+      },
+      {
+        "type": "li",
+        "text": "**Attaque** désespérée",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "**Mouvement** désespéré",
+        "level": 1
+      },
+      {
+        "type": "li",
+        "text": "**Fuite** de l'équipage",
+        "level": 1
+      },
+      {
+        "type": "p",
+        "text": "La **destruction** d'une unité entraîne un **test de moral à M** du dernier socle retiré."
+      }
+    ]
+  },
+  {
+    "id": "5.3.1",
+    "title": "Attaque désespérée",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "L'unité a le droit de faire une **action majeure de tir sur l'attaquant** avant de retirer les pertes et d'être détruite (en ignorant les dégâts subis)."
+      },
+      {
+        "type": "p",
+        "text": "Toutes les conditions de portée et de LOS restent les mêmes."
+      },
+      {
+        "type": "p",
+        "text": "Ce tir a **+1 pour toucher**."
+      }
+    ]
+  },
+  {
+    "id": "5.3.2",
+    "title": "Mouvement désespéré",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "L'unité a le droit de faire un pivot à 360° puis un mouvement en avant, avant d'être détruite. L'unité peut **éperonner** des adversaires."
+      }
+    ]
+  },
+  {
+    "id": "5.3.3",
+    "title": "Fuite de l'équipage",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Si l'unité se trouve à **M** d'un terrain, elle peut y faire une **prise de position**."
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Compétences / Bonus",
+    "level": 1,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Les armes ou les unités peuvent avoir une ou plusieurs compétences. A COMPLETER"
+      },
+      {
+        "type": "p",
+        "text": "**Anti-infanterie** = pas de bouclier pour les défenseur infanterie, permet de cibler uniquement l'infanterie adverse lors d'un tir dans un terrain contesté. -1 a la def de l'infanterie."
+      },
+      {
+        "type": "p",
+        "text": "**Anti-aérien** = ignore les règles des unités volantes (le -1 pour être touché par les armes d'unités au sol et pas de Front/Flanc/Arrière quand elles sont la cible de tir d'unités au sol)"
+      },
+      {
+        "type": "p",
+        "text": "**Air uniquement** = ne peut cibler que les unités aériennes"
+      },
+      {
+        "type": "p",
+        "text": "**Sol uniquement** = ne peut cibler que les unités au sol"
+      },
+      {
+        "type": "p",
+        "text": "**Rapide** = -1 pour être touché"
+      },
+      {
+        "type": "p",
+        "text": "**Acquisition de cible** = ignore la règle rapide"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "title": "Factions",
+    "level": 1,
+    "blocks": []
+  },
+  {
+    "id": "7.1",
+    "title": "Cabale",
+    "level": 2,
+    "blocks": []
+  },
+  {
+    "id": "7.1.1",
+    "title": "Type d'unité",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Faction dissidente de l'Union Terra, n'appartenant à aucune corporation. Il s'agit de colons et de scientifiques ayant fui les grandes villes pour vivre dans les déserts, décharges et autres lieux peu hospitaliers."
+      },
+      {
+        "type": "p",
+        "text": "Dans le secret des corpos, la Cabale a développé une technologie parallèle grâce aux découvertes de sites aliens."
+      },
+      {
+        "type": "p",
+        "text": "Pour se déplacer de façon optimale dans les déserts, la Cabale utilise des véhicules capables de rouler sans s'arrêter pendant des journées entières."
+      },
+      {
+        "type": "p",
+        "text": "Il ne faut pas se fier à l'aspect rudimentaire de ces véhicules, car à leur bord, les armements sont très efficaces contre les cibles de leurs raids. Les pilotes, soldats ou même scientifiques d'exception sont prêts à donner leur vie pour sécuriser le convoi."
+      }
+    ]
+  },
+  {
+    "id": "7.2",
+    "title": "Corporations",
+    "level": 2,
+    "blocks": []
+  },
+  {
+    "id": "7.2.1",
+    "title": "Type d'unités",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Les corporations sont les unités de colons envoyées par l'Union Terra afin de prendre position sur les différentes planètes de Noctua et commencer à récolter la Solaryne. Leur technologie fait partie des plus avancées de l'Union Terra."
+      },
+      {
+        "type": "p",
+        "text": "Chaque corpo possède son propre matériel, armement et armée privée."
+      },
+      {
+        "type": "p",
+        "text": "Les copros sont caractérisées par des véhicules lourds et des vaisseaux de soutien en orbite."
+      }
+    ]
+  },
+  {
+    "id": "7.3",
+    "title": "Umbra Sapiens",
+    "level": 2,
+    "blocks": []
+  },
+  {
+    "id": "7.3.1",
+    "title": "Type d'unités",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "L'Union Terra n'a que peu d'informations sur cette race alien qui agit dans l'ombre des radars humains. Pour certains humains, les Umbra Sapiens, d'une force supérieure à celle de l'humanité, ne sont qu'un mythe créé par l'Union pour instaurer la peur parmi la population."
+      },
+      {
+        "type": "p",
+        "text": "Des sites et installations ont pourtant été retrouvés par l'Union Terra sur les planètes de Noctua, mais leurs études sont restées secrètes."
+      },
+      {
+        "type": "p",
+        "text": "Les maigres informations indiquent qu'il s'agit de la race qui sait le mieux exploiter les cristaux de Solaryne. Peu d'individus ont été rencontrés, les quelques survivants de batailles opposant les Umbra Sapiens aux humains indiquent un rapport de force de 1 Umbra pour 50 humains."
+      },
+      {
+        "type": "p",
+        "text": "Des théories indiquent que ce seraient les Umbra Sapiens qui auraient révélé l'existence de Noctua aux yeux de l'univers."
+      }
+    ]
+  },
+  {
+    "id": "7.4",
+    "title": "Vespara",
+    "level": 2,
+    "blocks": []
+  },
+  {
+    "id": "7.4.1",
+    "title": "Type d'unités",
+    "level": 3,
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Race alien organique qui n'a qu'un seul objectif : consommer les cristaux de Solaryne. Les radars longue portée indiquent des vaisseaux-ruches immenses aux confins de la galaxie, se rapprochant du système Noctua."
+      },
+      {
+        "type": "p",
+        "text": "La présence d'entités aliens sur les planètes colonisées est une certitude : des émissaires de l'avant-garde Vespara ont traversé la galaxie bien plus rapidement que les vaisseaux-ruches, afin de préparer le terrain pour l'invasion."
+      },
+      {
+        "type": "p",
+        "text": "Les Vespara n'utilisent pas de carburants, de munitions ou même de ressources présentes sur les planètes, tout n'est qu'organisme."
+      }
+    ]
+  }
+]

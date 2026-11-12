@@ -1,0 +1,219 @@
+[
+  {
+    "title": "Phase d'énergie",
+    "blocks": [
+      {
+        "type": "li",
+        "text": "5 par véhicule de commandement",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "1 par terrain contrôlé",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "**Armes** : +1 réussite à chaque arme, pour l'unité"
+      },
+      {
+        "type": "p",
+        "text": "**Moteur** : +1S à ajouter au mouvement ou déplacement (si pas d'action de mouvement)"
+      },
+      {
+        "type": "p",
+        "text": "**Bouclier** : +1 réussite aux boucliers, pour l'unité"
+      }
+    ]
+  },
+  {
+    "title": "Phase d'ordre",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Choisir parmi 3 **actions majeures**."
+      },
+      {
+        "type": "p",
+        "text": "Pour chaque unité, mettre un pion face caché :"
+      },
+      {
+        "type": "li",
+        "text": "**Mouvement** : a le droit à un pivot au début et à la fin du mouvement. Gagne le bonus **Rapide** (-1 pour être touché). Peut faire une **Prise de position** à la fin du mouvement.",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "**Tir** : peut tirer avec toutes ses armes.",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "**Spéciale** : choisir 2 sous actions parmi **réparation** (4D, -1 dégât par réussite) et/ou **prise de position**",
+        "level": 0
+      }
+    ]
+  },
+  {
+    "title": "Phase d'activation",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Choisir une unité à activer."
+      },
+      {
+        "type": "p",
+        "text": "Résoudre dans l'ordre de son choix l'action **majeure** (obligatoire) et l'action **mineure** (facultative)."
+      },
+      {
+        "type": "p",
+        "text": "**Actions mineures** :"
+      },
+      {
+        "type": "li",
+        "text": "**Mouvement** : avance de sa valeur de mouvement.",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "**Tir** : peut tirer avec une arme.",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "**Spéciale** : choisir une sous action parmi **réparation** (4D, -1 dégât par réussite) et/ou **prise de position.**",
+        "level": 0
+      }
+    ]
+  },
+  {
+    "title": "ZAR",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "A la fin d'une action de mouvement."
+      },
+      {
+        "type": "p",
+        "text": "Toutes les unités à M de l'unité active doivent choisir une cible a M."
+      },
+      {
+        "type": "p",
+        "text": "Chaque cible participe à la ZAR et donc peut choisir à son tour une cible à M."
+      },
+      {
+        "type": "p",
+        "text": "Les ZAR sont toutes en simultané."
+      },
+      {
+        "type": "p",
+        "text": "Pas de modification au jet de dés."
+      },
+      {
+        "type": "p",
+        "text": "Pas de bouclier, pas de surcharge."
+      }
+    ]
+  },
+  {
+    "title": "Prise de position",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "A distance S d'un terrain, 1 + 4D (nombre de réussites)."
+      }
+    ]
+  },
+  {
+    "title": "Assaut de terrain capturé",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Les infanteries ne peuvent plus ZAR. A la phase de combat de terrains :"
+      },
+      {
+        "type": "li",
+        "text": "valeur de combat pour son nombre d'infanterie présente,",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "1 dé pour chaque véhicule allié à M.",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "Une fois les dés lancés, le joueur ayant obtenu le plus de réussites gagne le combat, et inflige en perte la différence entre les deux jets."
+      }
+    ]
+  },
+  {
+    "title": "Moral",
+    "blocks": [
+      {
+        "type": "li",
+        "text": "Socle retiré",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Unité détruite à M",
+        "level": 0
+      },
+      {
+        "type": "li",
+        "text": "Une infanterie a perdu un effectif",
+        "level": 0
+      },
+      {
+        "type": "p",
+        "text": "3D, avoir au moins une réussite."
+      },
+      {
+        "type": "p",
+        "text": "+1D si à L du véhicule de commandement, +1D si à plus de M d'unités ennemi,"
+      },
+      {
+        "type": "p",
+        "text": "-1 réussite par socle retiré."
+      },
+      {
+        "type": "p",
+        "text": "Infanterie : subit une perte."
+      },
+      {
+        "type": "p",
+        "text": "Aérien : subit un dégât."
+      },
+      {
+        "type": "p",
+        "text": "Véhicule : recule de S (1 dégât si le mouvement est bloqué)."
+      }
+    ]
+  },
+  {
+    "title": "Modificateurs de tir",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Couvert : +1 DEF."
+      },
+      {
+        "type": "p",
+        "text": "Rapide : -1 pour être touché."
+      },
+      {
+        "type": "p",
+        "text": "Courte portée : à mi-distance de tir, +1 pour toucher."
+      },
+      {
+        "type": "p",
+        "text": "Aérien : -1 pour être touché."
+      },
+      {
+        "type": "p",
+        "text": "Endommagé : -1 réussite par point de vie manquant au socle."
+      }
+    ]
+  }
+]

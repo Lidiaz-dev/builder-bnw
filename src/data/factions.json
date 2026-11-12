@@ -1,0 +1,2003 @@
+[
+  {
+    "id": "cabale",
+    "name": "Cabale",
+    "lore": null,
+    "background": "Faction dissidente de l'Union Terra, n'appartenant à aucune corporation. Il s'agit de colons et de scientifiques ayant fui les grandes villes pour vivre dans les déserts, décharges et autres lieux peu hospitaliers. Dans le secret des corpos, la Cabale a développé une technologie parallèle grâce aux découvertes de sites aliens. Pour se déplacer de façon optimale dans les déserts, la Cabale utilise des véhicules capables de rouler sans s'arrêter pendant des journées entières. Il ne faut pas se fier à l'aspect rudimentaire de ces véhicules, car à leur bord, les armements sont très efficaces contre les cibles de leurs raids. Les pilotes, soldats ou même scientifiques d'exception sont prêts à donner leur vie pour sécuriser le convoi.",
+    "factionPower": "Donne la règle Rapide à 1 unité + 4D pendant le round en cours et le suivant (peut être plusieurs fois la même unité).",
+    "colossusPower": "Lors de son arrivée, le colosse permet à une unité alliée à L de faire un mouvement de S. Lors de ce mouvement, l'unité peut faire un pivot à 360°, avant et après le mouvement. De plus, l'unité gagne la règle Rapide.",
+    "specialIntro": null,
+    "specialRules": [
+      {
+        "name": "Caravane alimentée",
+        "text": [
+          "Quand le Battle-Rig reçoit de l'énergie dans ses systèmes, il peut choisir d'autres unités à M de lui pour recevoir de l'énergie également dans les mêmes systèmes."
+        ]
+      },
+      {
+        "name": "Véhicule de tête",
+        "text": [
+          "Pendant l'activation du Battle-Rig, celui-ci peut donner un ordre supplémentaire à une unité à M, qui n'a pas déjà bénéficié d'un ordre supplémentaire ce round-ci."
+        ]
+      },
+      {
+        "name": "Démarrer le convoi",
+        "text": [
+          "Pendant la phase d'énergie, au lieu de choisir de distribuer de l'énergie normalement, il est possible de choisir une ou plusieurs unités sur la table pour dépenser 1 d'énergie chacune pour gagner la règle Rapide. Puis le joueur passe la main à son adversaire."
+        ]
+      },
+      {
+        "name": "Rapidité à tout prix",
+        "text": [
+          "Lorsqu'une unité gagne la règle Rapide alors qu'elle la possède déjà, elle gagne en plus la règle « Rapide 2 ».",
+          "Si l'unité possède déjà la règle Rapide 2, elle gagne en plus la règle « Rapide 3 »."
+        ]
+      },
+      {
+        "name": "Rapide 2",
+        "text": [
+          "Pendant la phase d'activation, au moment où l'unité reçoit la règle Rapide 2, elle peut faire un pivot, un mouvement de S puis un pivot.",
+          "Ce mouvement déclenche des ZAR.",
+          "Une unité Rapide 2 a -1 pour être touchée en ZAR."
+        ]
+      },
+      {
+        "name": "Rapide 3",
+        "text": [
+          "Pendant la phase d'activation, au moment où l'unité reçoit la règle Rapide 3, elle peut faire un pivot, un mouvement de S puis un pivot.",
+          "Ce mouvement déclenche des ZAR.",
+          "Une unité Rapide 3 ajoute +1 à sa DEF."
+        ]
+      }
+    ],
+    "tables": [],
+    "infantry": {
+      "def": 5,
+      "shield": 1,
+      "zar": 2
+    },
+    "units": {
+      "moyen": {
+        "slot": "moyen",
+        "title": "Véhicule Moyen",
+        "move": "M",
+        "def": [
+          7,
+          6,
+          6
+        ],
+        "shield": 3,
+        "zar": 6,
+        "size": "Moyen",
+        "models": 4,
+        "type": "Sol",
+        "power": {
+          "A": 4,
+          "M": 2,
+          "B": 3
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Canon",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Tourelle",
+            "range": 30,
+            "shots": 7
+          },
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Front",
+            "range": 15,
+            "shots": 4
+          }
+        ],
+        "rules": []
+      },
+      "leger": {
+        "slot": "leger",
+        "title": "Véhicule Léger",
+        "move": "L",
+        "def": [
+          5,
+          5
+        ],
+        "shield": 1,
+        "zar": 3,
+        "size": "Léger",
+        "models": 5,
+        "type": "Sol",
+        "power": {
+          "A": 3,
+          "M": 4,
+          "B": 2
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Front",
+            "range": 15,
+            "shots": 4
+          }
+        ],
+        "rules": []
+      },
+      "volant-leger": {
+        "slot": "volant-leger",
+        "title": "Volant Léger",
+        "move": "L",
+        "def": [
+          5,
+          5
+        ],
+        "shield": 1,
+        "zar": 0,
+        "size": "Léger",
+        "models": 4,
+        "type": "Air",
+        "power": {
+          "A": 3,
+          "M": 4,
+          "B": 2
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Missiles AIR SOL",
+            "bonus": "sol-uniquement",
+            "bonusLabel": "SOL uniquement",
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 5
+          }
+        ],
+        "rules": []
+      },
+      "volant-moyen": {
+        "slot": "volant-moyen",
+        "title": "Volant Moyen",
+        "move": "L",
+        "def": [
+          6,
+          6,
+          6
+        ],
+        "shield": 3,
+        "zar": 0,
+        "size": "Moyen",
+        "models": 3,
+        "type": "Air",
+        "power": {
+          "A": 3,
+          "M": 4,
+          "B": 2
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Bombes",
+            "bonus": "sol-uniquement",
+            "bonusLabel": "SOL uniquement",
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 7
+          },
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Front",
+            "range": 15,
+            "shots": 4
+          },
+          {
+            "name": "Anti aérien",
+            "bonus": "anti-aerien",
+            "bonusLabel": "Anti air",
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 6
+          }
+        ],
+        "rules": []
+      },
+      "lourd": {
+        "slot": "lourd",
+        "title": "Véhicule Lourd",
+        "move": "M",
+        "def": [
+          6,
+          7,
+          7,
+          8
+        ],
+        "shield": 5,
+        "zar": 25,
+        "size": "Lourd",
+        "models": 1,
+        "type": "Sol",
+        "power": {
+          "A": 4,
+          "M": 4,
+          "B": 4
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Canon Lourd",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front",
+            "range": 35,
+            "shots": 10
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front/Gauche",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front/Droit",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lance missiles",
+            "bonus": "anti-aerien",
+            "bonusLabel": "Anti-air",
+            "arc": "Tourelle",
+            "range": 30,
+            "shots": 6
+          }
+        ],
+        "rules": []
+      },
+      "commandant": {
+        "slot": "commandant",
+        "title": "Commandant",
+        "move": "M",
+        "def": [
+          7,
+          7,
+          7,
+          8,
+          8
+        ],
+        "shield": 6,
+        "zar": 25,
+        "size": "Lourd",
+        "models": 1,
+        "type": "Sol",
+        "power": {
+          "A": 4,
+          "M": 4,
+          "B": 4
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Canon Lourd",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Tourelle",
+            "range": 35,
+            "shots": 10
+          },
+          {
+            "name": "Canon Lourd",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front",
+            "range": 35,
+            "shots": 10
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front/Gauche",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front/Droit",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lance missiles",
+            "bonus": "anti-aerien",
+            "bonusLabel": "Anti-air",
+            "arc": "Tourelle",
+            "range": 30,
+            "shots": 6
+          }
+        ],
+        "rules": []
+      },
+      "artillerie": {
+        "slot": "artillerie",
+        "title": "Artillerie",
+        "move": "M",
+        "def": [
+          6,
+          6,
+          6
+        ],
+        "shield": 2,
+        "zar": 3,
+        "size": "Moyen",
+        "models": 3,
+        "type": "Sol",
+        "power": {
+          "A": 4,
+          "M": 2,
+          "B": 2
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Lance missiles",
+            "bonus": "anti-aerien",
+            "bonusLabel": "Anti air",
+            "arc": "Tourelle",
+            "range": 30,
+            "shots": 6
+          },
+          {
+            "name": "Canon long",
+            "bonus": "sol-uniquement",
+            "bonusLabel": "Sol uniquement",
+            "arc": "Front",
+            "range": 40,
+            "shots": 5
+          },
+          {
+            "name": "Canon long",
+            "bonus": "sol-uniquement",
+            "bonusLabel": "Sol uniquement",
+            "arc": "Front",
+            "range": 40,
+            "shots": 5
+          }
+        ],
+        "rules": []
+      },
+      "speciale": {
+        "slot": "speciale",
+        "title": "Unité spéciale",
+        "move": "L",
+        "def": [
+          6,
+          5
+        ],
+        "shield": 2,
+        "zar": 4,
+        "size": "Léger",
+        "models": 5,
+        "type": "Sol",
+        "power": {
+          "A": 3,
+          "M": 4,
+          "B": 2
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Canon court",
+            "bonus": "sol-uniquement",
+            "bonusLabel": "SOL uniqement",
+            "arc": "Front",
+            "range": 15,
+            "shots": 6
+          },
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Front",
+            "range": 15,
+            "shots": 4
+          }
+        ],
+        "rules": [
+          {
+            "name": "Perforation",
+            "text": "lors d'un tir avec le canon court, la DEF du défenseur est diminué de 1"
+          }
+        ]
+      },
+      "colosse": {
+        "slot": "colosse",
+        "title": "Colosse",
+        "move": "L",
+        "def": [
+          8,
+          5,
+          5,
+          5,
+          5
+        ],
+        "shield": 5,
+        "zar": 20,
+        "size": "Moyen",
+        "models": 1,
+        "type": "Sol",
+        "power": {
+          "A": 1,
+          "M": 2,
+          "B": 3
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Front",
+            "range": 15,
+            "shots": 4
+          }
+        ],
+        "rules": []
+      }
+    },
+    "sources": {
+      "profiles": "Profils Cabale v1.5.pdf",
+      "list": "LA Cabale V1.6.pdf"
+    }
+  },
+  {
+    "id": "corpo",
+    "name": "Corporations",
+    "lore": null,
+    "background": "Les corporations sont les unités de colons envoyées par l'Union Terra afin de prendre position sur les différentes planètes de Noctua et commencer à récolter la Solaryne. Leur technologie fait partie des plus avancées de l'Union Terra. Chaque corpo possède son propre matériel, armement et armée privée. Les copros sont caractérisées par des véhicules lourds et des vaisseaux de soutien en orbite.",
+    "factionPower": "Gagne 5 drop-tokens.",
+    "colossusPower": "Lors de son arrivée le colosse peut poser à L de lui une des 4 tourelles disponibles dans le choix des drops (gratuitement). De plus, s'il s'agit d'une tourelle Gatling ou tourelle Anti aérienne, elle peut faire une action mineure de tir.",
+    "specialIntro": "Les véhicules de commandement peuvent appeler différents types de bonus provenant des vaisseaux de soutien.",
+    "specialRules": [
+      {
+        "name": "Support demandé",
+        "text": [
+          "A chaque round, le véhicule de commandement gagne 10 pions spéciaux (drop-tokens) qu'il ajoute dans une réserve de pions.",
+          "Pendant l'activation du véhicule de commandement, celui-ci peut choisir un nombre de drop-tokens disponibles dans sa réserve, pour effectuer un appel de « drop ».",
+          "Les drop-tokens utilisés sont retirés de la réserve.",
+          "Chaque drop possède un coût en drop-token.",
+          "Chaque drop peut être appelé qu'une fois par activation.",
+          "Une fois le coût d'un ou plusieurs drop dépensé, le joueur les place sur la table, à M de tout ennemi.",
+          "Une fois le drop sur la table, il est considéré comme une unité appartenant au joueur qui l'a posé.",
+          "Si des drops avec le même nom sont à S les uns des autres (tous à S entre eux) ils forment une unité (de 3 socles maximum, afin de pouvoir cumuler les dés lors des actions de tirs).",
+          "Tous les drop ont une DEF de 3 + 3 (et n'ont pas de face/flanc/arrière)",
+          "La destruction d'un drop ne déclenche pas de test de moral."
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "columns": [
+          "Coût en drop-token",
+          "Nom",
+          "Effet"
+        ],
+        "rows": [
+          [
+            "1",
+            "Barricade",
+            "Pose un socle léger. Ce socle donne le couvert à une unité en contacte socle à socle"
+          ],
+          [
+            "2",
+            "Tourelle Machinegun",
+            "Pose un socle léger. Pendant l'activation du commandant, a le droit à une action secondaire de tir. Elle a une seule arme « Machine gun »"
+          ],
+          [
+            "3",
+            "Tourelle Anti aérienne",
+            "Pose un socle léger. Pendant l'activation du commandant, a le droit à une action secondaire de tir. Elle a une seule arme « Anti aérien »"
+          ],
+          [
+            "4",
+            "Tourelle boucliers",
+            "Pose un socle léger. Donne 1 réussite aux boucliers à M"
+          ],
+          [
+            "5",
+            "Tourelle munitions",
+            "Pose un socle léger. Donne 1 réussite aux armes à M"
+          ],
+          [
+            "6",
+            "Brouilleur",
+            "Pose un socle léger. Réduit de 1 la puissance adaptative a L (4/4/4 devient 3/3/3). Peut se cumuler avec d'autres brouilleurs"
+          ],
+          [
+            "7",
+            "Arme supplémentaire",
+            "Pose un socle léger. Quand une unité fini un mouvement a S, récupère automatiquement l'arme « Canon lourd ». Une fois l'arme récupérée, le socle reste et n'a plus d'effets."
+          ],
+          [
+            "8",
+            "Renforts",
+            "Ajoute un socle à une unité allié qui a perdu un ou plusieurs socle durant la bataille."
+          ]
+        ]
+      }
+    ],
+    "infantry": {
+      "def": 5,
+      "shield": 1,
+      "zar": 2
+    },
+    "units": {
+      "moyen": {
+        "slot": "moyen",
+        "title": "Véhicule Moyen",
+        "move": "M",
+        "def": [
+          7,
+          6,
+          6
+        ],
+        "shield": 3,
+        "zar": 6,
+        "size": "Moyen",
+        "models": 4,
+        "type": "Sol",
+        "power": {
+          "A": 4,
+          "M": 2,
+          "B": 3
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Canon",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Tourelle",
+            "range": 30,
+            "shots": 7
+          },
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 4
+          }
+        ],
+        "rules": []
+      },
+      "leger": {
+        "slot": "leger",
+        "title": "Véhicule Léger",
+        "move": "L",
+        "def": [
+          5,
+          5
+        ],
+        "shield": 1,
+        "zar": 2,
+        "size": "Léger",
+        "models": 5,
+        "type": "Sol",
+        "power": {
+          "A": 3,
+          "M": 4,
+          "B": 2
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Front",
+            "range": 15,
+            "shots": 4
+          }
+        ],
+        "rules": []
+      },
+      "volant-leger": {
+        "slot": "volant-leger",
+        "title": "Volant Léger",
+        "move": "L",
+        "def": [
+          5,
+          5
+        ],
+        "shield": 1,
+        "zar": 0,
+        "size": "Léger",
+        "models": 4,
+        "type": "Air",
+        "power": {
+          "A": 3,
+          "M": 4,
+          "B": 2
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Missiles AIR SOL",
+            "bonus": "sol-uniquement",
+            "bonusLabel": "SOL uniquement",
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 5
+          }
+        ],
+        "rules": []
+      },
+      "volant-moyen": {
+        "slot": "volant-moyen",
+        "title": "Volant Moyen",
+        "move": "L",
+        "def": [
+          6,
+          6,
+          6
+        ],
+        "shield": 3,
+        "zar": 0,
+        "size": "Moyen",
+        "models": 3,
+        "type": "Air",
+        "power": {
+          "A": 3,
+          "M": 4,
+          "B": 2
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Bombes",
+            "bonus": "sol-uniquement",
+            "bonusLabel": "SOL uniquement",
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 7
+          },
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 4
+          },
+          {
+            "name": "Anti aérien",
+            "bonus": "anti-aerien",
+            "bonusLabel": "Anti air",
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 6
+          }
+        ],
+        "rules": []
+      },
+      "lourd": {
+        "slot": "lourd",
+        "title": "Véhicule Lourd",
+        "move": "S",
+        "def": [
+          6,
+          7,
+          7,
+          8
+        ],
+        "shield": 5,
+        "zar": 20,
+        "size": "Lourd",
+        "models": 1,
+        "type": "Sol",
+        "power": {
+          "A": 4,
+          "M": 4,
+          "B": 4
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Canon Lourd",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Tourelle",
+            "range": 35,
+            "shots": 10
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front/Gauche",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front/Droit",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lance missiles",
+            "bonus": "anti-aerien",
+            "bonusLabel": "Anti-air",
+            "arc": "Tourelle",
+            "range": 30,
+            "shots": 6
+          }
+        ],
+        "rules": []
+      },
+      "commandant": {
+        "slot": "commandant",
+        "title": "Commandant",
+        "move": "S",
+        "def": [
+          7,
+          7,
+          8,
+          8,
+          9
+        ],
+        "shield": 6,
+        "zar": 20,
+        "size": "Lourd",
+        "models": 1,
+        "type": "Sol",
+        "power": {
+          "A": 4,
+          "M": 4,
+          "B": 4
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Canon Lourd",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Tourelle",
+            "range": 35,
+            "shots": 10
+          },
+          {
+            "name": "Canon Lourd",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front",
+            "range": 35,
+            "shots": 10
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front/Gauche",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front/Droit",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lance missiles",
+            "bonus": "anti-aerien",
+            "bonusLabel": "Anti-air",
+            "arc": "Tourelle",
+            "range": 30,
+            "shots": 6
+          }
+        ],
+        "rules": []
+      },
+      "artillerie": {
+        "slot": "artillerie",
+        "title": "Artillerie",
+        "move": "S",
+        "def": [
+          6,
+          6,
+          6
+        ],
+        "shield": 2,
+        "zar": 3,
+        "size": "Moyen",
+        "models": 3,
+        "type": "Sol",
+        "power": {
+          "A": 4,
+          "M": 2,
+          "B": 2
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Lance missiles",
+            "bonus": "anti-aerien",
+            "bonusLabel": "Anti air",
+            "arc": "Tourelle",
+            "range": 30,
+            "shots": 6
+          },
+          {
+            "name": "Canon long",
+            "bonus": "sol-uniquement",
+            "bonusLabel": "Sol uniquement",
+            "arc": "Front",
+            "range": 40,
+            "shots": 5
+          },
+          {
+            "name": "Canon long",
+            "bonus": "sol-uniquement",
+            "bonusLabel": "Sol uniquement",
+            "arc": "Front",
+            "range": 40,
+            "shots": 5
+          }
+        ],
+        "rules": []
+      },
+      "speciale": {
+        "slot": "speciale",
+        "title": "Unité spéciale",
+        "move": "M",
+        "def": [
+          7,
+          6,
+          6
+        ],
+        "shield": 4,
+        "zar": 5,
+        "size": "Moyen",
+        "models": 3,
+        "type": "Sol",
+        "power": {
+          "A": 3,
+          "M": 2,
+          "B": 3
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Lance missiles",
+            "bonus": "anti-aerien",
+            "bonusLabel": "Anti air",
+            "arc": "Tourelle",
+            "range": 30,
+            "shots": 6
+          },
+          {
+            "name": "Anti aérien",
+            "bonus": "anti-aerien",
+            "bonusLabel": "Anti air",
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 6
+          },
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Front",
+            "range": 15,
+            "shots": 4
+          }
+        ],
+        "rules": [
+          {
+            "name": "Balise mobile",
+            "text": "Pendant son activation, cette unité peut utiliser la réserve de drop-token pour appeler 1 drop à L"
+          }
+        ]
+      },
+      "colosse": {
+        "slot": "colosse",
+        "title": "Colosse",
+        "move": "L",
+        "def": [
+          8,
+          5,
+          5,
+          5,
+          5
+        ],
+        "shield": 5,
+        "zar": 20,
+        "size": "Moyen",
+        "models": 1,
+        "type": "Sol",
+        "power": {
+          "A": 1,
+          "M": 2,
+          "B": 3
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Front",
+            "range": 15,
+            "shots": 4
+          }
+        ],
+        "rules": []
+      }
+    },
+    "sources": {
+      "profiles": "Profils Corpo v1.5.pdf",
+      "list": "LA Corpo V1.4.pdf"
+    }
+  },
+  {
+    "id": "umbra",
+    "name": "Umbra Sapiens",
+    "lore": "La technologie Umbra étant à la pointe de ce qui peut être fait dans la galaxie, soutenue par l'énergie Solaryne, les véhicules sont d'une performance incroyable.",
+    "background": "L'Union Terra n'a que peu d'informations sur cette race alien qui agit dans l'ombre des radars humains. Pour certains humains, les Umbra Sapiens, d'une force supérieure à celle de l'humanité, ne sont qu'un mythe créé par l'Union pour instaurer la peur parmi la population. Des sites et installations ont pourtant été retrouvés par l'Union Terra sur les planètes de Noctua, mais leurs études sont restées secrètes. Les maigres informations indiquent qu'il s'agit de la race qui sait le mieux exploiter les cristaux de Solaryne. Peu d'individus ont été rencontrés, les quelques survivants de batailles opposant les Umbra Sapiens aux humains indiquent un rapport de force de 1 Umbra pour 50 humains. Des théories indiquent que ce seraient les Umbra Sapiens qui auraient révélé l'existence de Noctua aux yeux de l'univers.",
+    "factionPower": "Permet à 1 unité + 4D de ne pas retirer ses pions d'énergie à la prochaine phase de nettoyage.",
+    "colossusPower": "Lors de son arrivée le colosse possède le maximum d'énergie disponible pour ses systèmes (et donc peut faire autant d'actions) De plus, il distribue 1 d'énergie à 2 unités a L de lui.",
+    "specialIntro": null,
+    "specialRules": [
+      {
+        "name": "Maître de la Solaryn",
+        "text": [
+          "Chaque point d'énergie dépensé dans les systèmes d'une unité en vaut 2.",
+          "(exemple : un point d'énergie est dépensé dans les armes, l'unité considère que 2 énergies ont été dépensées dans les armes.)"
+        ]
+      },
+      {
+        "name": "Relais d'énergie",
+        "text": [
+          "Chaque unité avec la règle spéciale « Relais » permet de relayer la possibilité de dépenser de l'énergie de L depuis un véhicule de commandement.",
+          "Avec les profils génériques, toutes les unités de taille « moyen » et « lourd » possèdent la règle « Relais »."
+        ]
+      }
+    ],
+    "tables": [],
+    "infantry": {
+      "def": 5,
+      "shield": 2,
+      "zar": 3
+    },
+    "units": {
+      "moyen": {
+        "slot": "moyen",
+        "title": "Véhicule Moyen",
+        "move": "M",
+        "def": [
+          7,
+          6,
+          6,
+          5
+        ],
+        "shield": 5,
+        "zar": 4,
+        "size": "Moyen",
+        "models": 3,
+        "type": "Sol",
+        "power": {
+          "A": 4,
+          "M": 2,
+          "B": 4
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Canon",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front/Gauche",
+            "range": 30,
+            "shots": 7
+          },
+          {
+            "name": "Canon",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front/Droit",
+            "range": 30,
+            "shots": 7
+          },
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Front",
+            "range": 15,
+            "shots": 4
+          },
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Front",
+            "range": 15,
+            "shots": 4
+          }
+        ],
+        "rules": [
+          {
+            "name": "Relais",
+            "text": "Relaie la distribution d'énergie (L) depuis le véhicule de commandement."
+          }
+        ]
+      },
+      "leger": {
+        "slot": "leger",
+        "title": "Véhicule Léger",
+        "move": "L",
+        "def": [
+          5,
+          5,
+          5
+        ],
+        "shield": 2,
+        "zar": 3,
+        "size": "Léger",
+        "models": 4,
+        "type": "Sol",
+        "power": {
+          "A": 4,
+          "M": 4,
+          "B": 2
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Front",
+            "range": 15,
+            "shots": 4
+          }
+        ],
+        "rules": []
+      },
+      "volant-leger": {
+        "slot": "volant-leger",
+        "title": "Volant Léger",
+        "move": "L",
+        "def": [
+          5,
+          5,
+          4
+        ],
+        "shield": 2,
+        "zar": 0,
+        "size": "Léger",
+        "models": 3,
+        "type": "Air",
+        "power": {
+          "A": 4,
+          "M": 4,
+          "B": 2
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Missiles AIR SOL",
+            "bonus": "sol-uniquement",
+            "bonusLabel": "SOL uniquement",
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 5
+          }
+        ],
+        "rules": []
+      },
+      "volant-moyen": {
+        "slot": "volant-moyen",
+        "title": "Volant Moyen",
+        "move": "L",
+        "def": [
+          6,
+          6,
+          6,
+          4
+        ],
+        "shield": 4,
+        "zar": 0,
+        "size": "Moyen",
+        "models": 2,
+        "type": "Air",
+        "power": {
+          "A": 4,
+          "M": 4,
+          "B": 2
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Bombes",
+            "bonus": "sol-uniquement",
+            "bonusLabel": "SOL uniquement",
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 7
+          },
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 4
+          },
+          {
+            "name": "Anti aérien",
+            "bonus": "anti-aerien",
+            "bonusLabel": "Anti air",
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 6
+          }
+        ],
+        "rules": [
+          {
+            "name": "Relais",
+            "text": "Relaie la distribution d'énergie (L) depuis le véhicule de commandement."
+          }
+        ]
+      },
+      "lourd": {
+        "slot": "lourd",
+        "title": "Véhicule Lourd",
+        "move": "S",
+        "def": [
+          7,
+          7,
+          7,
+          9
+        ],
+        "shield": 7,
+        "zar": 15,
+        "size": "Lourd",
+        "models": 1,
+        "type": "Sol",
+        "power": {
+          "A": 4,
+          "M": 4,
+          "B": 4
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Canon Lourd",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Tourelle",
+            "range": 35,
+            "shots": 10
+          },
+          {
+            "name": "Canon Lourd",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front",
+            "range": 35,
+            "shots": 10
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front/Gauche",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front/Droit",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lance missiles",
+            "bonus": "anti-aerien",
+            "bonusLabel": "Anti-air",
+            "arc": "Tourelle",
+            "range": 30,
+            "shots": 6
+          }
+        ],
+        "rules": [
+          {
+            "name": "Relais",
+            "text": "Relaie la distribution d'énergie (L) depuis le véhicule de commandement."
+          }
+        ]
+      },
+      "commandant": {
+        "slot": "commandant",
+        "title": "Commandant",
+        "move": "S",
+        "def": [
+          7,
+          8,
+          8,
+          9,
+          9
+        ],
+        "shield": 6,
+        "zar": 15,
+        "size": "Lourd",
+        "models": 1,
+        "type": "Sol",
+        "power": {
+          "A": 6,
+          "M": 6,
+          "B": 6
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Canon Lourd",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Tourelle",
+            "range": 35,
+            "shots": 10
+          },
+          {
+            "name": "Canon Lourd",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Tourelle",
+            "range": 35,
+            "shots": 10
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front/Gauche",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front/Droit",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lance missiles",
+            "bonus": "anti-aerien",
+            "bonusLabel": "Anti-air",
+            "arc": "Tourelle",
+            "range": 30,
+            "shots": 6
+          }
+        ],
+        "rules": [
+          {
+            "name": "Relais",
+            "text": "Relaie la distribution d'énergie (L) depuis le véhicule de commandement."
+          }
+        ]
+      },
+      "artillerie": {
+        "slot": "artillerie",
+        "title": "Artillerie",
+        "move": "S",
+        "def": [
+          6,
+          6,
+          6,
+          4
+        ],
+        "shield": 2,
+        "zar": 3,
+        "size": "Moyen",
+        "models": 3,
+        "type": "Sol",
+        "power": {
+          "A": 4,
+          "M": 2,
+          "B": 2
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Lance missiles",
+            "bonus": "anti-aerien",
+            "bonusLabel": "Anti air",
+            "arc": "Tourelle",
+            "range": 30,
+            "shots": 6
+          },
+          {
+            "name": "Canon long",
+            "bonus": "sol-uniquement",
+            "bonusLabel": "Sol uniquement",
+            "arc": "Front",
+            "range": 40,
+            "shots": 5
+          },
+          {
+            "name": "Canon long",
+            "bonus": "sol-uniquement",
+            "bonusLabel": "Sol uniquement",
+            "arc": "Front",
+            "range": 40,
+            "shots": 5
+          }
+        ],
+        "rules": [
+          {
+            "name": "Relais",
+            "text": "Relaie la distribution d'énergie (L) depuis le véhicule de commandement."
+          }
+        ]
+      },
+      "speciale": {
+        "slot": "speciale",
+        "title": "Unité spéciale",
+        "move": "L",
+        "def": [
+          6,
+          5,
+          4
+        ],
+        "shield": 3,
+        "zar": 0,
+        "size": "Léger",
+        "models": 3,
+        "type": "Air",
+        "power": {
+          "A": 4,
+          "M": 2,
+          "B": 2
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 4
+          },
+          {
+            "name": "Anti aérien",
+            "bonus": "anti-aerien",
+            "bonusLabel": "Anti air",
+            "arc": "Front",
+            "range": 15,
+            "shots": 6
+          },
+          {
+            "name": "Anti aérien",
+            "bonus": "anti-aerien",
+            "bonusLabel": "Anti air",
+            "arc": "Front",
+            "range": 15,
+            "shots": 6
+          }
+        ],
+        "rules": [
+          {
+            "name": "Relais mobile",
+            "text": "Peut reçevoir de l'énergie et de faire relais d'énergie à plus de L du commandant"
+          }
+        ]
+      },
+      "colosse": {
+        "slot": "colosse",
+        "title": "Colosse",
+        "move": "L",
+        "def": [
+          8,
+          5,
+          5,
+          5,
+          5,
+          4
+        ],
+        "shield": 6,
+        "zar": 17,
+        "size": "Moyen",
+        "models": 1,
+        "type": "Sol",
+        "power": {
+          "A": 2,
+          "M": 2,
+          "B": 2
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Front",
+            "range": 15,
+            "shots": 4
+          }
+        ],
+        "rules": [
+          {
+            "name": "Relais",
+            "text": "Relaie la distribution d'énergie (L) depuis le véhicule de commandement."
+          }
+        ]
+      }
+    },
+    "sources": {
+      "profiles": "Profils Umbra v1.6.pdf",
+      "list": "LA Umbra Sapiens V1.4.pdf"
+    }
+  },
+  {
+    "id": "vespara",
+    "name": "Vespara",
+    "lore": "Les unités Vespara n'ont pas de boucliers pour se protéger, ils augmentent leurs chitines afin de mieux résister aux attaques.",
+    "background": "Race alien organique qui n'a qu'un seul objectif : consommer les cristaux de Solaryne. Les radars longue portée indiquent des vaisseaux-ruches immenses aux confins de la galaxie, se rapprochant du système Noctua. La présence d'entités aliens sur les planètes colonisées est une certitude : des émissaires de l'avant-garde Vespara ont traversé la galaxie bien plus rapidement que les vaisseaux-ruches, afin de préparer le terrain pour l'invasion. Les Vespara n'utilisent pas de carburants, de munitions ou même de ressources présentes sur les planètes, tout n'est qu'organisme.",
+    "factionPower": "Fait une prise de position pour tous les bâtiments contrôlés",
+    "colossusPower": "Lors de son arrivée le colosse peut faire une prise de position à M. De plus, il peut résoudre une contamination évolutive pour un bâtiment à M.",
+    "specialIntro": null,
+    "specialRules": [
+      {
+        "name": "Chitine évolutive",
+        "text": [
+          "Pendant la phase d'énergie, chaque point d'énergie donné dans le système de bouclier d'une unité, augmente ses paliers de DEF de +1 (en plus de la réussite automatique du bouclier)."
+        ]
+      },
+      {
+        "name": "Contamination urbaine",
+        "text": [
+          "Une infanterie qui rentre dans un bâtiment le contamine.",
+          "Uniquement les unités alliés d'infanterie peuvent capturer un bâtiment contaminé.",
+          "Si le bâtiment contaminé n'a plus d'infanterie alliée à l'intérieur, il est quand même considéré comme étant capturé, et donc apporte son bonus d'énergie."
+        ]
+      },
+      {
+        "name": "Eradication de la contamination",
+        "text": [
+          "Quand une infanterie ennemie est dans un bâtiment contaminé, à tout moment du round d'un tour allié elle peut subir une perte afin de supprimer la contamination (pas de test de moral)"
+        ]
+      },
+      {
+        "name": "Contamination évolutive",
+        "text": [
+          "A la fin de la phase d'ordre, les infanteries peuvent chacune utiliser cette règle spéciale.",
+          "Une infanterie allié peut subir X pertes, X étant le choix d'une amélioration à apporter au bâtiment (pas de test de moral)",
+          "Il n'est pas possible de choisir plusieurs fois la même amélioration pour le bâtiment.",
+          "Tant que le bâtiment est contaminé, l'amélioration reste."
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "columns": [
+          "Nombre de pertes",
+          "Nom",
+          "Effet"
+        ],
+        "rows": [
+          [
+            "1",
+            "Barricade",
+            "+1 DEF et +1 réussite aux boucliers"
+          ],
+          [
+            "2",
+            "Portes piégés",
+            "+1 réussite aux boucliers et 1 perte à toute infanterie ennemie qui entre"
+          ],
+          [
+            "3",
+            "Invasion",
+            "Fait une prise de position d'un autre bâtiment à L (cette nouvelle infanterie ne peut pas utiliser la contamination évolutive ce round)"
+          ],
+          [
+            "4",
+            "Surcharge",
+            "Donne +1 DEF aux véhicules alliés à M"
+          ]
+        ]
+      }
+    ],
+    "infantry": {
+      "def": 4,
+      "shield": 0,
+      "zar": 2
+    },
+    "units": {
+      "moyen": {
+        "slot": "moyen",
+        "title": "Véhicule Moyen",
+        "move": "M",
+        "def": [
+          7,
+          6,
+          6
+        ],
+        "shield": 0,
+        "zar": 6,
+        "size": "Moyen",
+        "models": 4,
+        "type": "Sol",
+        "power": {
+          "A": 4,
+          "M": 2,
+          "B": 3
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Canon",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Tourelle",
+            "range": 30,
+            "shots": 7
+          },
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Front",
+            "range": 15,
+            "shots": 4
+          },
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Front",
+            "range": 15,
+            "shots": 4
+          }
+        ],
+        "rules": []
+      },
+      "leger": {
+        "slot": "leger",
+        "title": "Véhicule Léger",
+        "move": "L",
+        "def": [
+          5,
+          5
+        ],
+        "shield": 0,
+        "zar": 2,
+        "size": "Léger",
+        "models": 5,
+        "type": "Sol",
+        "power": {
+          "A": 3,
+          "M": 4,
+          "B": 2
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Front",
+            "range": 15,
+            "shots": 4
+          }
+        ],
+        "rules": []
+      },
+      "volant-leger": {
+        "slot": "volant-leger",
+        "title": "Volant Léger",
+        "move": "L",
+        "def": [
+          5,
+          5
+        ],
+        "shield": 0,
+        "zar": 0,
+        "size": "Léger",
+        "models": 4,
+        "type": "Air",
+        "power": {
+          "A": 3,
+          "M": 4,
+          "B": 2
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Missiles AIR SOL",
+            "bonus": "sol-uniquement",
+            "bonusLabel": "SOL uniquement",
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 5
+          }
+        ],
+        "rules": []
+      },
+      "volant-moyen": {
+        "slot": "volant-moyen",
+        "title": "Volant Moyen",
+        "move": "L",
+        "def": [
+          7,
+          6,
+          6
+        ],
+        "shield": 0,
+        "zar": 0,
+        "size": "Moyen",
+        "models": 2,
+        "type": "Air",
+        "power": {
+          "A": 3,
+          "M": 4,
+          "B": 2
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Bombes",
+            "bonus": "sol-uniquement",
+            "bonusLabel": "SOL uniquement",
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 7
+          },
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 4
+          },
+          {
+            "name": "Anti aérien",
+            "bonus": "anti-aerien",
+            "bonusLabel": "Anti air",
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 6
+          }
+        ],
+        "rules": []
+      },
+      "lourd": {
+        "slot": "lourd",
+        "title": "Véhicule Lourd",
+        "move": "S",
+        "def": [
+          7,
+          7,
+          7,
+          8
+        ],
+        "shield": 0,
+        "zar": 25,
+        "size": "Lourd",
+        "models": 1,
+        "type": "Sol",
+        "power": {
+          "A": 4,
+          "M": 4,
+          "B": 4
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Canon Lourd",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Tourelle",
+            "range": 35,
+            "shots": 10
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front/Gauche",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front/Droit",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lance missiles",
+            "bonus": "anti-aerien",
+            "bonusLabel": "Anti-air",
+            "arc": "Tourelle",
+            "range": 30,
+            "shots": 6
+          }
+        ],
+        "rules": []
+      },
+      "commandant": {
+        "slot": "commandant",
+        "title": "Commandant",
+        "move": "S",
+        "def": [
+          7,
+          7,
+          7,
+          8,
+          8
+        ],
+        "shield": 0,
+        "zar": 25,
+        "size": "Lourd",
+        "models": 1,
+        "type": "Sol",
+        "power": {
+          "A": 4,
+          "M": 4,
+          "B": 4
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Canon Lourd",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Tourelle",
+            "range": 35,
+            "shots": 10
+          },
+          {
+            "name": "Canon Lourd",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Tourelle",
+            "range": 35,
+            "shots": 10
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front/Gauche",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Front/Droit",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lasers",
+            "bonus": null,
+            "bonusLabel": null,
+            "arc": "Tourelle",
+            "range": 15,
+            "shots": 5
+          },
+          {
+            "name": "Lance missiles",
+            "bonus": "anti-aerien",
+            "bonusLabel": "Anti-air",
+            "arc": "Tourelle",
+            "range": 30,
+            "shots": 6
+          }
+        ],
+        "rules": []
+      },
+      "artillerie": {
+        "slot": "artillerie",
+        "title": "Artillerie",
+        "move": "S",
+        "def": [
+          5,
+          5,
+          6
+        ],
+        "shield": 0,
+        "zar": 3,
+        "size": "Moyen",
+        "models": 3,
+        "type": "Sol",
+        "power": {
+          "A": 4,
+          "M": 2,
+          "B": 2
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Lance missiles",
+            "bonus": "anti-aerien",
+            "bonusLabel": "Anti air",
+            "arc": "Tourelle",
+            "range": 30,
+            "shots": 6
+          },
+          {
+            "name": "Canon long",
+            "bonus": "sol-uniquement",
+            "bonusLabel": "Sol uniquement",
+            "arc": "Front",
+            "range": 40,
+            "shots": 5
+          },
+          {
+            "name": "Canon long",
+            "bonus": "sol-uniquement",
+            "bonusLabel": "Sol uniquement",
+            "arc": "Front",
+            "range": 40,
+            "shots": 5
+          }
+        ],
+        "rules": []
+      },
+      "speciale": {
+        "slot": "speciale",
+        "title": "Unité spéciale",
+        "move": "L",
+        "def": [
+          8,
+          7,
+          7
+        ],
+        "shield": 0,
+        "zar": 7,
+        "size": "Moyen",
+        "models": 3,
+        "type": "Sol",
+        "power": {
+          "A": 0,
+          "M": 3,
+          "B": 4
+        },
+        "destruction": 4,
+        "weapons": [],
+        "rules": [
+          {
+            "name": "Protubérance Frontale",
+            "text": "Pour les éperonnages, l'unité est toujours considéré comme ayant parcouru L et étant de taille Lourde"
+          }
+        ]
+      },
+      "colosse": {
+        "slot": "colosse",
+        "title": "Colosse",
+        "move": "L",
+        "def": [
+          8,
+          4,
+          4,
+          4,
+          4
+        ],
+        "shield": 0,
+        "zar": 20,
+        "size": "Moyen",
+        "models": 1,
+        "type": "Sol",
+        "power": {
+          "A": 1,
+          "M": 2,
+          "B": 2
+        },
+        "destruction": 4,
+        "weapons": [
+          {
+            "name": "Machine gun",
+            "bonus": "anti-infanterie",
+            "bonusLabel": "Anti infanterie",
+            "arc": "Front",
+            "range": 15,
+            "shots": 4
+          }
+        ],
+        "rules": []
+      }
+    },
+    "sources": {
+      "profiles": "Profils Vespara v1.6.pdf",
+      "list": "LA Vespara V1.4.pdf"
+    }
+  }
+]

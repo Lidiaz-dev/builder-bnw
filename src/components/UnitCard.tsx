@@ -1,4 +1,4 @@
-import { SLOT_LABEL, skillById, type Faction, type UnitProfile } from '../data'
+import { SLOT_LABEL, skillById, type ExampleProfile, type UnitProfile } from '../data'
 
 const MOVE: Record<string, string> = { S: '3"', M: '6"', L: '12"' }
 
@@ -9,8 +9,8 @@ export default function UnitCard({
   badge,
   compact,
 }: {
-  faction: Faction
-  profile: UnitProfile
+  faction: { name: string }
+  profile: UnitProfile | ExampleProfile
   badge?: string
   compact?: boolean
 }) {
@@ -21,7 +21,7 @@ export default function UnitCard({
       <header>
         <div>
           <span className="unit-faction">{faction.name}</span>
-          <h3>{SLOT_LABEL[p.slot]}</h3>
+          <h3>{p.slot ? SLOT_LABEL[p.slot] : p.title}</h3>
         </div>
         <div className="unit-tags">
           {badge && <span className="pill accent">{badge}</span>}
@@ -106,7 +106,7 @@ export default function UnitCard({
 }
 
 /** Profil de l'infanterie de la faction (placée dans les terrains). */
-export function InfantryCard({ faction }: { faction: Faction }) {
+export function InfantryCard({ faction }: { faction: { name: string; infantry: { def: number; shield: number; zar: number } } }) {
   const i = faction.infantry
   return (
     <article className="unit-card infantry">

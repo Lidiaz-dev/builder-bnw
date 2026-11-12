@@ -110,11 +110,20 @@ def cell_texts(page, table):
 # --------------------------------------------------------------------------- profils
 
 
-def parse_profile(rows):
-    """Un tableau de profil -> dict. Structure : titre, Armes, entêtes, armes…, Mouvement…, Taille…"""
+def is_profile_table(rows) -> bool:
+    """Tableau au format d'un profil d'unité (entêtes Nom/Bonus/Arc, puis Mouvement et Taille)."""
+    firsts = [r[0] for r in rows]
+    return "Nom" in firsts and "Mouvement" in firsts and "Taille" in firsts
+
+
+def parse_profile(rows, example=False):
+    """Un tableau de profil -> dict. Structure : titre, Armes, entêtes, armes…, Mouvement…, Taille…
+
+    example=True : profil d'exemple du livret (2.2), sans emplacement dans l'arbre.
+    """
     title = " ".join(rows[0][1:]).strip()
     slot = SLOTS.get(title.lower())
-    if not slot:
+    if not slot and not example:
         raise ValueError(f"Profil inconnu : {title!r}")
     i = 0
     while rows[i][0] != "Nom":
@@ -450,7 +459,13 @@ def parse_rulebook(path: Path):
             elif started and cur is not None:
                 if kind == "table":
                     flush()
-                    cur["blocks"].append({"type": "table", "rows": payload})
+                    if is_profile_table(payload):
+                        # Profil d'exemple : affiché avec la même fiche que les unités du site.
+                        prof = parse_profile(payload, example=True)
+                        prof["faction"] = payload[0][0]
+                        cur["blocks"].append({"type": "profile", "profile": prof})
+                    else:
+                        cur["blocks"].append({"type": "table", "rows": payload})
                 else:
                     images.append((cur, payload))
         flush()

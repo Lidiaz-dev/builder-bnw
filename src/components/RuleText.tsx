@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import type { RuleBlock } from '../data'
+import UnitCard from './UnitCard'
 
 /** Texte avec le gras du livret (**…**) et, en option, des mots surlignés par la recherche. */
 export function RichText({ text, highlight }: { text: string; highlight?: string }) {
@@ -85,6 +86,12 @@ export function RuleBlocks({ blocks, highlight }: { blocks: RuleBlock[]; highlig
               ))}
             </tbody>
           </table>
+        </div>,
+      )
+    } else if (b.type === 'profile') {
+      out.push(
+        <div key={i} className="rule-profile">
+          <UnitCard faction={{ name: b.profile.faction }} profile={b.profile} />
         </div>,
       )
     } else {

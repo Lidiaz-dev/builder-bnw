@@ -12,7 +12,14 @@ const norm = (s: string) =>
     .replace(/\*\*/g, '')
     .toLowerCase()
 
-const blockText = (b: RuleBlock) => (b.type === 'table' ? b.rows.flat().join(' ') : b.type === 'img' ? '' : b.text)
+const blockText = (b: RuleBlock) =>
+  b.type === 'table'
+    ? b.rows.flat().join(' ')
+    : b.type === 'img'
+      ? ''
+      : b.type === 'profile'
+        ? b.profile.weapons.map((w) => `${w.name} ${w.bonusLabel ?? ''}`).join(' ')
+        : b.text
 
 /** Sections de premier niveau (chapitres) et leurs sous-sections, pour le sommaire. */
 const chapterOf = (id: string) => id.split('.')[0]

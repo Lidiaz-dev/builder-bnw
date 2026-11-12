@@ -75,6 +75,10 @@ export type RuleBlock =
   | { type: 'li'; text: string; level?: number }
   | { type: 'table'; rows: string[][] }
   | { type: 'img'; src: string }
+  | { type: 'profile'; profile: ExampleProfile }
+
+/** Profil d'exemple du livret (2.2) : titres génériques, pas d'emplacement dans l'arbre. */
+export type ExampleProfile = Omit<UnitProfile, 'slot'> & { slot: null; faction: string }
 
 export interface RuleSection {
   id: string

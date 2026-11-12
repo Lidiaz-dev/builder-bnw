@@ -221,70 +221,56 @@
         "text": "Chaque unité se compose d'un profil suivant :"
       },
       {
-        "type": "table",
-        "rows": [
-          [
-            "[Faction]",
-            "[Nom de l'unité]"
+        "type": "profile",
+        "profile": {
+          "slot": null,
+          "title": "[Nom de l'unité]",
+          "move": "M",
+          "def": [
+            7,
+            6,
+            6
           ],
-          [
-            "Armes"
+          "shield": 3,
+          "zar": 6,
+          "size": "Moyen",
+          "models": 4,
+          "type": "Sol",
+          "power": {
+            "A": 4,
+            "M": 2,
+            "B": 3
+          },
+          "destruction": 4,
+          "weapons": [
+            {
+              "name": "Canon",
+              "bonus": null,
+              "bonusLabel": null,
+              "arc": "Tourelle",
+              "range": 30,
+              "shots": 7
+            },
+            {
+              "name": "Lance missiles",
+              "bonus": "anti-aerien",
+              "bonusLabel": "Anti air",
+              "arc": "Front",
+              "range": 30,
+              "shots": 6
+            },
+            {
+              "name": "Gatling",
+              "bonus": "anti-infanterie",
+              "bonusLabel": "Anti infanterie",
+              "arc": "Front",
+              "range": 15,
+              "shots": 6
+            }
           ],
-          [
-            "Nom",
-            "Bonus",
-            "Arc",
-            "Portée",
-            "Tirs"
-          ],
-          [
-            "Canon",
-            "-",
-            "Tourelle",
-            "30",
-            "7"
-          ],
-          [
-            "Lance missiles",
-            "Anti air",
-            "Front",
-            "30",
-            "6"
-          ],
-          [
-            "Gatling",
-            "Anti infanterie",
-            "Front",
-            "15",
-            "6"
-          ],
-          [
-            "Mouvement",
-            "Défense",
-            "Bouclier",
-            "ZAR"
-          ],
-          [
-            "M",
-            "7+6+6",
-            "3",
-            "6"
-          ],
-          [
-            "Taille",
-            "Unité",
-            "Type",
-            "Puissance adaptative A/M/B",
-            "Points de destruction"
-          ],
-          [
-            "Moyen",
-            "4",
-            "Sol",
-            "4/2/3",
-            "4"
-          ]
-        ]
+          "rules": [],
+          "faction": "[Faction]"
+        }
       },
       {
         "type": "p",

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { FACTION_COLOR, factions, rules, sources } from '../data'
+import { FACTION_COLOR, factions, rules } from '../data'
 
 export default function HomePage() {
   const lore = rules.find((r) => r.id === '1')
@@ -48,10 +48,6 @@ export default function HomePage() {
           </Link>
         </section>
       )}
-
-      <p className="muted small center">
-        Règles : {sources.rules} · {sources.quickref}
-      </p>
     </div>
   )
 }

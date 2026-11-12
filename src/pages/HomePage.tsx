@@ -35,7 +35,6 @@ export default function HomePage() {
           <Link key={f.id} to={`/regles/factions/${f.id}`} className="faction-tile" style={{ ['--faction' as string]: FACTION_COLOR[f.id] }}>
             <h2>{f.name}</h2>
             <p>{(f.background ?? f.lore ?? '').split('. ').slice(0, 2).join('. ')}.</p>
-            <span className="small muted">Pouvoir : {f.factionPower}</span>
           </Link>
         ))}
       </section>

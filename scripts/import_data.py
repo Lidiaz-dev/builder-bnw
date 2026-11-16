@@ -519,6 +519,24 @@ def parse_quickref(path: Path):
     return cards
 
 
+# Points de destruction par socle détruit (le livret marque ce point « WIP », cf HYPOTHESES.md).
+# Visé : environ 1/3 des points de victoire, 2/3 venant du scénario.
+BASE_VALUE = {"Léger": 1, "Moyen": 2, "Lourd": 5}
+COLOSSUS_VALUE = 6
+# Umbra : moins de socles mais plus solides, ses socles moyens et son commandant valent plus.
+FACTION_BASE_VALUE = {"umbra": {"Moyen": 3}}
+FACTION_COMMANDER_BONUS = {"umbra": 2}
+
+
+def base_value(fid, slot, size):
+    if slot == "colosse":
+        return COLOSSUS_VALUE
+    v = FACTION_BASE_VALUE.get(fid, {}).get(size, BASE_VALUE[size])
+    if slot == "commandant":
+        v += FACTION_COMMANDER_BONUS.get(fid, 0)
+    return v
+
+
 # --------------------------------------------------------------------------- main
 
 
@@ -547,6 +565,8 @@ def main():
             for u in units.values():
                 if u["size"] in ("Moyen", "Lourd"):
                     u["rules"].append({"name": "Relais", "text": "Relaie la distribution d'énergie (L) depuis le véhicule de commandement."})
+        for u in units.values():
+            u["destruction"] = base_value(fid, u["slot"], u["size"])
         missing = [s for s in SLOTS.values() if s not in units]
         if missing:
             raise SystemExit(f"{prof.name} : profils manquants {missing}")
@@ -580,6 +600,7 @@ def main():
     for s in rules:
         for b in s["blocks"]:
             if b["type"] == "profile":
+                b["profile"]["destruction"] = base_value(None, None, b["profile"]["size"])
                 for w in b["profile"]["weapons"]:
                     if w["name"] == "Machinegun":
                         w["name"] = "Machine gun"

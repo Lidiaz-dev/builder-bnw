@@ -21,7 +21,12 @@ Choix faits là où les documents (Brave New World V1.8, Profils v1.5/v1.6, LA V
 - **Relais (Umbra)** : ajouté aux unités de taille Moyen et Lourd, comme l'indique la règle « Relais d'énergie ».
 - **Battle-Rig (Cabale)** : les règles Caravane alimentée et Véhicule de tête parlent du « Battle-Rig ». Il s'agit
   probablement du commandant Cabale, mais rien ne le confirme. Le texte est laissé tel quel.
-- **Points de destruction** : toutes les unités valent 4 dans les profils, et le livret marque ce point « WIP ».
+- **Points de destruction** (le livret marque ce point « WIP », les profils donnaient 4 à toutes les unités) :
+  chaque **socle** détruit rapporte des points à l'adversaire selon sa taille : léger 1, moyen 2, lourd 5, colosse 6.
+  Umbra, qui a moins de socles mais plus solides : socles moyens à 3 et commandant à 7. Visé : environ 2/3 des points
+  de victoire par le scénario (90 au maximum) et 1/3 par la destruction. Une armée entière détruite vaut en moyenne
+  39 points en Engagement et 51 en Théâtre (Umbra 39 et 51 avec son ajustement). Barème dans `scripts/import_data.py`
+  (`BASE_VALUE`, `FACTION_BASE_VALUE`, `FACTION_COMMANDER_BONUS`).
 - **Compétences** : la section 6 est marquée « A COMPLETER ». Seules les compétences listées sont reprises
   (Anti-infanterie, Anti-aérien, Air uniquement, Sol uniquement, Rapide, Acquisition de cible).
 

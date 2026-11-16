@@ -1,4 +1,4 @@
-import { FORMATS, factionById, type FormatId } from '../data'
+import { FORMATS, SLOT_LABEL, factionById, type FormatId } from '../data'
 import { armyUnits, type Army, type ArmyUnit } from './army'
 
 /** Assistant de partie : état d'une partie en cours, enregistré dans le navigateur. */
@@ -77,8 +77,8 @@ export interface PlayerState {
   factionId: string
   /** Liste d'armée associée (copie au lancement de la partie). */
   army: Army | null
-  /** Unités détruites par l'adversaire (clés d'ArmyUnit). */
-  destroyed: string[]
+  /** Socles perdus par unité (clé d'ArmyUnit → nombre de socles détruits). */
+  lost: Record<string, number>
   /** Points de destruction ajoutés à la main (sans liste associée). */
   manualDestruction: number
   scenarioPoints: number
@@ -108,7 +108,7 @@ export function newPlayer(name: string, factionId: string, army: Army | null): P
     name,
     factionId,
     army,
-    destroyed: [],
+    lost: {},
     manualDestruction: 0,
     scenarioPoints: 0,
     terrains: 0,
@@ -138,17 +138,20 @@ export function unitsInPlay(p: PlayerState): ArmyUnit[] {
 /** Nombre d'activations du joueur (unités encore en jeu). */
 export function activations(p: PlayerState): number {
   if (!p.army) return p.manualUnits
-  return unitsInPlay(p).filter((u) => !p.destroyed.includes(u.key)).length
+  return unitsInPlay(p).filter((u) => !isDestroyed(p, u)).length
 }
 
 /** Énergie disponible à la phase d'énergie. */
 export const energy = (p: PlayerState) => (p.commandAlive ? 5 : 0) + p.terrains
 
-/** Points de destruction marqués par le joueur i (unités ennemies détruites). */
+export const lostBases = (p: PlayerState, u: ArmyUnit) => Math.min(u.profile.models, p.lost[u.key] ?? 0)
+export const isDestroyed = (p: PlayerState, u: ArmyUnit) => lostBases(p, u) >= u.profile.models
+
+/** Points de destruction marqués par le joueur i : la valeur de chaque socle ennemi détruit. */
 export function destructionPoints(g: GameState, i: 0 | 1): number {
   const me = g.players[i]
   const foe = g.players[other(i)]
-  const fromList = foe.army ? armyUnits(foe.army).filter((u) => foe.destroyed.includes(u.key)).reduce((s, u) => s + u.profile.destruction, 0) : 0
+  const fromList = foe.army ? armyUnits(foe.army).reduce((s, u) => s + lostBases(foe, u) * u.profile.destruction, 0) : 0
   return fromList + me.manualDestruction
 }
 
@@ -273,15 +276,21 @@ export function scoreZones(g: GameState, pts: [number, number]): ScoreResult {
   return { game: next, reminders }
 }
 
-export function toggleDestroyed(g: GameState, owner: 0 | 1, key: string): GameState {
+/** Ajoute (delta > 0) ou retire des socles détruits à une unité du joueur owner. */
+export function loseBases(g: GameState, owner: 0 | 1, key: string, delta: number): GameState {
   const p = g.players[owner]
-  const destroyed = p.destroyed.includes(key) ? p.destroyed.filter((k) => k !== key) : [...p.destroyed, key]
-  let next = updatePlayer(g, owner, { destroyed })
-  if (key === 'qg-commandant') next = updatePlayer(next, owner, { commandAlive: !destroyed.includes(key) })
   const u = p.army ? armyUnits(p.army).find((x) => x.key === key) : null
-  if (u && destroyed.includes(key)) {
-    next = log(next, `${p.name} perd : ${u.profile.title} (${u.profile.destruction} points pour ${g.players[other(owner)].name}).`)
-  }
+  if (!u) return g
+  const before = lostBases(p, u)
+  const after = Math.max(0, Math.min(u.profile.models, before + delta))
+  if (after === before) return g
+  let next = updatePlayer(g, owner, { lost: { ...p.lost, [key]: after } })
+  if (key === 'qg-commandant') next = updatePlayer(next, owner, { commandAlive: after < u.profile.models })
+  const foe = g.players[other(owner)].name
+  const pts = Math.abs(after - before) * u.profile.destruction
+  const what = `${SLOT_LABEL[u.slot]}, ${Math.abs(after - before)} socle${Math.abs(after - before) > 1 ? 's' : ''}`
+  next = log(next, after > before ? `${p.name} perd : ${what} (+${pts} pour ${foe}).` : `Correction : ${p.name} récupère ${what} (−${pts} pour ${foe}).`)
+  if (after === u.profile.models) next = log(next, `${p.name} : unité détruite (${SLOT_LABEL[u.slot]}).`)
   return next
 }
 
@@ -329,7 +338,14 @@ const KEY = 'bnw.game'
 export function loadGame(): GameState | null {
   try {
     const raw = localStorage.getItem(KEY)
-    return raw ? (JSON.parse(raw) as GameState) : null
+    if (!raw) return null
+    const g = JSON.parse(raw) as GameState
+    // Ancienne sauvegarde : unités cochées détruites entières.
+    for (const p of g.players) {
+      const old = (p as PlayerState & { destroyed?: string[] }).destroyed
+      if (!p.lost) p.lost = Object.fromEntries((old ?? []).map((k) => [k, 99]))
+    }
+    return g
   } catch {
     return null
   }

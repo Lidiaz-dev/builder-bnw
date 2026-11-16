@@ -57,8 +57,11 @@ export default function UnitCard({
           </dd>
         </div>
         <div>
-          <dt title="Points de destruction">Destr.</dt>
-          <dd>{p.destruction}</dd>
+          <dt title="Points de destruction marqués par l'adversaire pour chaque socle détruit">Destr.</dt>
+          <dd>
+            {p.destruction}
+            <small>/socle</small>
+          </dd>
         </div>
       </dl>
 

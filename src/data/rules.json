@@ -241,7 +241,7 @@
             "M": 2,
             "B": 3
           },
-          "destruction": 4,
+          "destruction": 2,
           "weapons": [
             {
               "name": "Canon",
@@ -333,7 +333,7 @@
       },
       {
         "type": "li",
-        "text": "Points de destruction : le nombre de points que l'adversaire marque en détruisant cette unité",
+        "text": "Points de destruction : les points que l'adversaire marque pour chaque socle détruit de cette unité",
         "level": 0
       }
     ]
@@ -1168,7 +1168,7 @@
       },
       {
         "type": "p",
-        "text": "Lors du calcul des points de victoire, chaque joueur ajoute le nombre de points de destruction correspondant aux profils des unités qu'il a détruites."
+        "text": "Lors du calcul des points de victoire, chaque joueur ajoute le nombre de points de destruction de chaque socle ennemi qu'il a détruit (léger 1, moyen 2, lourd 5, colosse 6)."
       },
       {
         "type": "p",
@@ -1342,7 +1342,7 @@
       },
       {
         "type": "li",
-        "text": "En éliminant des unités ennemies : **points de destruction** WIP",
+        "text": "En éliminant des unités ennemies : **points de destruction**, socle par socle",
         "level": 0
       },
       {

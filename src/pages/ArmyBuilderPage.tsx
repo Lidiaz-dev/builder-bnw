@@ -138,7 +138,7 @@ export default function ArmyBuilderPage() {
               <th>Socles</th>
               <th>Taille</th>
               <th>Type</th>
-              <th>Destr.</th>
+              <th title="Points pour l'adversaire : par socle, et pour l'unité entière">Destr. socle · unité</th>
             </tr>
           </thead>
           <tbody>
@@ -151,7 +151,9 @@ export default function ArmyBuilderPage() {
                 <td>{u.profile.models}</td>
                 <td>{u.profile.size}</td>
                 <td>{u.profile.type === 'Air' ? 'Aérien' : 'Sol'}</td>
-                <td>{u.profile.destruction}</td>
+                <td>
+                  {u.profile.destruction} · {u.profile.destruction * u.profile.models}
+                </td>
               </tr>
             ))}
           </tbody>

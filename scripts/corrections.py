@@ -13,6 +13,10 @@ CORRECTIONS: list[tuple[str, str, str]] = [
     (r"1 dé pour chaque véhicule allié à M", "1 dé pour chaque socle allié à M", "combat de terrains : 1 dé par socle (4.5)"),
     (r"\bGatling\b", "Machinegun", "nom de la tourelle des drops"),
     (r"Avec les profils génériques, toutes les unités", "Toutes les unités", "plus de profils génériques"),
+    # --- Points de destruction par socle (HYPOTHESES.md) -------------------------------------
+    (r"le nombre de points que l'adversaire marque en détruisant cette unité", "les points que l'adversaire marque pour chaque socle détruit de cette unité", "destruction comptée par socle"),
+    (r"correspondant aux profils des unités qu'il a détruites", "de chaque socle ennemi qu'il a détruit (léger 1, moyen 2, lourd 5, colosse 6)", "destruction comptée par socle"),
+    (r"(\*\*points de destruction\*\*) WIP", r"\1, socle par socle", "destruction comptée par socle"),
     # --- Accords et orthographe -------------------------------------------------------------
     (r"reçevoir", "recevoir", "orthographe"),
     (r"\bLes copros\b", "Les corpos", "faute de frappe"),

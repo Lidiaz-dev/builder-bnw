@@ -76,7 +76,7 @@
           "M": 2,
           "B": 3
         },
-        "destruction": 4,
+        "destruction": 2,
         "weapons": [
           {
             "name": "Canon",
@@ -115,7 +115,7 @@
           "M": 4,
           "B": 2
         },
-        "destruction": 4,
+        "destruction": 1,
         "weapons": [
           {
             "name": "Machine gun",
@@ -146,7 +146,7 @@
           "M": 4,
           "B": 2
         },
-        "destruction": 4,
+        "destruction": 1,
         "weapons": [
           {
             "name": "Missiles AIR SOL",
@@ -186,7 +186,7 @@
           "M": 4,
           "B": 2
         },
-        "destruction": 4,
+        "destruction": 2,
         "weapons": [
           {
             "name": "Bombes",
@@ -235,7 +235,7 @@
           "M": 4,
           "B": 4
         },
-        "destruction": 4,
+        "destruction": 5,
         "weapons": [
           {
             "name": "Canon Lourd",
@@ -293,7 +293,7 @@
           "M": 4,
           "B": 4
         },
-        "destruction": 4,
+        "destruction": 5,
         "weapons": [
           {
             "name": "Canon Lourd",
@@ -365,7 +365,7 @@
           "M": 2,
           "B": 2
         },
-        "destruction": 4,
+        "destruction": 2,
         "weapons": [
           {
             "name": "Lance missiles",
@@ -412,7 +412,7 @@
           "M": 4,
           "B": 2
         },
-        "destruction": 4,
+        "destruction": 1,
         "weapons": [
           {
             "name": "Canon court",
@@ -459,7 +459,7 @@
           "M": 2,
           "B": 3
         },
-        "destruction": 4,
+        "destruction": 6,
         "weapons": [
           {
             "name": "Machine gun",
@@ -579,7 +579,7 @@
           "M": 2,
           "B": 3
         },
-        "destruction": 4,
+        "destruction": 2,
         "weapons": [
           {
             "name": "Canon",
@@ -618,7 +618,7 @@
           "M": 4,
           "B": 2
         },
-        "destruction": 4,
+        "destruction": 1,
         "weapons": [
           {
             "name": "Machine gun",
@@ -649,7 +649,7 @@
           "M": 4,
           "B": 2
         },
-        "destruction": 4,
+        "destruction": 1,
         "weapons": [
           {
             "name": "Missiles AIR SOL",
@@ -689,7 +689,7 @@
           "M": 4,
           "B": 2
         },
-        "destruction": 4,
+        "destruction": 2,
         "weapons": [
           {
             "name": "Bombes",
@@ -738,7 +738,7 @@
           "M": 4,
           "B": 4
         },
-        "destruction": 4,
+        "destruction": 5,
         "weapons": [
           {
             "name": "Canon Lourd",
@@ -796,7 +796,7 @@
           "M": 4,
           "B": 4
         },
-        "destruction": 4,
+        "destruction": 5,
         "weapons": [
           {
             "name": "Canon Lourd",
@@ -868,7 +868,7 @@
           "M": 2,
           "B": 2
         },
-        "destruction": 4,
+        "destruction": 2,
         "weapons": [
           {
             "name": "Lance missiles",
@@ -916,7 +916,7 @@
           "M": 2,
           "B": 3
         },
-        "destruction": 4,
+        "destruction": 2,
         "weapons": [
           {
             "name": "Lance missiles",
@@ -971,7 +971,7 @@
           "M": 2,
           "B": 3
         },
-        "destruction": 4,
+        "destruction": 6,
         "weapons": [
           {
             "name": "Machine gun",
@@ -1041,7 +1041,7 @@
           "M": 2,
           "B": 4
         },
-        "destruction": 4,
+        "destruction": 3,
         "weapons": [
           {
             "name": "Canon",
@@ -1102,7 +1102,7 @@
           "M": 4,
           "B": 2
         },
-        "destruction": 4,
+        "destruction": 1,
         "weapons": [
           {
             "name": "Machine gun",
@@ -1134,7 +1134,7 @@
           "M": 4,
           "B": 2
         },
-        "destruction": 4,
+        "destruction": 1,
         "weapons": [
           {
             "name": "Missiles AIR SOL",
@@ -1175,7 +1175,7 @@
           "M": 4,
           "B": 2
         },
-        "destruction": 4,
+        "destruction": 3,
         "weapons": [
           {
             "name": "Bombes",
@@ -1229,7 +1229,7 @@
           "M": 4,
           "B": 4
         },
-        "destruction": 4,
+        "destruction": 5,
         "weapons": [
           {
             "name": "Canon Lourd",
@@ -1300,7 +1300,7 @@
           "M": 6,
           "B": 6
         },
-        "destruction": 4,
+        "destruction": 7,
         "weapons": [
           {
             "name": "Canon Lourd",
@@ -1378,7 +1378,7 @@
           "M": 2,
           "B": 2
         },
-        "destruction": 4,
+        "destruction": 3,
         "weapons": [
           {
             "name": "Lance missiles",
@@ -1431,7 +1431,7 @@
           "M": 2,
           "B": 2
         },
-        "destruction": 4,
+        "destruction": 1,
         "weapons": [
           {
             "name": "Machine gun",
@@ -1487,7 +1487,7 @@
           "M": 2,
           "B": 2
         },
-        "destruction": 4,
+        "destruction": 6,
         "weapons": [
           {
             "name": "Machine gun",
@@ -1606,7 +1606,7 @@
           "M": 2,
           "B": 3
         },
-        "destruction": 4,
+        "destruction": 2,
         "weapons": [
           {
             "name": "Canon",
@@ -1653,7 +1653,7 @@
           "M": 4,
           "B": 2
         },
-        "destruction": 4,
+        "destruction": 1,
         "weapons": [
           {
             "name": "Machine gun",
@@ -1684,7 +1684,7 @@
           "M": 4,
           "B": 2
         },
-        "destruction": 4,
+        "destruction": 1,
         "weapons": [
           {
             "name": "Missiles AIR SOL",
@@ -1724,7 +1724,7 @@
           "M": 4,
           "B": 2
         },
-        "destruction": 4,
+        "destruction": 2,
         "weapons": [
           {
             "name": "Bombes",
@@ -1773,7 +1773,7 @@
           "M": 4,
           "B": 4
         },
-        "destruction": 4,
+        "destruction": 5,
         "weapons": [
           {
             "name": "Canon Lourd",
@@ -1831,7 +1831,7 @@
           "M": 4,
           "B": 4
         },
-        "destruction": 4,
+        "destruction": 5,
         "weapons": [
           {
             "name": "Canon Lourd",
@@ -1903,7 +1903,7 @@
           "M": 2,
           "B": 2
         },
-        "destruction": 4,
+        "destruction": 2,
         "weapons": [
           {
             "name": "Lance missiles",
@@ -1951,7 +1951,7 @@
           "M": 3,
           "B": 4
         },
-        "destruction": 4,
+        "destruction": 2,
         "weapons": [],
         "rules": [
           {
@@ -1981,7 +1981,7 @@
           "M": 2,
           "B": 2
         },
-        "destruction": 4,
+        "destruction": 6,
         "weapons": [
           {
             "name": "Machine gun",

@@ -25,7 +25,9 @@ import {
   setPriority,
   spendDrops,
   storeGame,
-  toggleDestroyed,
+  isDestroyed,
+  loseBases,
+  lostBases,
   unitsInPlay,
   victoryPoints,
   type GameState,
@@ -186,7 +188,7 @@ function Setup({ onStart }: { onStart: (g: GameState) => void }) {
                 </label>
               )}
               <p className="small muted">
-                {army ? `${armyUnits(army).length - 1} unités au déploiement (+ colosse en réserve). Les destructions se cochent unité par unité.` : 'Sans liste : activations et points de destruction se comptent à la main.'}
+                {army ? `${armyUnits(army).length - 1} unités au déploiement (+ colosse en réserve). Les socles détruits se comptent unité par unité.` : 'Sans liste : activations et points de destruction se comptent à la main.'}
               </p>
             </section>
           )
@@ -401,7 +403,7 @@ function PlayerPanel({
         <Counter label="Terrains contrôlés" value={p.terrains} onChange={(v) => patch({ terrains: v })} />
         <Counter label="Pass tokens" value={p.passTokens} onChange={(v) => patch({ passTokens: v })} />
         {!p.army && <Counter label="Unités en jeu" value={p.manualUnits} onChange={(v) => patch({ manualUnits: v })} />}
-        {!p.army && <Counter label="Destruction marquée" value={p.manualDestruction} step={4} onChange={(v) => patch({ manualDestruction: v })} />}
+        {!p.army && <Counter label="Destruction marquée" value={p.manualDestruction} onChange={(v) => patch({ manualDestruction: v })} />}
       </div>
       <div className="row wrap">
         <label className="check">
@@ -433,24 +435,38 @@ function PlayerPanel({
           <h3>Unités ({activations(p)} en jeu)</h3>
           <ul className="unit-checks">
             {units.map((u) => {
-              const dead = p.destroyed.includes(u.key)
+              const lost = lostBases(p, u)
+              const dead = isDestroyed(p, u)
               const waiting = !inPlay.has(u.key)
+              const n = u.profile.models
               return (
-                <li key={u.key} className={dead ? 'dead' : waiting ? 'waiting' : ''}>
-                  <label className="check">
-                    <input type="checkbox" checked={dead} onChange={() => setGame(toggleDestroyed(game, i, u.key))} disabled={waiting} />
+                <li key={u.key} className={`unit-loss${dead ? ' dead' : waiting ? ' waiting' : ''}`}>
+                  <div>
                     {SLOT_LABEL[u.slot]}
                     <span className="muted small">
                       {' '}
-                      · {u.profile.models} socle{u.profile.models > 1 ? 's' : ''} · DEF {u.profile.def.join('+')} · {u.profile.destruction} pts
+                      · DEF {u.profile.def.join('+')} · {u.profile.destruction} pt{u.profile.destruction > 1 ? 's' : ''} / socle
                       {waiting ? ' · en réserve' : ''}
                     </span>
-                  </label>
+                  </div>
+                  <div className="row loss-ctl">
+                    <button className="btn small ghost" onClick={() => setGame(loseBases(game, i, u.key, -1))} disabled={waiting || lost === 0} aria-label={`${SLOT_LABEL[u.slot]} : un socle détruit de moins`}>
+                      −
+                    </button>
+                    <span className="bases" aria-label={`${lost} socle${lost > 1 ? 's' : ''} détruit${lost > 1 ? 's' : ''} sur ${n}`}>
+                      {Array.from({ length: n }, (_, k) => (
+                        <span key={k} className={`base-pip${k < lost ? ' lost' : ''}`} />
+                      ))}
+                    </span>
+                    <button className="btn small ghost" onClick={() => setGame(loseBases(game, i, u.key, 1))} disabled={waiting || dead} aria-label={`${SLOT_LABEL[u.slot]} : un socle détruit de plus`}>
+                      +
+                    </button>
+                  </div>
                 </li>
               )
             })}
           </ul>
-          <p className="small muted">Cocher une unité quand elle est détruite : ses points de destruction vont à l'adversaire.</p>
+          <p className="small muted">« + » à chaque socle détruit : sa valeur va à l'adversaire. L'unité est détruite quand tous ses socles le sont.</p>
         </div>
       )}
 

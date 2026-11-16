@@ -113,7 +113,7 @@ export function armyUnits(army: Army): ArmyUnit[] {
   return list
 }
 
-/** Total des points de destruction que l'adversaire peut marquer (hors colosse en réserve compris). */
-export const destructionTotal = (army: Army) => armyUnits(army).reduce((s, u) => s + u.profile.destruction, 0)
+/** Total des points de destruction que l'adversaire peut marquer en détruisant tous les socles (colosse compris). */
+export const destructionTotal = (army: Army) => armyUnits(army).reduce((s, u) => s + u.profile.destruction * u.profile.models, 0)
 
 export const modelCount = (army: Army) => armyUnits(army).reduce((s, u) => s + u.profile.models, 0)
